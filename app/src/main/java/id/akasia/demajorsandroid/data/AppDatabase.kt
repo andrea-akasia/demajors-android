@@ -7,8 +7,7 @@ import id.akasia.demajorsandroid.data.local.pokemon.LocalPokemonDao
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.room.migration.Migration
 
-
-@Database(entities = [LocalPokemon::class], version = 1) //TODO bump version to 2 to test migration from v1 to v2
+@Database(entities = [LocalPokemon::class], version = 1) // TODO bump version to 2 to test migration from v1 to v2
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun PokemonDao(): LocalPokemonDao
@@ -20,7 +19,4 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
     }
-
-
-
 }

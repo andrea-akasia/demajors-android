@@ -33,40 +33,42 @@ class DetailPokemonActivity : BaseActivity<DetailPokemonViewModel>(), HasAndroid
         binding = ActivityDetailPokemonBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel.data.observe(this, {
-            setupTabs(it)
+        viewModel.data.observe(
+            this,
+            {
+                setupTabs(it)
 
-            Glide.with(this)
-                .load(it.sprites?.other?.officialArtwork?.frontDefault)
-                .centerCrop()
-                .into(binding.artwork)
-            binding.name.text = it.name
+                Glide.with(this)
+                    .load(it.sprites?.other?.officialArtwork?.frontDefault)
+                    .centerCrop()
+                    .into(binding.artwork)
+                binding.name.text = it.name
 
-            typeAdapter = TypeAdapter(it.types)
-            binding.rvType.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-            binding.rvType.adapter = typeAdapter
-        })
+                typeAdapter = TypeAdapter(it.types)
+                binding.rvType.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+                binding.rvType.adapter = typeAdapter
+            }
+        )
 
         intent.getStringExtra(POKEMON_NAME)?.let {
             viewModel.loadDetail(it)
         }
     }
 
-    private fun setupTabs(data: DetailPokemonResponse){
+    private fun setupTabs(data: DetailPokemonResponse) {
         tabAdapter = TabAdapter(supportFragmentManager, lifecycle)
         tabAdapter.addFragments(BaseStatFragment.newInstance(Gson().toJson(data)))
         tabAdapter.addFragments(MovesFragment.newInstance(Gson().toJson(data.moves)))
         binding.pager.adapter = tabAdapter
 
         TabLayoutMediator(binding.tabLayout, binding.pager) { tab, position ->
-            if(position==0){
+            if (position == 0) {
                 tab.text = "Base Stats"
-            }else{
+            } else {
                 tab.text = "Moves"
             }
         }.attach()
     }
 
     override fun androidInjector(): AndroidInjector<Any> = androidInjector
-
 }

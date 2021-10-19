@@ -22,6 +22,5 @@ object MigrationUtil {
             .build()
         migrationTestHelper.closeWhenFinished(roomDatabase)
         return roomDatabase
-
     }
 }

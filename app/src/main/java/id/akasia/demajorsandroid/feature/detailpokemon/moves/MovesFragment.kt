@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import id.akasia.demajorsandroid.base.BaseFragment
 import id.akasia.demajorsandroid.databinding.FragmentMovesBinding
 
-class MovesFragment: BaseFragment<MovesViewModel>() {
+class MovesFragment : BaseFragment<MovesViewModel>() {
     override val viewModelClass: Class<MovesViewModel> = MovesViewModel::class.java
     private var _binding: FragmentMovesBinding? = null
     private val binding get() = _binding!!

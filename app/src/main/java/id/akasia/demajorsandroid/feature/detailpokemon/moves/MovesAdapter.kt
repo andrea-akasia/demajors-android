@@ -4,9 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import id.akasia.demajorsandroid.databinding.ViewPokemonMoveBinding
-import id.akasia.demajorsandroid.model.api.detailpokemon.MovesItem
 
-class MovesAdapter(val data: List<String>): RecyclerView.Adapter<MovesAdapter.MoveHolder>() {
+class MovesAdapter(val data: List<String>) : RecyclerView.Adapter<MovesAdapter.MoveHolder>() {
     class MoveHolder(val binding: ViewPokemonMoveBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoveHolder {
@@ -18,7 +17,7 @@ class MovesAdapter(val data: List<String>): RecyclerView.Adapter<MovesAdapter.Mo
     }
 
     override fun onBindViewHolder(holder: MoveHolder, position: Int) {
-        with(holder){
+        with(holder) {
             binding.name.text = data[position]
         }
     }

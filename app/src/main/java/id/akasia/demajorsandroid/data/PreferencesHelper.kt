@@ -7,7 +7,6 @@ import javax.inject.Inject
 import android.content.SharedPreferences
 import javax.inject.Singleton
 
-
 @Singleton
 class PreferencesHelper @Inject
 constructor(@ApplicationContext context: Context) {
@@ -26,7 +25,6 @@ constructor(@ApplicationContext context: Context) {
         val editor = mPref.edit()
         editor.putString(key, value)
         editor.commit()
-
     }
 
     fun getString(key: String): String? {
@@ -56,5 +54,4 @@ constructor(@ApplicationContext context: Context) {
     fun clear() {
         mPref.edit().clear().apply()
     }
-
 }

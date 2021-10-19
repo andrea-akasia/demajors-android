@@ -13,5 +13,4 @@ abstract class FragmentBuildersModule {
 
     @ContributesAndroidInjector
     abstract fun contributeMovesFragment(): MovesFragment
-
 }

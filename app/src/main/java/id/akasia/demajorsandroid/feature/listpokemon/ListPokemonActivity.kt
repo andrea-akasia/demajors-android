@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import id.akasia.demajorsandroid.base.BaseActivity
 import id.akasia.demajorsandroid.databinding.ActivityListPokemonBinding
 
-class ListPokemonActivity : BaseActivity<ListPokemonViewModel>(){
+class ListPokemonActivity : BaseActivity<ListPokemonViewModel>() {
 
     override val viewModelClass: Class<ListPokemonViewModel> get() = ListPokemonViewModel::class.java
     private lateinit var binding: ActivityListPokemonBinding
@@ -21,11 +21,13 @@ class ListPokemonActivity : BaseActivity<ListPokemonViewModel>(){
         binding.rv.layoutManager = LinearLayoutManager(this)
         binding.rv.adapter = adapter
 
-        viewModel.pokemonData.observe(this, {
-            adapter?.submitList(it)
-        })
+        viewModel.pokemonData.observe(
+            this,
+            {
+                adapter?.submitList(it)
+            }
+        )
 
         viewModel.loadAllPokemonFromNetwork()
     }
-
 }

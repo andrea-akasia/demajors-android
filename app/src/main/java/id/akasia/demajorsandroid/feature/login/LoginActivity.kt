@@ -14,5 +14,4 @@ class LoginActivity : BaseActivity<LoginViewModel>() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-
 }

@@ -15,7 +15,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import okhttp3.OkHttpClient
 
 @Module
-class NetworkModule{
+class NetworkModule {
 
     @Provides
     @Singleton

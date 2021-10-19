@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import id.akasia.demajorsandroid.databinding.ViewPokemonStatBinding
 import id.akasia.demajorsandroid.model.api.detailpokemon.StatsItem
 
-class BaseStatAdapter(val data: List<StatsItem>): RecyclerView.Adapter<BaseStatAdapter.StatHolder>() {
+class BaseStatAdapter(val data: List<StatsItem>) : RecyclerView.Adapter<BaseStatAdapter.StatHolder>() {
     class StatHolder(val binding: ViewPokemonStatBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StatHolder {
@@ -18,7 +18,7 @@ class BaseStatAdapter(val data: List<StatsItem>): RecyclerView.Adapter<BaseStatA
     }
 
     override fun onBindViewHolder(holder: StatHolder, position: Int) {
-        with(holder){
+        with(holder) {
             binding.statName.text = data[position].stat?.name
             binding.baseStat.text = data[position].baseStat.toString()
         }

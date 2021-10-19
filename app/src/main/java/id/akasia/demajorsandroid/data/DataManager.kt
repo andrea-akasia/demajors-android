@@ -13,13 +13,13 @@ import retrofit2.Response
 import androidx.paging.DataSource
 import id.akasia.demajorsandroid.model.api.detailpokemon.DetailPokemonResponse
 
-
 @Singleton
 class DataManager
 @Inject constructor(
     private val api: APIService,
     private val prefs: PreferencesHelper,
-    private val localDatabase: AppDatabase){
+    private val localDatabase: AppDatabase
+) {
 
     /* ---------------------------------------- SQLite ------------------------------------------ */
 
@@ -46,5 +46,4 @@ class DataManager
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
     }
-
 }

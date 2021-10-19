@@ -4,13 +4,12 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import id.akasia.demajorsandroid.feature.detailpokemon.moves.MovesFragment
 
 class TabAdapter(fm: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(fm, lifecycle) {
 
     private var fragments: MutableList<Fragment> = mutableListOf()
 
-    fun addFragments(fragment: Fragment){
+    fun addFragments(fragment: Fragment) {
         fragments.add(fragment)
     }
 

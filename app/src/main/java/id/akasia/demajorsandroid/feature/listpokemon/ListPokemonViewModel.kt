@@ -2,7 +2,8 @@ package id.akasia.demajorsandroid.feature.listpokemon
 
 import android.annotation.SuppressLint
 import androidx.lifecycle.LiveData
-import androidx.paging.*
+import androidx.paging.PagedList
+import androidx.paging.LivePagedListBuilder
 import id.akasia.demajorsandroid.base.BaseViewModel
 import id.akasia.demajorsandroid.data.DataManager
 import id.akasia.demajorsandroid.data.local.pokemon.LocalPokemon
@@ -11,9 +12,9 @@ import timber.log.Timber
 import javax.inject.Inject
 
 class ListPokemonViewModel
-@Inject constructor(private val dataManager: DataManager) : BaseViewModel(){
+@Inject constructor(private val dataManager: DataManager) : BaseViewModel() {
 
-    val pokemonData : LiveData<PagedList<LocalPokemon>> by lazy {
+    val pokemonData: LiveData<PagedList<LocalPokemon>> by lazy {
         val dataSourceFactory = dataManager.loadAllPokemonFromLocal()
         val config = PagedList.Config.Builder()
             .setPageSize(10)
@@ -22,22 +23,22 @@ class ListPokemonViewModel
     }
 
     @SuppressLint("CheckResult")
-    fun loadAllPokemonFromNetwork(){
+    fun loadAllPokemonFromNetwork() {
         dataManager.reqPokemon(0, 1118)
             .doOnSubscribe(this::addDisposable)
             .subscribe(
-                {res ->
-                    if(res.isSuccessful){
+                { res ->
+                    if (res.isSuccessful) {
                         val response = res.body()
                         response?.results?.let {
                             saveToLocal(convertToLocal(it))
                         }
-                    }else{
-                        //not 200
+                    } else {
+                        // not 200
                         Timber.i("response code is ${res.code()}")
                     }
                 },
-                {err ->
+                { err ->
                     Timber.e(err)
                 }
             )
@@ -45,7 +46,7 @@ class ListPokemonViewModel
 
     private fun convertToLocal(data: List<Pokemon>): List<LocalPokemon> {
         val result: MutableList<LocalPokemon> = mutableListOf()
-        for(pokemon in data){
+        for (pokemon in data) {
             result.add(
                 LocalPokemon(
                     pokemon.getId(),

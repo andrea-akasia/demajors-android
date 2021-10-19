@@ -11,14 +11,14 @@ import id.akasia.demajorsandroid.databinding.FragmentBaseStatBinding
 import id.akasia.demajorsandroid.model.api.detailpokemon.DetailPokemonResponse
 import com.google.gson.Gson
 
-class BaseStatFragment: BaseFragment<BaseStatViewModel>() {
+class BaseStatFragment : BaseFragment<BaseStatViewModel>() {
     override val viewModelClass: Class<BaseStatViewModel> = BaseStatViewModel::class.java
     private var _binding: FragmentBaseStatBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var adapter: BaseStatAdapter
 
-    companion object{
+    companion object {
         const val KEY_STAT = "STAT"
         fun newInstance(data: String) = BaseStatFragment().apply {
             arguments = bundleOf(
@@ -46,7 +46,7 @@ class BaseStatFragment: BaseFragment<BaseStatViewModel>() {
         arguments?.getString(KEY_STAT)?.let {
             val data = Gson().fromJson(it, DetailPokemonResponse::class.java)
             adapter = BaseStatAdapter(viewModel.generateBaseStat(data))
-            _binding?.let { v->
+            _binding?.let { v ->
                 v.rv.layoutManager = LinearLayoutManager(context)
                 v.rv.adapter = adapter
             }

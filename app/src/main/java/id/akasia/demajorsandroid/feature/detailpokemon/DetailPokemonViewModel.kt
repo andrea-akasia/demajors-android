@@ -10,26 +10,25 @@ import javax.inject.Inject
 
 @SuppressLint("CheckResult")
 class DetailPokemonViewModel
-@Inject constructor(private val dataManager: DataManager) : BaseViewModel(){
+@Inject constructor(private val dataManager: DataManager) : BaseViewModel() {
 
     internal var data = MutableLiveData<DetailPokemonResponse>()
 
-    fun loadDetail(name: String){
+    fun loadDetail(name: String) {
         dataManager.reqDetailPokemon(name)
             .doOnSubscribe(this::addDisposable)
             .subscribe(
-                {res->
-                    if(res.isSuccessful){
+                { res ->
+                    if (res.isSuccessful) {
                         val response = res.body()
                         response?.let { data.postValue(it) }
-                    }else{
+                    } else {
                         Timber.i("response code is ${res.code()}")
                     }
                 },
-                {err ->
+                { err ->
                     Timber.e(err)
                 }
             )
     }
-
 }

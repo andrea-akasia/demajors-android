@@ -7,7 +7,7 @@ import dagger.android.ContributesAndroidInjector
 import id.akasia.demajorsandroid.feature.login.LoginActivity
 
 @Module
-abstract class BuildersModule{
+abstract class BuildersModule {
 
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindLoginActivity(): LoginActivity

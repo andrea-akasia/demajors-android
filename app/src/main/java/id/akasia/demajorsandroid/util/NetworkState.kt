@@ -47,5 +47,4 @@ class NetworkState {
         val LOADED: NetworkState = NetworkState(Status.SUCCESS, R.string.success)
         val LOADING: NetworkState = NetworkState(Status.RUNNING, R.string.running)
     }
-
 }

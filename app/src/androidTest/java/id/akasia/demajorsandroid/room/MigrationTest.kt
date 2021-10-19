@@ -15,7 +15,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.IOException
 
-
 @RunWith(AndroidJUnit4::class)
 class MigrationTest {
 
@@ -38,7 +37,7 @@ class MigrationTest {
         }
         db.close()
 
-        //Re-Open Database in version 2 by providing the necessary migrations and validate the schema
+        // Re-Open Database in version 2 by providing the necessary migrations and validate the schema
         helper.runMigrationsAndValidate(TEST_DB, 2, true, AppDatabase.MIGRATION_1_2)
 
         val appDatabase = MigrationUtil
@@ -47,7 +46,7 @@ class MigrationTest {
                 AppDatabase.MIGRATION_1_2
             ) as AppDatabase
 
-        //Now checking if the new database contains the correctly exported data from the previous database
+        // Now checking if the new database contains the correctly exported data from the previous database
         val migratedDataFeedDao = appDatabase.PokemonDao()
         Assert.assertEquals(
             migratedDataFeedDao.loadPokemonById("pokemon 2").pokemonName,
@@ -55,7 +54,6 @@ class MigrationTest {
         )
         appDatabase.close()
     }
-
 
     private fun insertData(pokemon: LocalPokemon, db: SupportSQLiteDatabase) {
         val values = ContentValues()
