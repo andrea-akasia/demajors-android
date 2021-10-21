@@ -11,11 +11,23 @@ import androidx.lifecycle.ViewModelProvider
 import id.akasia.demajorsandroid.feature.detailpokemon.DetailPokemonViewModel
 import id.akasia.demajorsandroid.feature.detailpokemon.basestat.BaseStatViewModel
 import id.akasia.demajorsandroid.feature.detailpokemon.moves.MovesViewModel
+import id.akasia.demajorsandroid.feature.home.HomeViewModel
 import id.akasia.demajorsandroid.feature.login.LoginViewModel
 import id.akasia.demajorsandroid.feature.main.MainViewModel
+import id.akasia.demajorsandroid.feature.profile.ProfileViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ProfileViewModel::class)
+    abstract fun bindProfileViewModel(profileViewModel: ProfileViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(HomeViewModel::class)
+    abstract fun bindHomeViewModel(homeViewModel: HomeViewModel): ViewModel
 
     @Binds
     @IntoMap

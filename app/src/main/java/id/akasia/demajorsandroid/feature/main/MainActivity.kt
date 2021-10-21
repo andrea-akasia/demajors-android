@@ -5,13 +5,22 @@ import android.view.WindowInsets
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import dagger.android.AndroidInjector
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.HasAndroidInjector
+import id.akasia.demajorsandroid.R
 import id.akasia.demajorsandroid.base.BaseActivity
 import id.akasia.demajorsandroid.databinding.ActivityMainBinding
+import id.akasia.demajorsandroid.feature.home.HomeFragment
+import id.akasia.demajorsandroid.feature.profile.ProfileFragment
+import javax.inject.Inject
 
-class MainActivity : BaseActivity<MainViewModel>() {
+class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
 
     override val viewModelClass: Class<MainViewModel> = MainViewModel::class.java
     private lateinit var binding: ActivityMainBinding
+
+    @Inject lateinit var androidInjector: DispatchingAndroidInjector<Any>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,5 +36,28 @@ class MainActivity : BaseActivity<MainViewModel>() {
         } else {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
         }
+
+        binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
+                }
+                R.id.nav_my_artist -> {
+                }
+                R.id.nav_cart -> {
+                }
+                R.id.nav_wallet -> {
+                }
+                R.id.nav_profile -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.container, ProfileFragment()).commit()
+                }
+            }
+            true
+        }
+
+        // default fragment
+        supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
     }
+
+    override fun androidInjector(): AndroidInjector<Any> = androidInjector
 }
