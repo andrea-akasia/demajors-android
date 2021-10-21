@@ -39,6 +39,7 @@ android {
             proguardFile "proguard-glide.pro"
             proguardFile "proguard-retrofit.pro"
             proguardFile "proguard-gson.pro"
+            proguardFile "proguard-carbon.pro"
         }
         debug {
             minifyEnabled false
