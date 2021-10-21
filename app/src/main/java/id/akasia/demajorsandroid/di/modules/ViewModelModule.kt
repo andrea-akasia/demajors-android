@@ -12,9 +12,15 @@ import id.akasia.demajorsandroid.feature.detailpokemon.DetailPokemonViewModel
 import id.akasia.demajorsandroid.feature.detailpokemon.basestat.BaseStatViewModel
 import id.akasia.demajorsandroid.feature.detailpokemon.moves.MovesViewModel
 import id.akasia.demajorsandroid.feature.login.LoginViewModel
+import id.akasia.demajorsandroid.feature.main.MainViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MainViewModel::class)
+    abstract fun bindMainViewModel(mainViewModel: MainViewModel): ViewModel
 
     @Binds
     @IntoMap

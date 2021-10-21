@@ -5,9 +5,13 @@ import id.akasia.demajorsandroid.feature.detailpokemon.DetailPokemonActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import id.akasia.demajorsandroid.feature.login.LoginActivity
+import id.akasia.demajorsandroid.feature.main.MainActivity
 
 @Module
 abstract class BuildersModule {
+
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindMainActivity(): MainActivity
 
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindLoginActivity(): LoginActivity
