@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_activate_kyc.xml" value="0.3223684210526316" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_login.xml" value="0.3223684210526316" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_card_profile.xml" value="0.3223684210526316" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_card_profile_2.xml" value="0.3223684210526316" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_textfield.xml" value="0.3223684210526316" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_textfield_search.xml" value="0.18640350877192982" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.18640350877192982" />
@@ -19,7 +22,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_cart.xml" value="0.1587719298245614" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_home.xml" value="0.16" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_my_artist.xml" value="0.1587719298245614" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.1587719298245614" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.5176470588235295" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_wallet.xml" value="0.1587719298245614" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1587719298245614" />
       </map>
