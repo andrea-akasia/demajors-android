@@ -7,7 +7,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
     defaultConfig {
-        applicationId "id.akasia.demajorsandroid"
+        applicationId "com.demajors.demajorsapp"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -51,13 +51,13 @@ android {
     productFlavors {
         prod {
             dimension "mode"
-            applicationId "id.akasia.demajorsandroid"
+            applicationId "com.demajors.demajorsapp"
             buildConfigField "String", "BASE_URL", '"https://pokeapi.co/api/v2/"'
             buildConfigField "boolean", "ENABLE_CRASH_REPORT", "true"
         }
         dev {
             dimension "mode"
-            applicationId "id.akasia.demajorsandroid.dev"
+            applicationId "com.demajors.demajorsapp.dev"
             buildConfigField "String", "BASE_URL", '"https://pokeapi.co/api/v2/"'
             buildConfigField "boolean", "ENABLE_CRASH_REPORT", "false"
         }

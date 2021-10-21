@@ -19,6 +19,6 @@
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer
 
--keep class id.akasia.demajorsandroid.model.** { <fields>; }
+-keep class com.demajors.demajorsapp.model.** { <fields>; }
 
 ##---------------End: proguard configuration for Gson  ----------
