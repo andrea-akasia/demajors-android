@@ -151,4 +151,6 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 
     api 'tk.zielony:carbon:0.16.0.1'
+
+    implementation 'com.tbuonomo:dotsindicator:4.2'
 }

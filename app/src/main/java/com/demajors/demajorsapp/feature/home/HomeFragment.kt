@@ -12,6 +12,8 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
+    private var bannerAdapter: BannerAdapter? = null
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,5 +30,10 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        _binding?.let { ui ->
+            bannerAdapter = BannerAdapter(viewModel.getDummyBanner())
+            ui.viewBanner.adapter = bannerAdapter
+            ui.bannerIndicator.setViewPager2(ui.viewBanner)
+        }
     }
 }
