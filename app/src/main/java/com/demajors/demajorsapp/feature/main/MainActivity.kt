@@ -37,7 +37,7 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
         }
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
                     supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()

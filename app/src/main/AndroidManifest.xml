@@ -19,7 +19,8 @@
         <activity android:name="com.demajors.demajorsapp.feature.login.LoginActivity" android:windowSoftInputMode="adjustPan">
 
         </activity>
-        <activity android:name="com.demajors.demajorsapp.feature.main.MainActivity">
+        <activity android:name="com.demajors.demajorsapp.feature.main.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
