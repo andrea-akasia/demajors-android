@@ -22,7 +22,7 @@ class HomeViewModel
         return result
     }
 
-    fun getDummyBestSeller(): MutableList<HomeItem> {
+    fun getDummyHomeItems(): MutableList<HomeItem> {
         val result = mutableListOf<HomeItem>()
         result.add(HomeItem())
         result.add(HomeItem())
