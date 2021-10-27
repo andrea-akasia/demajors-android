@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
 import com.demajors.demajorsapp.model.banner.Banner
+import com.demajors.demajorsapp.model.home.ArtistItem
 import com.demajors.demajorsapp.model.home.HomeItem
 import javax.inject.Inject
 
@@ -30,6 +31,21 @@ class HomeViewModel
         result.add(HomeItem())
         result.add(HomeItem())
         result.add(HomeItem())
+        return result
+    }
+
+    fun getDummyArtistItems(): MutableList<ArtistItem> {
+        val result = mutableListOf<ArtistItem>()
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
+        result.add(ArtistItem())
         return result
     }
 }

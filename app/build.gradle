@@ -153,4 +153,5 @@ dependencies {
     api 'tk.zielony:carbon:0.16.0.1'
 
     implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
