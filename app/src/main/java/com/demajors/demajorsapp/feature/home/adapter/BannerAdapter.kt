@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.home
+package com.demajors.demajorsapp.feature.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,9 +7,9 @@ import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.databinding.ViewItemBannerBinding
 import com.demajors.demajorsapp.model.banner.Banner
 
-class BannerAdapter(val data: MutableList<Banner>): RecyclerView.Adapter<BannerAdapter.BannerHolder>() {
+class BannerAdapter(val data: MutableList<Banner>) : RecyclerView.Adapter<BannerAdapter.BannerHolder>() {
 
-    class BannerHolder(val binding: ViewItemBannerBinding): RecyclerView.ViewHolder(binding.root)
+    class BannerHolder(val binding: ViewItemBannerBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BannerHolder =
         BannerHolder(
@@ -19,7 +19,7 @@ class BannerAdapter(val data: MutableList<Banner>): RecyclerView.Adapter<BannerA
         )
 
     override fun onBindViewHolder(holder: BannerHolder, position: Int) {
-        with(holder){
+        with(holder) {
             binding.img.setImageResource(R.drawable.sample_banner)
         }
     }

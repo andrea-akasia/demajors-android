@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentHomeBinding
+import com.demajors.demajorsapp.feature.home.adapter.BannerAdapter
+import com.demajors.demajorsapp.feature.home.adapter.BestSellerAdapter
 
 class HomeFragment : BaseFragment<HomeViewModel>() {
     override val viewModelClass: Class<HomeViewModel> = HomeViewModel::class.java
@@ -13,6 +16,7 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
     private val binding get() = _binding!!
 
     private var bannerAdapter: BannerAdapter? = null
+    private var bestSellerAdapter: BestSellerAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,6 +38,9 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
             bannerAdapter = BannerAdapter(viewModel.getDummyBanner())
             ui.viewBanner.adapter = bannerAdapter
             ui.bannerIndicator.setViewPager2(ui.viewBanner)
+
+            ui.rvBestSeller.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+            ui.rvBestSeller.adapter = BestSellerAdapter(viewModel.getDummyBestSeller())
         }
     }
 }
