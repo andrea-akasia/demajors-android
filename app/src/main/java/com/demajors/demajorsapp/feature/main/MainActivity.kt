@@ -14,7 +14,6 @@ import javax.inject.Inject
 import android.view.WindowManager
 import com.demajors.demajorsapp.R
 
-
 class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
 
     override val viewModelClass: Class<MainViewModel> = MainViewModel::class.java
