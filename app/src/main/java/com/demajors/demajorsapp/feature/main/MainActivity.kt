@@ -1,19 +1,19 @@
 package com.demajors.demajorsapp.feature.main
 
 import android.os.Bundle
-import android.view.WindowInsets
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
+import androidx.core.content.ContextCompat
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
-import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityMainBinding
 import com.demajors.demajorsapp.feature.home.HomeFragment
 import com.demajors.demajorsapp.feature.profile.ProfileFragment
 import javax.inject.Inject
+
+import android.view.WindowManager
+import com.demajors.demajorsapp.R
+
 
 class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
 
@@ -27,15 +27,9 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.R) {
-            val insetsControllerCompat = WindowInsetsControllerCompat(window, window.decorView)
-            insetsControllerCompat.systemBarsBehavior =
-                WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-            insetsControllerCompat.hide(WindowInsetsCompat.Type.systemBars())
-        } else {
-            window.insetsController?.hide(WindowInsets.Type.statusBars())
-        }
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
