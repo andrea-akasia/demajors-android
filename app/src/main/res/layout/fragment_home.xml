@@ -152,7 +152,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/view_now_playing"
+                android:id="@+id/view_latest_release"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_6sdp">
@@ -161,7 +161,7 @@
                     android:id="@+id/label_now_playing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Now Playing"
+                    android:text="Latest Release"
                     android:gravity="center_vertical"
                     android:foregroundGravity="center_vertical"
                     android:textColor="#FFFFFF"
@@ -196,7 +196,7 @@
                     android:id="@+id/rv_now_playing"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/view_item_now_playing"
+                    tools:listitem="@layout/view_item_latest_release"
                     tools:itemCount="2"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     android:orientation="horizontal"

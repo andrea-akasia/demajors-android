@@ -24,9 +24,9 @@
         android:layout_marginTop="@dimen/_6sdp"
         android:fontFamily="@font/roboto_400"
         android:gravity="center_horizontal"
-        android:text="Raiso"
+        android:text="Efek Rumah Kaca"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/img"
         app:layout_constraintStart_toStartOf="@+id/img"
         app:layout_constraintTop_toBottomOf="@+id/img" />
