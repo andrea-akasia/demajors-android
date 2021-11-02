@@ -6,6 +6,9 @@ import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityArtistDetailBinding
+import com.demajors.demajorsapp.feature.myartist.nft.ListArtistNFTFragment
+import com.demajors.demajorsapp.feature.myartist.rilisan.ListRilisanFragment
+import com.google.android.material.tabs.TabLayoutMediator
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
@@ -19,6 +22,8 @@ class ArtistDetailActivity : BaseActivity<ArtistViewModel>(), HasAndroidInjector
     @Inject
     lateinit var androidInjector: DispatchingAndroidInjector<Any>
 
+    private lateinit var tabAdapter: TabAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityArtistDetailBinding.inflate(layoutInflater)
@@ -29,6 +34,23 @@ class ArtistDetailActivity : BaseActivity<ArtistViewModel>(), HasAndroidInjector
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
         binding.actionBack.setOnClickListener { onBackPressed() }
+
+        setupTabs()
+    }
+
+    private fun setupTabs() {
+        tabAdapter = TabAdapter(supportFragmentManager, lifecycle)
+        tabAdapter.addFragments(ListRilisanFragment.newInstance(""))
+        tabAdapter.addFragments(ListArtistNFTFragment.newInstance(""))
+        binding.pager.adapter = tabAdapter
+
+        TabLayoutMediator(binding.tabLayout, binding.pager) { tab, position ->
+            if (position == 0) {
+                tab.text = "RILISAN"
+            } else {
+                tab.text = "NFT"
+            }
+        }.attach()
     }
 
     override fun androidInjector(): AndroidInjector<Any> = androidInjector

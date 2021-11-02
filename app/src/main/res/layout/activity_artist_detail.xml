@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_6sdp"
-                    android:text="www.demajors.com/arin.cinta.sihombing"
+                    android:text="www.demajors.com/efekrumahkaca"
                     android:fontFamily="@font/roboto_400"
                     android:textSize="12sp"
                     android:textColor="#FFFFFF"
@@ -189,6 +189,27 @@
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:background="#1E1E1E">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    app:tabTextColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
