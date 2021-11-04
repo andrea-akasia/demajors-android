@@ -6,8 +6,10 @@ import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityArtistDetailBinding
+import com.demajors.demajorsapp.feature.myartist.merchandise.ListArtistMerchandiseFragment
 import com.demajors.demajorsapp.feature.myartist.nft.ListArtistNFTFragment
 import com.demajors.demajorsapp.feature.myartist.rilisan.ListRilisanFragment
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -33,7 +35,26 @@ class ArtistDetailActivity : BaseActivity<ArtistViewModel>(), HasAndroidInjector
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
-        binding.actionBack.setOnClickListener { onBackPressed() }
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.title = "Efek Rumah Kaca"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        var isShow = true
+        var scrollRange = -1
+        binding.appbar.addOnOffsetChangedListener(
+            AppBarLayout.OnOffsetChangedListener { barLayout, verticalOffset ->
+                if (scrollRange == -1) {
+                    scrollRange = barLayout?.totalScrollRange!!
+                }
+                if (scrollRange + verticalOffset == 0) {
+                    binding.collapseToolbar.title = "Efek Rumah Kaca"
+                    isShow = true
+                } else if (isShow) {
+                    binding.collapseToolbar.title = " " // careful there should a space between double quote otherwise it wont work
+                    isShow = false
+                }
+            }
+        )
 
         setupTabs()
     }
@@ -41,13 +62,16 @@ class ArtistDetailActivity : BaseActivity<ArtistViewModel>(), HasAndroidInjector
     private fun setupTabs() {
         tabAdapter = TabAdapter(supportFragmentManager, lifecycle)
         tabAdapter.addFragments(ListRilisanFragment.newInstance(""))
+        tabAdapter.addFragments(ListArtistMerchandiseFragment.newInstance(""))
         tabAdapter.addFragments(ListArtistNFTFragment.newInstance(""))
         binding.pager.adapter = tabAdapter
 
         TabLayoutMediator(binding.tabLayout, binding.pager) { tab, position ->
             if (position == 0) {
                 tab.text = "RILISAN"
-            } else {
+            } else if (position == 1) {
+                tab.text = "MERCHANDISE"
+            } else if (position == 2) {
                 tab.text = "NFT"
             }
         }.attach()

@@ -1,23 +1,22 @@
-package com.demajors.demajorsapp.feature.myartist.nft
+package com.demajors.demajorsapp.feature.myartist.merchandise
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
-import com.demajors.demajorsapp.databinding.FragmentArtistNftListBinding
+import com.demajors.demajorsapp.databinding.FragmentArtistMerchandiseBinding
 import com.demajors.demajorsapp.feature.myartist.ArtistViewModel
 
-class ListArtistNFTFragment : BaseFragment<ArtistViewModel>() {
+class ListArtistMerchandiseFragment : BaseFragment<ArtistViewModel>() {
     override val viewModelClass: Class<ArtistViewModel> = ArtistViewModel::class.java
-    private var _binding: FragmentArtistNftListBinding? = null
+    private var _binding: FragmentArtistMerchandiseBinding? = null
     private val binding get() = _binding!!
 
     companion object {
         const val KEY_DATA = "DATA"
-        fun newInstance(data: String) = ListArtistNFTFragment().apply {
+        fun newInstance(data: String) = ListArtistMerchandiseFragment().apply {
             arguments = bundleOf(
                 KEY_DATA to data
             )
@@ -29,7 +28,7 @@ class ListArtistNFTFragment : BaseFragment<ArtistViewModel>() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentArtistNftListBinding.inflate(inflater, container, false)
+        _binding = FragmentArtistMerchandiseBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -42,12 +41,6 @@ class ListArtistNFTFragment : BaseFragment<ArtistViewModel>() {
         super.onViewCreated(view, savedInstanceState)
 
         _binding?.let { ui ->
-            ui.rvPremium.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            val premiumAdapter = NFTAdapter(viewModel.getDummyPremiumNFTs())
-            ui.rvPremium.adapter = premiumAdapter
-
-            ui.rvReguler.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            ui.rvReguler.adapter = NFTAdapter(viewModel.getDummyRegularNFTs())
         }
     }
 }
