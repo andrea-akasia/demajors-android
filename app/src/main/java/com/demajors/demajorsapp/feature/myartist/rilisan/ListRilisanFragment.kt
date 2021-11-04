@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.recyclerview.widget.GridLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentArtistRilisanBinding
 import com.demajors.demajorsapp.feature.myartist.ArtistViewModel
@@ -41,6 +42,8 @@ class ListRilisanFragment : BaseFragment<ArtistViewModel>() {
         super.onViewCreated(view, savedInstanceState)
 
         _binding?.let { ui ->
+            ui.rv.layoutManager = GridLayoutManager(activity, 2)
+            ui.rv.adapter = ArtistReleaseAdapter(viewModel.getDummyArtistReleases())
         }
     }
 }
