@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist
+package com.demajors.demajorsapp.feature.myartist.detail
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

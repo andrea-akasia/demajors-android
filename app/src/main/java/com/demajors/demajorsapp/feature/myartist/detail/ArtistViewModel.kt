@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist
+package com.demajors.demajorsapp.feature.myartist.detail
 
 import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData

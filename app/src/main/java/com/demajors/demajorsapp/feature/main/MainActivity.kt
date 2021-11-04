@@ -13,6 +13,7 @@ import javax.inject.Inject
 
 import android.view.WindowManager
 import com.demajors.demajorsapp.R
+import com.demajors.demajorsapp.feature.myartist.MyArtistFragment
 
 class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
 
@@ -36,6 +37,7 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
                     supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
                 }
                 R.id.nav_my_artist -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.container, MyArtistFragment()).commit()
                 }
                 R.id.nav_cart -> {
                 }

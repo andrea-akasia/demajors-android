@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist.rilisan
+package com.demajors.demajorsapp.feature.myartist.detail.rilisan
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

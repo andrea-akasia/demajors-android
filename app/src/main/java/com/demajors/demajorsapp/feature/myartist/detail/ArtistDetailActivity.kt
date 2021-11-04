@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist
+package com.demajors.demajorsapp.feature.myartist.detail
 
 import android.os.Bundle
 import android.view.WindowManager
@@ -6,9 +6,9 @@ import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityArtistDetailBinding
-import com.demajors.demajorsapp.feature.myartist.merchandise.ListArtistMerchandiseFragment
-import com.demajors.demajorsapp.feature.myartist.nft.ListArtistNFTFragment
-import com.demajors.demajorsapp.feature.myartist.rilisan.ListRilisanFragment
+import com.demajors.demajorsapp.feature.myartist.detail.merchandise.ListArtistMerchandiseFragment
+import com.demajors.demajorsapp.feature.myartist.detail.nft.ListArtistNFTFragment
+import com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragment
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.android.AndroidInjector

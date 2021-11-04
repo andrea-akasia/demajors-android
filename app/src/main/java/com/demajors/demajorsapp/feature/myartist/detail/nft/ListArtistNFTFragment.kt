@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist.nft
+package com.demajors.demajorsapp.feature.myartist.detail.nft
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentArtistNftListBinding
-import com.demajors.demajorsapp.feature.myartist.ArtistViewModel
+import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 
 class ListArtistNFTFragment : BaseFragment<ArtistViewModel>() {
     override val viewModelClass: Class<ArtistViewModel> = ArtistViewModel::class.java

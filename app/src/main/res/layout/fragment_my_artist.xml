@@ -7,15 +7,53 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MY ARTIST"
-        android:textColor="#A7A7A7"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/value_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/background_textfield_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_4sdp"
+        android:hint="Ketik untuk mencari"
+        android:inputType="text"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:textColorHint="#A7A7A7"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_your_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_800"
+        android:foregroundGravity="center_vertical"
+        android:text="Your Artist"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/value_search"
+        app:layout_constraintTop_toBottomOf="@+id/value_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:spanCount="3"
+        tools:listitem="@layout/view_item_artist"
+        tools:itemCount="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_your_artist" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import com.demajors.demajorsapp.feature.login.LoginActivity
 import com.demajors.demajorsapp.feature.main.MainActivity
-import com.demajors.demajorsapp.feature.myartist.ArtistDetailActivity
+import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
 
 @Module
 abstract class BuildersModule {

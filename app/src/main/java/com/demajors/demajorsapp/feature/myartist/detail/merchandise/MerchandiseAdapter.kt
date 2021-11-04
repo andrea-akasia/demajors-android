@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist.merchandise
+package com.demajors.demajorsapp.feature.myartist.detail.merchandise
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

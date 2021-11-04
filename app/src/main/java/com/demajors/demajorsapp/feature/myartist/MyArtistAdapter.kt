@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.home.adapter
+package com.demajors.demajorsapp.feature.myartist
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import com.demajors.demajorsapp.databinding.ViewItemArtistBinding
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
 import com.demajors.demajorsapp.model.home.ArtistItem
 
-class ArtistAdapter(val data: MutableList<ArtistItem>) : RecyclerView.Adapter<ArtistAdapter.ArtistHolder>() {
+class MyArtistAdapter(val data: MutableList<ArtistItem>) : RecyclerView.Adapter<MyArtistAdapter.ArtistHolder>() {
 
     class ArtistHolder(val binding: ViewItemArtistBinding) : RecyclerView.ViewHolder(binding.root)
 

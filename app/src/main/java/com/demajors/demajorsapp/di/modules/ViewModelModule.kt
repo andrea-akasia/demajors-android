@@ -14,11 +14,17 @@ import com.demajors.demajorsapp.feature.detailpokemon.moves.MovesViewModel
 import com.demajors.demajorsapp.feature.home.HomeViewModel
 import com.demajors.demajorsapp.feature.login.LoginViewModel
 import com.demajors.demajorsapp.feature.main.MainViewModel
-import com.demajors.demajorsapp.feature.myartist.ArtistViewModel
+import com.demajors.demajorsapp.feature.myartist.MyArtistViewModel
+import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 import com.demajors.demajorsapp.feature.profile.ProfileViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MyArtistViewModel::class)
+    abstract fun bindMyArtistViewModel(myArtistViewModel: MyArtistViewModel): ViewModel
 
     @Binds
     @IntoMap

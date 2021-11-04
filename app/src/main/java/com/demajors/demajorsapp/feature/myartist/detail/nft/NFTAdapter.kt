@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist.nft
+package com.demajors.demajorsapp.feature.myartist.detail.nft
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

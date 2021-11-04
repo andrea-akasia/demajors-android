@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.myartist.merchandise
+package com.demajors.demajorsapp.feature.myartist.detail.rilisan
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,17 +7,17 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.GridLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
-import com.demajors.demajorsapp.databinding.FragmentArtistMerchandiseBinding
-import com.demajors.demajorsapp.feature.myartist.ArtistViewModel
+import com.demajors.demajorsapp.databinding.FragmentArtistRilisanBinding
+import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 
-class ListArtistMerchandiseFragment : BaseFragment<ArtistViewModel>() {
+class ListRilisanFragment : BaseFragment<ArtistViewModel>() {
     override val viewModelClass: Class<ArtistViewModel> = ArtistViewModel::class.java
-    private var _binding: FragmentArtistMerchandiseBinding? = null
+    private var _binding: FragmentArtistRilisanBinding? = null
     private val binding get() = _binding!!
 
     companion object {
         const val KEY_DATA = "DATA"
-        fun newInstance(data: String) = ListArtistMerchandiseFragment().apply {
+        fun newInstance(data: String) = ListRilisanFragment().apply {
             arguments = bundleOf(
                 KEY_DATA to data
             )
@@ -29,7 +29,7 @@ class ListArtistMerchandiseFragment : BaseFragment<ArtistViewModel>() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentArtistMerchandiseBinding.inflate(inflater, container, false)
+        _binding = FragmentArtistRilisanBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -43,7 +43,7 @@ class ListArtistMerchandiseFragment : BaseFragment<ArtistViewModel>() {
 
         _binding?.let { ui ->
             ui.rv.layoutManager = GridLayoutManager(activity, 2)
-            ui.rv.adapter = MerchandiseAdapter(viewModel.getDummyArtistMerchandises())
+            ui.rv.adapter = ArtistReleaseAdapter(viewModel.getDummyArtistReleases())
         }
     }
 }
