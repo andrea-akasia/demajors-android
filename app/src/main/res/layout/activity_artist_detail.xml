@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -15,7 +16,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <carbon.beta.CollapsingToolbarLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapse_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -117,7 +118,7 @@
                             android:layout_gravity="center_vertical"
                             android:layout_marginStart="@dimen/_4sdp"
                             android:fontFamily="@font/roboto_700"
-                            android:text="Love"
+                            android:text="Follow"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -181,9 +182,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_34sdp"
                 android:layout_gravity="bottom"
-                app:tabTextColor="@color/colorAccent" />
+                app:tabTextColor="@color/colorAccent"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-        </carbon.beta.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
