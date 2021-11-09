@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
+import com.demajors.demajorsapp.model.artist.NFTItem
 import com.demajors.demajorsapp.model.banner.Banner
 import com.demajors.demajorsapp.model.home.ArtistItem
 import com.demajors.demajorsapp.model.home.HomeItem
@@ -14,6 +15,17 @@ class HomeViewModel
 @Inject constructor(private val dataManager: DataManager) : BaseViewModel() {
 
     internal var warningMessage = MutableLiveData<String>()
+
+    fun getDummyPremiumNFTs(): MutableList<NFTItem> {
+        val result = mutableListOf<NFTItem>()
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "PREMIUM"))
+        return result
+    }
 
     fun getDummyBanner(): MutableList<Banner> {
         val result = mutableListOf<Banner>()

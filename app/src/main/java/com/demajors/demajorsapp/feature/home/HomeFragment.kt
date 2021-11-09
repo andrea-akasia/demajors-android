@@ -12,6 +12,7 @@ import com.demajors.demajorsapp.feature.home.adapter.BestSellerAdapter
 import com.demajors.demajorsapp.feature.home.adapter.NowPLayingAdapter
 import com.demajors.demajorsapp.feature.home.adapter.RecommendationAdapter
 import com.demajors.demajorsapp.feature.home.adapter.ArtistAdapter
+import com.demajors.demajorsapp.feature.myartist.detail.nft.NFTAdapter
 
 class HomeFragment : BaseFragment<HomeViewModel>() {
     override val viewModelClass: Class<HomeViewModel> = HomeViewModel::class.java
@@ -52,6 +53,9 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
 
             ui.rvArtist.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             ui.rvArtist.adapter = ArtistAdapter(viewModel.getDummyArtistItems())
+
+            ui.rvNft.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+            ui.rvNft.adapter = NFTAdapter(viewModel.getDummyPremiumNFTs())
         }
     }
 }
