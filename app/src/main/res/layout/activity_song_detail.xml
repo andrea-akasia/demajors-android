@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_700"
+            android:text="Everything Is Gonna Be Fine"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/action_back"
+            app:layout_constraintStart_toEndOf="@+id/action_back"
+            app:layout_constraintTop_toTopOf="@+id/action_back" />
+
+        <ImageView
+            android:id="@+id/action_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_download_white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_song"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sample_home_image_3" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_preview"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button_red">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_play_white" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Preview"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_700"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_weight="0.08"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_download"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button_white">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_download_black" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unduh"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_700"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Everything Is Gonna Be Fine"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_800"/>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:id="@+id/action_star"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        app:srcCompat="@drawable/ic_star" />
+
+                    <TextView
+                        android:id="@+id/value_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123 Star"
+                        android:textColor="#A7A7A7"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/roboto_700"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:id="@+id/action_love"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        app:srcCompat="@drawable/ic_love" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Love"
+                        android:textColor="#A7A7A7"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/roboto_700"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:id="@+id/action_save"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        app:srcCompat="@drawable/ic_add_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simpan"
+                        android:textColor="#A7A7A7"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/roboto_700"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:id="@+id/action_share"
+                    android:orientation="vertical"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        app:srcCompat="@drawable/ic_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bagikan"
+                        android:textColor="#A7A7A7"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/roboto_700"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="#A7A7A7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_artist"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:src="@drawable/sample_image_artist_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_artist"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/value_artist_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_700"
+                        android:text="Mocca"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/value_album_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_400"
+                        android:text="Album: Day By Day"
+                        android:textColor="#A7A7A7"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp">
+
+                <TextView
+                    android:id="@+id/label_other_tracks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track Lainnya"
+                    android:gravity="center_vertical"
+                    android:foregroundGravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_700"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tracks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/view_item_recommendation"
+                    tools:itemCount="3"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_other_tracks" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

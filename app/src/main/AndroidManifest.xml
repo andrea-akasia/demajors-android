@@ -29,6 +29,7 @@
         <activity
             android:parentActivityName=".feature.main.MainActivity"
             android:name=".feature.myartist.detail.ArtistDetailActivity" />
+        <activity android:name=".feature.song.DetailSongActivity" />
     </application>
 
 </manifest>

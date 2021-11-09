@@ -17,9 +17,15 @@ import com.demajors.demajorsapp.feature.main.MainViewModel
 import com.demajors.demajorsapp.feature.myartist.MyArtistViewModel
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 import com.demajors.demajorsapp.feature.profile.ProfileViewModel
+import com.demajors.demajorsapp.feature.song.SongViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SongViewModel::class)
+    abstract fun bindSongViewModel(songViewModel: SongViewModel): ViewModel
 
     @Binds
     @IntoMap

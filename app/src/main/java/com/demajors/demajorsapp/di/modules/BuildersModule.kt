@@ -7,9 +7,13 @@ import dagger.android.ContributesAndroidInjector
 import com.demajors.demajorsapp.feature.login.LoginActivity
 import com.demajors.demajorsapp.feature.main.MainActivity
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
+import com.demajors.demajorsapp.feature.song.DetailSongActivity
 
 @Module
 abstract class BuildersModule {
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindDetailSongActivity(): DetailSongActivity
+
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindArtistDetailActivity(): ArtistDetailActivity
 
