@@ -9,10 +9,15 @@ import com.demajors.demajorsapp.feature.main.MainActivity
 import com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
 import com.demajors.demajorsapp.feature.nft.DetailNFTActivity
+import com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
 import com.demajors.demajorsapp.feature.song.DetailSongActivity
 
 @Module
 abstract class BuildersModule {
+
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindDetailRilisanActivity(): DetailRilisanActivity
+
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindDetailMerchandiseActivity(): DetailMerchandiseActivity
 

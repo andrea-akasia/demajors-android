@@ -1,9 +1,11 @@
 package com.demajors.demajorsapp.feature.myartist.detail.rilisan
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemArtistReleaseBinding
+import com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
 import com.demajors.demajorsapp.model.artist.RilisanItem
 
 class ArtistReleaseAdapter(val data: MutableList<RilisanItem>) : RecyclerView.Adapter<ArtistReleaseAdapter.ArtistReleaseHolder>() {
@@ -19,6 +21,11 @@ class ArtistReleaseAdapter(val data: MutableList<RilisanItem>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: ArtistReleaseHolder, position: Int) {
         with(holder) {
+            itemView.setOnClickListener {
+                itemView.context.startActivity(
+                    Intent(itemView.context, DetailRilisanActivity::class.java)
+                )
+            }
         }
     }
 

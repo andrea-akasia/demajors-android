@@ -32,6 +32,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_merchandise.xml" value="0.31476449275362317" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.31476449275362317" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_pokemon.xml" value="0.21875" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_rilisan.xml" value="0.31476449275362317" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_song_detail.xml" value="0.33" />
@@ -48,7 +49,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/home_slider_banner.xml" value="0.23143115942028986" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist.xml" value="0.67" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist_merchandise.xml" value="0.21875" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist_release.xml" value="0.21875" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist_release.xml" value="0.67" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_best_seller.xml" value="0.5" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_latest_release.xml" value="0.75" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_nft_premium.xml" value="0.33" />

@@ -19,10 +19,16 @@ import com.demajors.demajorsapp.feature.myartist.MyArtistViewModel
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 import com.demajors.demajorsapp.feature.nft.DetailNFTViewModel
 import com.demajors.demajorsapp.feature.profile.ProfileViewModel
+import com.demajors.demajorsapp.feature.rilisan.RilisanViewModel
 import com.demajors.demajorsapp.feature.song.SongViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(RilisanViewModel::class)
+    abstract fun bindRilisanViewModel(rilisanViewModel: RilisanViewModel): ViewModel
 
     @Binds
     @IntoMap

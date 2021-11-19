@@ -32,6 +32,7 @@
         <activity android:name=".feature.song.DetailSongActivity" />
         <activity android:name=".feature.nft.DetailNFTActivity" />
         <activity android:name=".feature.merchandise.DetailMerchandiseActivity" />
+        <activity android:name=".feature.rilisan.DetailRilisanActivity" />
     </application>
 
 </manifest>
