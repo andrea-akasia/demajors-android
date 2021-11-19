@@ -1,9 +1,11 @@
 package com.demajors.demajorsapp.feature.myartist.detail.merchandise
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemArtistMerchandiseBinding
+import com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity
 import com.demajors.demajorsapp.model.artist.MerchandiseItem
 
 class MerchandiseAdapter(val data: MutableList<MerchandiseItem>) : RecyclerView.Adapter<MerchandiseAdapter.MerchandiseHolder>() {
@@ -19,6 +21,14 @@ class MerchandiseAdapter(val data: MutableList<MerchandiseItem>) : RecyclerView.
 
     override fun onBindViewHolder(holder: MerchandiseHolder, position: Int) {
         with(holder) {
+            itemView.setOnClickListener {
+                itemView.context.startActivity(
+                    Intent(
+                        itemView.context,
+                        DetailMerchandiseActivity::class.java
+                    )
+                )
+            }
         }
     }
 

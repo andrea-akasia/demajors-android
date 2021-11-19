@@ -14,6 +14,7 @@ import com.demajors.demajorsapp.feature.detailpokemon.moves.MovesViewModel
 import com.demajors.demajorsapp.feature.home.HomeViewModel
 import com.demajors.demajorsapp.feature.login.LoginViewModel
 import com.demajors.demajorsapp.feature.main.MainViewModel
+import com.demajors.demajorsapp.feature.merchandise.MerchandiseViewModel
 import com.demajors.demajorsapp.feature.myartist.MyArtistViewModel
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 import com.demajors.demajorsapp.feature.nft.DetailNFTViewModel
@@ -22,6 +23,11 @@ import com.demajors.demajorsapp.feature.song.SongViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MerchandiseViewModel::class)
+    abstract fun bindMerchandiseViewModel(merchandiseViewModel: MerchandiseViewModel): ViewModel
 
     @Binds
     @IntoMap
