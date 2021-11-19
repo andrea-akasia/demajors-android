@@ -62,6 +62,5 @@ class DetailMerchandiseActivity : BaseActivity<MerchandiseViewModel>() {
             binding.sizeExtraLarge.background = ContextCompat.getDrawable(this, R.drawable.background_unselected_option)
             binding.sizeDoubleExtraLarge.background = ContextCompat.getDrawable(this, R.drawable.background_selected_option_red)
         }
-
     }
 }

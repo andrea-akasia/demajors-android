@@ -22,6 +22,5 @@ class DetailRilisanActivity : BaseActivity<RilisanViewModel>() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
         binding.actionBack.setOnClickListener { onBackPressed() }
-
     }
 }

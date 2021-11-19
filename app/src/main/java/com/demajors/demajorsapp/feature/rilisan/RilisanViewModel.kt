@@ -11,5 +11,4 @@ class RilisanViewModel
 @Inject constructor(private val dataManager: DataManager) : BaseViewModel() {
 
     internal var warningMessage = MutableLiveData<String>()
-
 }

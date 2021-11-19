@@ -22,6 +22,5 @@ class DetailNFTActivity : BaseActivity<DetailNFTViewModel>() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
         binding.actionBack.setOnClickListener { onBackPressed() }
-
     }
 }
