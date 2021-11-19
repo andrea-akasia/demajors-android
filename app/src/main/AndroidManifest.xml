@@ -30,7 +30,7 @@
             android:parentActivityName=".feature.main.MainActivity"
             android:name=".feature.myartist.detail.ArtistDetailActivity" />
         <activity android:name=".feature.song.DetailSongActivity" />
-        <activity android:name=".feature.nft.DetailNFTActivity" />
+        <activity android:name=".feature.nft.detail.DetailNFTActivity" />
         <activity android:name=".feature.merchandise.DetailMerchandiseActivity" />
         <activity android:name=".feature.rilisan.DetailRilisanActivity" />
     </application>

@@ -29,8 +29,8 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/ic_nav_profile.xml" value="0.18640350877192982" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/ic_nav_wallet.xml" value="0.18640350877192982" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_artist_detail.xml" value="0.25" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_merchandise.xml" value="0.31476449275362317" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.31476449275362317" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_merchandise.xml" value="0.33" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_pokemon.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_rilisan.xml" value="0.31476449275362317" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
@@ -41,11 +41,11 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_artist_nft_list.xml" value="0.2" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_artist_rilisan.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_cart.xml" value="0.1587719298245614" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_moves.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_my_artist.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_wallet.xml" value="0.1587719298245614" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_wallet.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/home_slider_banner.xml" value="0.23143115942028986" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist.xml" value="0.67" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_artist_merchandise.xml" value="0.21875" />

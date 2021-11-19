@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/value_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/background_textfield_search"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_4sdp"
+        android:hint="Ketik untuk mencari"
+        android:inputType="text"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:textColorHint="#A7A7A7"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value_search">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view_trending_nft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/label_nft_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trending NFT"
+                    android:gravity="center_vertical"
+                    android:foregroundGravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_700"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/action_more_nft_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_700"
+                    android:text="Lainnya"
+                    android:textColor="#DCCEAC"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_more_nft_trending"
+                    app:layout_constraintEnd_toStartOf="@+id/icon_more_nft_trending"
+                    app:layout_constraintTop_toTopOf="@+id/icon_more_nft_trending"/>
+
+                <ImageView
+                    android:id="@+id/icon_more_nft_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/label_nft_trending"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/label_nft_trending"
+                    app:srcCompat="@drawable/ic_more" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_nft_trending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/view_item_nft_premium"
+                    tools:itemCount="8"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_nft_trending" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/view_new_nft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/label_nft_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest NFT"
+                    android:gravity="center_vertical"
+                    android:foregroundGravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_700"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/action_more_nft_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_700"
+                    android:text="Lainnya"
+                    android:textColor="#DCCEAC"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_more_nft_new"
+                    app:layout_constraintEnd_toStartOf="@+id/icon_more_nft_new"
+                    app:layout_constraintTop_toTopOf="@+id/icon_more_nft_new"/>
+
+                <ImageView
+                    android:id="@+id/icon_more_nft_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/label_nft_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/label_nft_new"
+                    app:srcCompat="@drawable/ic_more" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_nft_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/view_item_nft_premium"
+                    tools:itemCount="8"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_nft_new" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,10 +9,13 @@ import com.demajors.demajorsapp.feature.myartist.MyArtistFragment
 import com.demajors.demajorsapp.feature.myartist.detail.merchandise.ListArtistMerchandiseFragment
 import com.demajors.demajorsapp.feature.myartist.detail.nft.ListArtistNFTFragment
 import com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragment
+import com.demajors.demajorsapp.feature.nft.list.ListNftFragment
 import com.demajors.demajorsapp.feature.profile.ProfileFragment
 
 @Module
 abstract class FragmentBuildersModule {
+    @ContributesAndroidInjector
+    abstract fun contributeListNftFragment(): ListNftFragment
 
     @ContributesAndroidInjector
     abstract fun contributeMyArtistFragment(): MyArtistFragment

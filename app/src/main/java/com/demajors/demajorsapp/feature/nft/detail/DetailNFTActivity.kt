@@ -1,4 +1,4 @@
-package com.demajors.demajorsapp.feature.nft
+package com.demajors.demajorsapp.feature.nft.detail
 
 import android.os.Bundle
 import android.view.WindowManager

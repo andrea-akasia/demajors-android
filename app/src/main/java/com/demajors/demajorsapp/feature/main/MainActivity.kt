@@ -14,6 +14,7 @@ import javax.inject.Inject
 import android.view.WindowManager
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.feature.myartist.MyArtistFragment
+import com.demajors.demajorsapp.feature.nft.list.ListNftFragment
 
 class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
 
@@ -42,6 +43,7 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
                 R.id.nav_cart -> {
                 }
                 R.id.nav_wallet -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.container, ListNftFragment()).commit()
                 }
                 R.id.nav_profile -> {
                     supportFragmentManager.beginTransaction().replace(R.id.container, ProfileFragment()).commit()

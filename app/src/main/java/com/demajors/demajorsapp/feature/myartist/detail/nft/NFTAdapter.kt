@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemNftPremiumBinding
 import com.demajors.demajorsapp.databinding.ViewItemNftRegulerBinding
-import com.demajors.demajorsapp.feature.nft.DetailNFTActivity
+import com.demajors.demajorsapp.feature.nft.detail.DetailNFTActivity
 import com.demajors.demajorsapp.model.artist.NFTItem
 
 class NFTAdapter(val data: MutableList<NFTItem>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
