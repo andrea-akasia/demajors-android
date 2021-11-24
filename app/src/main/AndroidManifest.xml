@@ -16,7 +16,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.demajors.demajorsapp.feature.listpokemon.ListPokemonActivity"/>
         <activity android:name="com.demajors.demajorsapp.feature.detailpokemon.DetailPokemonActivity" />
-        <activity android:name="com.demajors.demajorsapp.feature.login.LoginActivity" android:windowSoftInputMode="adjustPan">
+        <activity android:name="com.demajors.demajorsapp.feature.login.LoginActivity" android:windowSoftInputMode="adjustPan"
+            android:exported="true">
 
         </activity>
         <activity android:name="com.demajors.demajorsapp.feature.main.MainActivity"

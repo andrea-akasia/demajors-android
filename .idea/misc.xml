@@ -6,6 +6,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_activate_kyc.xml" value="0.3223684210526316" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_green.xml" value="0.3828125" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_login.xml" value="0.3223684210526316" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_login_disabled.xml" value="0.3125" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_outline.xml" value="0.2677083333333333" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_red.xml" value="0.2994791666666667" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/drawable/background_button_white.xml" value="0.2833333333333333" />
@@ -33,7 +34,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_pokemon.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_rilisan.xml" value="0.31476449275362317" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_song_detail.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/background_button_login.xml" value="0.2957427536231884" />
