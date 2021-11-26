@@ -12,6 +12,7 @@ import io.reactivex.schedulers.Schedulers
 import retrofit2.Response
 import androidx.paging.DataSource
 import com.demajors.demajorsapp.BuildConfig
+import com.demajors.demajorsapp.model.api.BaseAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
@@ -67,6 +68,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+
+    fun logout(): Single<Response<BaseAPIResponse>> {
+        return api.logout(BuildConfig.AUTH_URL + "v1/token/revoke", getRefreshAuthorizationHeader())
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
 
     fun refreshToken(): Single<Response<RefreshTokenAPIResponse>> {
         return api.refreshToken(BuildConfig.AUTH_URL + "v1/token/refresh", getRefreshAuthorizationHeader())

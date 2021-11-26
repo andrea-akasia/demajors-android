@@ -1,5 +1,6 @@
 package com.demajors.demajorsapp.network
 
+import com.demajors.demajorsapp.model.api.BaseAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
@@ -16,6 +17,12 @@ import retrofit2.http.Url
 import retrofit2.http.Header
 
 interface APIService {
+
+    @POST
+    fun logout(
+        @Url authURL: String,
+        @Header("Authorization") refreshToken: String
+    ): Single<Response<BaseAPIResponse>>
 
     @POST
     fun refreshToken(
