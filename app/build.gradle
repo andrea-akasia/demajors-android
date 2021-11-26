@@ -69,12 +69,18 @@ android {
             applicationId "com.demajors.demajorsapp"
             buildConfigField "String", "BASE_URL", '"https://api-demajor.akasia.id/"'
             buildConfigField "String", "AUTH_URL", '"https://accounts-demajor.akasia.id/"'
+            buildConfigField "String", "CLIENT_KEY", '""'
+            buildConfigField "String", "MIDTRANS_BASE_URL", '"https://api.midtrans.com"'
+            buildConfigField "String", "MIDTRANS_SERVER_KEY", '""'
         }
         dev {
             dimension "mode"
             applicationId "com.demajors.demajorsapp.dev"
             buildConfigField "String", "BASE_URL", '"https://api-demajor-dev.akasia.id/"'
             buildConfigField "String", "AUTH_URL", '"https://accounts-demajor-dev.akasia.id/"'
+            buildConfigField "String", "CLIENT_KEY", '"SB-Mid-client-l7u9b6vU28LDJ3OC"'
+            buildConfigField "String", "MIDTRANS_BASE_URL", '"https://api.sandbox.midtrans.com"'
+            buildConfigField "String", "MIDTRANS_SERVER_KEY", '"SB-Mid-server-g_DE7-1GBPj0WiLNjUwrTv3d"'
             signingConfig signingConfigs.dev
         }
     }
@@ -174,4 +180,11 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:29.0.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+    //payment-midtrans
+    implementation group: 'com.google.android.gms', name: 'play-services-base', version: '17.6.0'
+    devImplementation ('com.midtrans:uikit:1.30.0-SANDBOX'){
+        exclude group: "com.google.android.gms", module: "play-services-base"
+    }
+    prodImplementation 'com.midtrans:uikit:1.30.0'
 }
