@@ -1,0 +1,1630 @@
+androidx.appcompat.view.menu.ActionMenuItemView
+com.google.firebase.components.DependencyCycleException
+kotlin.UninitializedPropertyAccessException
+com.google.gson.internal.bind.DateTypeAdapter$1
+androidx.constraintlayout.widget.ConstraintLayout
+com.google.gson.internal.bind.SqlDateTypeAdapter$1
+androidx.recyclerview.widget.GridLayoutManager
+com.demajors.demajorsapp.model.artist.NFTItem
+androidx.appcompat.widget.Toolbar
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroupDetailsItem
+carbon.widget.FlowLayout
+androidx.appcompat.view.menu.ExpandedMenuView
+com.google.firebase.crashlytics.CrashlyticsRegistrar
+com.google.android.gms.dynamic.RemoteCreator$RemoteCreatorException
+androidx.savedstate.SavedStateRegistry$1
+androidx.activity.ImmLeaksCleaner
+kotlin.TypeCastException
+com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
+com.demajors.demajorsapp.base.BaseActivity
+androidx.core.app.RemoteActionCompat
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService
+com.google.android.gms.measurement.AppMeasurementReceiver
+com.google.firebase.FirebaseTooManyRequestsException
+com.demajors.demajorsapp.feature.nft.list.ListNftFragment
+kotlin.internal.jdk8.JDK8PlatformImplementations
+com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity
+com.google.gson.JsonParseException
+dagger.android.DaggerService
+com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
+com.google.firebase.installations.FirebaseInstallationsException
+androidx.constraintlayout.widget.Guideline
+carbon.widget.FrameLayout
+com.google.android.material.timepicker.ClockHandView
+com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragment
+com.google.firebase.FirebaseException
+com.google.android.material.datepicker.MaterialTextInputPicker
+kotlin.NoWhenBranchMatchedException
+androidx.appcompat.widget.ActionBarContextView
+com.caverock.androidsvg.SVGParseException
+androidx.lifecycle.Lifecycling$1
+androidx.core.os.OperationCanceledException
+io.reactivex.exceptions.OnErrorNotImplementedException
+com.google.android.gms.measurement.AppMeasurementContentProvider
+com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+com.google.gson.internal.bind.ArrayTypeAdapter$1
+com.bumptech.glide.load.ImageHeaderParser$ImageType
+androidx.core.content.UnusedAppRestrictionsBackportService
+com.bumptech.glide.Registry$NoImageHeaderParserException
+com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar
+com.google.gson.stream.MalformedJsonException
+com.google.android.gms.common.annotation.KeepName
+androidx.core.app.JobIntentService
+carbon.widget.DropDown
+com.google.android.material.tabs.TabLayout
+carbon.widget.SearchEditText
+com.bumptech.glide.Registry$NoResultEncoderAvailableException
+kotlinx.coroutines.channels.ClosedReceiveChannelException
+carbon.widget.TableView
+com.google.android.gms.measurement.AppMeasurementJobService
+com.google.android.material.bottomappbar.BottomAppBar$Behavior
+okhttp3.internal.http2.ConnectionShutdownException
+com.google.gson.internal.bind.TimeTypeAdapter$1
+androidx.appcompat.widget.SearchView$SearchAutoComplete
+androidx.room.EmptyResultSetException
+com.demajors.demajorsapp.model.api.BaseAPIResponse
+androidx.room.MultiInstanceInvalidationService
+com.demajors.demajorsapp.model.api.auth.LoginData
+com.google.android.material.bottomnavigation.BottomNavigationView
+kotlinx.coroutines.flow.internal.AbortFlowException
+com.google.android.material.timepicker.TimePickerView
+com.demajors.demajorsapp.feature.main.MainActivity
+carbon.widget.AutoCompleteEditText
+dagger.android.DaggerFragment
+com.google.gson.JsonIOException
+com.bumptech.glide.manager.SupportRequestManagerFragment
+com.google.gson.internal.Excluder
+androidx.recyclerview.widget.StaggeredGridLayoutManager
+com.demajors.demajorsapp.feature.myartist.detail.nft.ListArtistNFTFragment
+com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+com.google.android.gms.internal.measurement.zzma
+com.google.gson.internal.bind.TypeAdapters$32
+com.google.gson.internal.bind.TypeAdapters$34
+com.google.android.material.datepicker.MaterialCalendarGridView
+com.google.gson.internal.bind.TypeAdapters$30
+com.bumptech.glide.manager.RequestManagerFragment
+com.google.android.material.internal.CheckableImageButton
+dagger.android.support.DaggerAppCompatActivity
+androidx.lifecycle.SavedStateHandleController
+dagger.android.DaggerApplication
+com.google.gson.internal.bind.CollectionTypeAdapterFactory
+com.google.android.gms.measurement.AppMeasurement
+de.hdodenhof.circleimageview.CircleImageView
+androidx.appcompat.widget.AlertDialogLayout
+androidx.startup.InitializationProvider
+androidx.core.net.ParseException
+androidx.appcompat.widget.DialogTitle
+androidx.core.graphics.drawable.IconCompatParcelizer
+carbon.widget.ProgressBar
+dagger.android.DaggerActivity
+io.reactivex.exceptions.UndeliverableException
+com.google.android.gms.internal.measurement.zzkh
+com.google.firebase.installations.FirebaseInstallationsRegistrar
+androidx.appcompat.widget.ButtonBarLayout
+androidx.viewpager2.adapter.FragmentStateAdapter$2
+androidx.lifecycle.ProcessLifecycleInitializer
+com.google.android.material.snackbar.SnackbarContentLayout
+com.demajors.demajorsapp.feature.profile.ProfileFragment
+carbon.widget.Divider
+kotlinx.coroutines.TimeoutCancellationException
+com.demajors.demajorsapp.feature.myartist.MyArtistFragment
+com.demajors.demajorsapp.feature.detailpokemon.DetailPokemonActivity
+dagger.android.DaggerContentProvider
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroup
+androidx.appcompat.widget.ActionBarContainer
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior
+com.google.android.gms.measurement.AppMeasurementService
+com.google.android.material.timepicker.ClockFaceView
+com.demajors.demajorsapp.feature.login.LoginActivity
+com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+com.google.android.material.appbar.AppBarLayout$BaseBehavior
+com.google.android.gms.internal.measurement.zzd
+retrofit2.adapter.rxjava2.HttpException
+com.google.firebase.components.DependencyException
+com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
+io.reactivex.exceptions.CompositeException
+com.google.android.material.transformation.ExpandableTransformationBehavior
+androidx.startup.StartupException
+com.google.android.gms.common.internal.ReflectedParcelable
+com.google.android.gms.common.util.DynamiteApi
+com.google.android.material.internal.NavigationMenuItemView
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor
+com.demajors.demajorsapp.model.api.auth.LoginBody
+com.google.android.material.transformation.ExpandableBehavior
+androidx.emoji2.text.EmojiCompatInitializer$1
+android.support.v4.app.RemoteActionCompatParcelizer
+androidx.lifecycle.ReflectiveGenericLifecycleObserver
+com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
+com.google.firebase.components.MissingDependencyException
+com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
+com.google.gson.JsonSyntaxException
+kotlin.io.NoSuchFileException
+com.bumptech.glide.load.engine.GlideException
+com.google.gson.internal.bind.TypeAdapters$33
+com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+com.google.firebase.components.InvalidRegistrarException
+androidx.recyclerview.widget.LinearLayoutManager
+com.google.firebase.FirebaseApiNotAvailableException
+androidx.lifecycle.LiveData$LifecycleBoundObserver
+com.demajors.demajorsapp.model.artist.MerchandiseItem
+kotlin.io.FileAlreadyExistsException
+com.google.android.material.appbar.AppBarLayout$Behavior
+kotlin.KotlinNullPointerException
+com.google.android.gms.common.api.internal.zza
+com.demajors.demajorsapp.feature.home.HomeFragment
+com.demajors.demajorsapp.model.api.detailpokemon.Move
+com.google.firebase.ktx.FirebaseCommonKtxRegistrar
+kotlinx.coroutines.JobCancellationException
+com.google.firebase.provider.FirebaseInitProvider
+com.google.android.gms.common.api.ApiException
+com.google.android.material.theme.MaterialComponentsViewInflater
+androidx.lifecycle.CompositeGeneratedAdaptersObserver
+android.support.v4.graphics.drawable.IconCompatParcelizer
+com.google.android.gms.common.api.internal.LifecycleCallback
+androidx.fragment.app.Fragment$5
+androidx.appcompat.app.AppCompatActivity
+com.demajors.demajorsapp.data.AppDatabase
+kotlin.io.ReadAfterEOFException
+com.google.gson.internal.bind.MapTypeAdapterFactory
+com.google.android.gms.common.api.ResolvableApiException
+androidx.core.content.FileProvider
+com.demajors.demajorsapp.App
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior
+com.google.gson.internal.bind.TreeTypeAdapter$SingleTypeFactory
+com.demajors.demajorsapp.data.AppDatabase_Impl
+carbon.widget.LinearLayout
+kotlinx.coroutines.internal.UndeliveredElementException
+com.google.android.material.internal.NavigationMenuView
+androidx.viewpager2.widget.ViewPager2
+com.demajors.demajorsapp.model.api.pokemon.Pokemon
+com.demajors.demajorsapp.model.api.detailpokemon.Sprites
+com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior
+com.google.android.material.appbar.MaterialToolbar
+carbon.widget.ImageView
+androidx.constraintlayout.core.parser.CLParsingException
+android.support.v4.app.INotificationSideChannel$Stub
+kotlin.internal.jdk7.JDK7PlatformImplementations
+androidx.appcompat.widget.ViewStubCompat
+androidx.appcompat.view.menu.ListMenuItemView
+androidx.appcompat.widget.FitWindowsLinearLayout
+com.demajors.demajorsapp.model.home.HomeItem
+com.demajors.demajorsapp.model.api.auth.RefreshTokenData
+com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+com.google.gson.internal.bind.TypeAdapters$26
+com.google.android.gms.common.UserRecoverableException
+com.google.android.material.chip.ChipGroup
+androidx.lifecycle.SingleGeneratedAdapterObserver
+androidx.activity.ComponentActivity$5
+okhttp3.internal.publicsuffix.PublicSuffixDatabase
+carbon.widget.RecyclerView
+androidx.savedstate.Recreator
+com.google.android.material.snackbar.Snackbar$SnackbarLayout
+com.bumptech.glide.load.HttpException
+com.google.android.material.snackbar.BaseTransientBottomBar$Behavior
+okhttp3.internal.http2.StreamResetException
+com.google.android.material.bottomsheet.BottomSheetBehavior
+com.demajors.demajorsapp.model.api.detailpokemon.OfficialArtwork
+kotlinx.coroutines.CompletionHandlerException
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
+pub.devrel.easypermissions.AppSettingsDialogHolderActivity
+com.demajors.demajorsapp.model.api.detailpokemon.StatsItem
+com.google.firebase.components.ComponentDiscoveryService
+com.google.android.material.datepicker.MaterialDatePicker
+androidx.core.app.NotificationCompatSideChannelService
+com.demajors.demajorsapp.model.api.detailpokemon.Type
+pub.devrel.easypermissions.RationaleDialogFragment
+android.support.v4.app.INotificationSideChannel$Default
+androidx.fragment.app.DialogFragment
+androidx.emoji2.text.flatbuffer.FlexBuffers$FlexBufferException
+okhttp3.internal.connection.RouteException
+kotlinx.coroutines.channels.ClosedSendChannelException
+androidx.appcompat.app.AlertController$RecycleListView
+androidx.versionedparcelable.CustomVersionedParcelable
+com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader$EndOfFileException
+com.google.gson.internal.bind.ObjectTypeAdapter$1
+com.demajors.demajorsapp.feature.detailpokemon.moves.MovesFragment
+com.google.android.datatransport.cct.CctBackendFactory
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty
+com.demajors.demajorsapp.model.api.detailpokemon.Other
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+androidx.lifecycle.SavedStateHandleController$1
+kotlin.io.FileSystemException
+com.demajors.demajorsapp.feature.song.DetailSongActivity
+com.demajors.demajorsapp.model.api.detailpokemon.MovesItem
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+com.google.firebase.analytics.FirebaseAnalytics
+kotlinx.coroutines.CoroutineExceptionHandler
+com.demajors.demajorsapp.feature.detailpokemon.basestat.BaseStatFragment
+androidx.appcompat.widget.SearchView
+androidx.versionedparcelable.VersionedParcel$ParcelException
+com.google.android.material.internal.BaselineLayout
+com.google.android.material.timepicker.ChipTextInputComboView
+kotlin.KotlinNothingValueException
+com.bumptech.glide.Registry$NoSourceEncoderAvailableException
+androidx.appcompat.widget.AppCompatRatingBar
+com.google.android.material.appbar.CollapsingToolbarLayout
+kotlinx.coroutines.internal.MainDispatcherFactory
+com.demajors.demajorsapp.model.banner.Banner
+com.google.firebase.FirebaseCommonRegistrar
+androidx.databinding.ViewDataBinding$OnStartListener
+androidx.activity.ComponentActivity$3
+androidx.activity.ComponentActivity$4
+com.google.android.material.transformation.FabTransformationSheetBehavior
+androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable
+com.google.android.material.textview.MaterialTextView
+com.bumptech.glide.GeneratedAppGlideModule
+io.reactivex.exceptions.MissingBackpressureException
+com.google.android.material.transformation.FabTransformationBehavior
+com.demajors.demajorsapp.base.BaseFragment
+android.support.v4.app.INotificationSideChannel$Stub$Proxy
+androidx.fragment.app.FragmentManager$6
+androidx.fragment.app.FragmentActivity
+com.demajors.demajorsapp.feature.listpokemon.ListPokemonActivity
+dagger.android.DaggerBroadcastReceiver
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior
+androidx.activity.ComponentActivity
+androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$3
+com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+com.google.android.material.textfield.TextInputEditText
+dagger.android.DaggerDialogFragment
+androidx.appcompat.widget.ActionMenuView
+androidx.lifecycle.FullLifecycleObserverAdapter
+androidx.coordinatorlayout.widget.CoordinatorLayout
+com.google.gson.internal.bind.TypeAdapters$35
+kotlinx.coroutines.flow.internal.ChildCancelledException
+androidx.appcompat.widget.ActivityChooserView$InnerLayout
+com.google.android.material.button.MaterialButtonToggleGroup
+com.google.android.material.transformation.FabTransformationScrimBehavior
+kotlinx.coroutines.android.AndroidDispatcherFactory
+com.demajors.demajorsapp.model.artist.RilisanItem
+carbon.widget.RelativeLayout
+com.demajors.demajorsapp.network.APIService
+androidx.core.app.CoreComponentFactory
+com.google.android.material.datepicker.MaterialCalendar
+dagger.android.support.DaggerApplication
+com.demajors.demajorsapp.feature.nft.detail.DetailNFTActivity
+com.demajors.demajorsapp.model.api.detailpokemon.TypesItem
+com.google.firebase.encoders.EncodingException
+androidx.constraintlayout.widget.Barrier
+carbon.widget.TextView
+androidx.cardview.widget.CardView
+carbon.widget.RadioButton
+carbon.widget.EditText
+androidx.core.app.ComponentActivity
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader
+com.bumptech.glide.Registry$NoModelLoaderAvailableException
+android.support.v4.app.INotificationSideChannel
+com.google.android.gms.stats.GCoreWakefulBroadcastReceiver
+com.demajors.demajorsapp.feature.myartist.detail.merchandise.ListArtistMerchandiseFragment
+androidx.appcompat.widget.FitWindowsFrameLayout
+com.demajors.demajorsapp.model.api.detailpokemon.Stat
+androidx.versionedparcelable.ParcelImpl
+com.google.android.gms.common.api.UnsupportedApiCallException
+androidx.appcompat.widget.ContentFrameLayout
+androidx.core.app.RemoteActionCompatParcelizer
+com.google.android.gms.internal.measurement.zzjd
+androidx.transition.FragmentTransitionSupport
+androidx.fragment.app.Fragment$InstantiationException
+retrofit2.HttpException
+com.google.android.gms.dynamite.DynamiteModule$LoadingException
+com.google.gson.internal.bind.TypeAdapters$31
+androidx.lifecycle.ReportFragment
+androidx.core.widget.NestedScrollView
+androidx.annotation.Keep
+com.google.android.material.chip.Chip
+androidx.emoji2.text.EmojiCompatInitializer
+dagger.android.DaggerIntentService
+com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory
+com.google.android.gms.common.GooglePlayServicesNotAvailableException
+kotlin.io.AccessDeniedException
+com.google.android.material.appbar.AppBarLayout
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+com.google.android.material.behavior.SwipeDismissBehavior
+androidx.activity.result.ActivityResultRegistry$1
+com.google.android.datatransport.runtime.synchronization.SynchronizationException
+com.google.firebase.FirebaseNetworkException
+com.google.android.gms.internal.measurement.zzkg
+com.demajors.demajorsapp.model.home.ArtistItem
+com.google.android.gms.common.GooglePlayServicesRepairableException
+androidx.appcompat.widget.ActionBarOverlayLayout
+carbon.widget.InputLayout
+androidx.recyclerview.widget.RecyclerView
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+androidx.viewpager2.adapter.FragmentStateAdapter$5
+com.demajors.demajorsapp.model.api.detailpokemon.Ability
+io.reactivex.exceptions.ProtocolViolationException
+com.bumptech.glide.Registry$MissingComponentException
+dagger.android.DispatchingAndroidInjector$InvalidInjectorBindingException
+com.google.android.material.textfield.TextInputLayout
+com.google.android.material.button.MaterialButton
+com.demajors.demajorsapp.model.api.detailpokemon.MoveLearnMethod
+carbon.widget.TextMarker
+androidx.legacy.content.WakefulBroadcastReceiver
+carbon.widget.Button
+carbon.widget.CheckBox
+androidx.core.graphics.drawable.IconCompat
+carbon.widget.FloatingActionButton
+kotlinx.coroutines.android.AndroidExceptionPreHandler
+com.google.android.gms.common.api.Scope
+com.demajors.demajorsapp.model.api.detailpokemon.AbilitiesItem
+com.google.android.gms.common.internal.safeparcel.SafeParcelReader$ParseException
+com.google.android.gms.tasks.RuntimeExecutionException
+androidx.fragment.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: int zzt
+androidx.lifecycle.ProcessLifecycleOwner$3$1: androidx.lifecycle.ProcessLifecycleOwner$3 this$1
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzB
+com.google.android.gms.internal.measurement.zzfs: double zzj
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: android.os.Bundle mTriggeredEventParams
+com.google.android.gms.internal.measurement.zzeq: int zze
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType GIF
+com.google.android.gms.internal.measurement.zzfu: java.lang.String zzg
+com.google.android.gms.internal.measurement.zzfc: com.google.android.gms.internal.measurement.zzfc zza
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mExpiredEventName
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder
+com.google.android.gms.internal.measurement.zzel: com.google.android.gms.internal.measurement.zzex zzf
+com.google.android.gms.measurement.internal.zzp: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.BaseAPIResponse: boolean isSucceed
+com.google.android.gms.internal.measurement.zzfo: com.google.android.gms.internal.measurement.zzke zzf
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzF
+com.google.android.gms.internal.measurement.zzfs: com.google.android.gms.internal.measurement.zzfs zza
+com.google.android.gms.internal.measurement.zzfq: long zzg
+com.google.android.gms.internal.measurement.zzfs: float zzi
+com.demajors.demajorsapp.model.api.detailpokemon.Ability: java.lang.String url
+com.demajors.demajorsapp.model.api.auth.LoginBody: java.lang.String passw
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mOrigin
+com.google.android.gms.common.zzk: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzi
+com.google.android.gms.internal.measurement.zzfa: boolean zzg
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzg
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next
+carbon.widget.CheckBox$SavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.BaseAPIResponse: java.lang.String errMessage
+com.google.android.gms.internal.measurement.zzfe: java.lang.String zzg
+com.google.android.gms.measurement.internal.zzat: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfq: int zze
+com.google.android.gms.internal.measurement.zzeh: int zze
+com.google.android.material.internal.ParcelableSparseArray: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: boolean mActive
+com.google.android.gms.internal.measurement.zzfk: com.google.android.gms.internal.measurement.zzgd zzh
+com.google.android.gms.measurement.internal.zzkv: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.detailpokemon.TypesItem: com.demajors.demajorsapp.model.api.detailpokemon.Type type
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzk
+com.demajors.demajorsapp.model.api.detailpokemon.OfficialArtwork: java.lang.String frontDefault
+com.demajors.demajorsapp.model.api.detailpokemon.MovesItem: com.demajors.demajorsapp.model.api.detailpokemon.Move move
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+com.demajors.demajorsapp.model.api.detailpokemon.Other: com.demajors.demajorsapp.model.api.detailpokemon.OfficialArtwork officialArtwork
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed
+com.google.android.gms.internal.measurement.zzgb: int zze
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzr
+com.google.android.gms.internal.measurement.zzfy: long zzm
+com.google.android.gms.internal.measurement.zzeh: int zzf
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzke zzi
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzQ
+com.google.android.gms.internal.measurement.zzex: int zzf
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: long mTriggerTimeout
+com.google.android.gms.internal.measurement.zzfk: boolean zzi
+com.google.android.gms.internal.measurement.zzfo: com.google.android.gms.internal.measurement.zzfo zza
+com.demajors.demajorsapp.model.api.pokemon.Pokemon: java.lang.String name
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+com.google.android.gms.internal.measurement.zzfy: long zzC
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: android.os.Bundle mExpiredEventParams
+com.demajors.demajorsapp.model.api.detailpokemon.MoveLearnMethod: java.lang.String url
+com.google.android.material.appbar.AppBarLayout$BaseBehavior$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: android.os.IBinder mRemote
+com.google.android.gms.internal.measurement.zzfs: com.google.android.gms.internal.measurement.zzke zzk
+androidx.viewpager.widget.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: android.support.v4.app.INotificationSideChannel sDefaultImpl
+com.google.android.material.stateful.ExtendableSavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.detailpokemon.Stat: java.lang.String name
+com.google.android.gms.measurement.internal.zzab: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgt: int zzf
+com.google.android.gms.internal.measurement.zzfm: com.google.android.gms.internal.measurement.zzfm zza
+androidx.recyclerview.widget.RecyclerView$SavedState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause
+com.google.android.gms.internal.measurement.zzfy: boolean zzac
+com.demajors.demajorsapp.model.api.detailpokemon.AbilitiesItem: com.demajors.demajorsapp.model.api.detailpokemon.Ability ability
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzq
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType UNKNOWN
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack
+com.google.android.gms.internal.measurement.zzgt: int zze
+com.demajors.demajorsapp.model.api.auth.LoginData: java.lang.String tokenRefresh
+com.google.android.gms.internal.measurement.zzej: com.google.android.gms.internal.measurement.zzke zzh
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex
+com.google.android.gms.internal.measurement.zzfw: com.google.android.gms.internal.measurement.zzke zze
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur
+com.google.android.gms.internal.measurement.zzeh: com.google.android.gms.internal.measurement.zzeh zza
+com.google.android.material.datepicker.Month: android.os.Parcelable$Creator CREATOR
+androidx.appcompat.widget.Toolbar$SavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.detailpokemon.Move: java.lang.String url
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl
+com.google.android.gms.internal.measurement.zzfe: com.google.android.gms.internal.measurement.zzfe zza
+com.google.android.gms.internal.measurement.zzes: boolean zzk
+com.google.android.gms.internal.measurement.zzfm: int zze
+com.google.android.material.internal.CheckableImageButton$SavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.auth.RefreshTokenData: java.lang.String token
+kotlinx.coroutines.CancellableContinuationImpl: int _decision
+com.demajors.demajorsapp.model.api.detailpokemon.MoveLearnMethod: java.lang.String name
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mAppId
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzs
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzab
+com.demajors.demajorsapp.model.api.detailpokemon.AbilitiesItem: java.lang.Boolean isHidden
+com.google.android.gms.internal.measurement.zzgt: double zzk
+com.google.android.gms.measurement.internal.zzar: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.JobSupport: java.lang.Object _state
+androidx.fragment.app.FragmentState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgo: com.google.android.gms.internal.measurement.zzgk zzg
+com.google.android.gms.internal.measurement.zzgd: com.google.android.gms.internal.measurement.zzkd zzf
+com.google.android.gms.internal.measurement.zzel: java.lang.String zzi
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef
+com.google.android.gms.internal.measurement.zzfa: java.lang.String zzf
+com.google.android.gms.internal.measurement.zzgm: int zze
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzkc zzU
+com.demajors.demajorsapp.model.api.detailpokemon.Type: java.lang.String name
+androidx.customview.widget.ExploreByTouchHelper: int mHoveredVirtualViewId
+com.google.android.gms.internal.measurement.zzfc: com.google.android.gms.internal.measurement.zzke zzk
+androidx.viewpager2.widget.ViewPager2$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: boolean zzaa
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzX
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzI
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState
+com.demajors.demajorsapp.model.api.detailpokemon.StatsItem: com.demajors.demajorsapp.model.api.detailpokemon.Stat stat
+com.google.android.gms.internal.measurement.zzel: boolean zzh
+com.google.android.gms.internal.measurement.zzfy: long zzW
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroup: java.lang.String url
+com.google.android.gms.internal.measurement.zzeh: com.google.android.gms.internal.measurement.zzke zzh
+com.google.android.gms.internal.measurement.zzgh: double zzk
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: long mTriggeredTimestamp
+com.google.android.gms.internal.measurement.zzfc: int zze
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Integer baseExperience
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue
+com.google.android.gms.internal.measurement.zzgh: java.lang.String zzg
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzl
+com.google.android.gms.internal.measurement.zzfy: int zzf
+com.google.android.gms.internal.measurement.zzej: com.google.android.gms.internal.measurement.zzeq zzj
+com.google.android.gms.internal.measurement.zzgd: com.google.android.gms.internal.measurement.zzgd zza
+com.google.android.gms.internal.measurement.zzgb: int zzf
+com.google.android.gms.internal.measurement.zzfk: int zze
+com.google.android.gms.internal.measurement.zzgf: int zzf
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzS
+com.demajors.demajorsapp.model.api.detailpokemon.Sprites: com.demajors.demajorsapp.model.api.detailpokemon.Other other
+com.google.android.gms.internal.measurement.zzeq: java.lang.String zzh
+com.google.android.gms.internal.measurement.zzes: com.google.android.gms.internal.measurement.zzel zzh
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+com.demajors.demajorsapp.model.api.detailpokemon.Ability: java.lang.String name
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType[] $VALUES
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzM
+com.google.android.gms.internal.measurement.zzfy: int zzL
+com.google.android.gms.internal.measurement.zzeh: com.google.android.gms.internal.measurement.zzke zzg
+com.google.android.gms.internal.measurement.zzes: int zzf
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType WEBP
+com.google.android.gms.internal.measurement.zzex: com.google.android.gms.internal.measurement.zzke zzi
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroup: java.lang.String name
+com.google.android.gms.internal.measurement.zzfo: long zzi
+com.google.android.gms.internal.measurement.zzfy: int zzh
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzp
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle
+com.demajors.demajorsapp.model.api.pokemon.Pokemon: java.lang.String url
+com.google.android.gms.internal.measurement.zzgh: int zze
+com.google.android.gms.internal.measurement.zzfy: int zzJ
+com.demajors.demajorsapp.model.api.detailpokemon.StatsItem: int baseStat
+carbon.widget.RadioButton$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzh
+com.google.android.gms.internal.measurement.zzeh: boolean zzi
+com.google.android.gms.internal.measurement.zzfy: long zzl
+com.google.android.gms.internal.measurement.zzgd: com.google.android.gms.internal.measurement.zzkd zze
+com.google.android.gms.internal.measurement.zzgh: com.google.android.gms.internal.measurement.zzgh zza
+com.google.android.gms.internal.measurement.zzfc: com.google.android.gms.internal.measurement.zzke zzn
+com.google.android.gms.internal.measurement.zzfy: long zzx
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Integer height
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: android.os.Bundle mTimedOutEventParams
+com.google.android.gms.common.internal.GetServiceRequest: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.CompletedExceptionally: int _handled
+com.google.android.gms.internal.measurement.zzfc: com.google.android.gms.internal.measurement.zzke zzj
+com.google.android.gms.internal.measurement.zzfa: int zzi
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mTriggeredEventName
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.String name
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+com.google.android.gms.internal.measurement.zzgd: com.google.android.gms.internal.measurement.zzke zzh
+com.google.android.material.datepicker.CalendarConstraints: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzeq: java.lang.String zzj
+com.google.android.material.navigation.NavigationBarView$SavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.home.HomeItem: java.lang.String thumbnail
+com.google.android.gms.common.internal.zzb: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: long zzk
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Boolean isDefault
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.Object mValue
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mTimedOutEventName
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzw
+android.support.v4.app.INotificationSideChannel$Stub: int TRANSACTION_cancel
+android.support.v4.app.INotificationSideChannel$Stub: int TRANSACTION_cancelAll
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType WEBP_A
+com.google.android.gms.internal.measurement.zzfy: long zzN
+com.google.android.gms.internal.measurement.zzex: com.google.android.gms.internal.measurement.zzex zza
+android.support.v4.app.INotificationSideChannel$Stub: int TRANSACTION_notify
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzfy zze
+com.google.android.gms.internal.measurement.zzjx: java.util.Map zza
+com.google.android.gms.internal.measurement.zzfk: com.google.android.gms.internal.measurement.zzfk zza
+androidx.recyclerview.widget.LinearLayoutManager$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgm: com.google.android.gms.internal.measurement.zzke zzg
+com.google.android.material.datepicker.DateValidatorPointForward: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+com.google.android.gms.internal.measurement.zzfc: long zzf
+com.google.android.gms.internal.measurement.zzex: int zze
+com.google.android.gms.internal.measurement.zzgb: com.google.android.gms.internal.measurement.zzgb zza
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: com.demajors.demajorsapp.model.api.detailpokemon.Sprites sprites
+com.google.android.gms.internal.measurement.zzfs: int zze
+com.google.android.gms.internal.measurement.zzfq: com.google.android.gms.internal.measurement.zzfq zza
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+com.google.android.gms.internal.measurement.zzgh: long zzi
+com.demajors.demajorsapp.model.api.pokemon.PokemonResponse: java.util.List results
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzgb zzT
+kotlinx.coroutines.internal.AtomicOp: java.lang.Object _consensus
+com.google.android.gms.internal.measurement.zzfy: long zzn
+com.google.android.gms.internal.measurement.zzej: java.lang.String zzg
+com.google.android.gms.internal.measurement.zzfy: int zzR
+com.demajors.demajorsapp.model.artist.MerchandiseItem: java.lang.String thumbnail
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: java.lang.ClassLoader sClassLoader
+com.google.android.material.textfield.TextInputLayout$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+carbon.widget.DropDown$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+com.google.android.gms.internal.measurement.zzej: boolean zzi
+kotlinx.coroutines.CancelledContinuation: int _resumed
+android.support.v4.app.INotificationSideChannel$Stub: java.lang.String DESCRIPTOR
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state
+com.google.android.gms.internal.measurement.zzej: boolean zzm
+com.google.android.gms.internal.measurement.zzfo: int zzj
+com.google.android.gms.internal.measurement.zzfi: com.google.android.gms.internal.measurement.zzfi zza
+pub.devrel.easypermissions.AppSettingsDialog: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroupDetailsItem: com.demajors.demajorsapp.model.api.detailpokemon.VersionGroup versionGroup
+com.google.android.gms.internal.measurement.zzgh: java.lang.String zzh
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+com.google.android.gms.internal.measurement.zzfy: int zzg
+com.google.android.gms.internal.measurement.zzes: boolean zzi
+com.demajors.demajorsapp.model.api.detailpokemon.AbilitiesItem: java.lang.Integer slot
+com.google.android.gms.internal.measurement.zzih: int zzb
+com.google.android.gms.internal.measurement.zzfo: long zzh
+com.google.android.gms.internal.measurement.zzfa: boolean zzh
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType PNG_A
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzj
+com.google.android.gms.internal.measurement.zzfs: long zzh
+com.google.android.gms.internal.measurement.zzjx: int zzd
+com.google.android.material.badge.BadgeDrawable$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgt: com.google.android.gms.internal.measurement.zzke zzg
+com.google.android.gms.internal.measurement.zzej: boolean zzk
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask
+com.google.android.gms.internal.measurement.zzfm: long zzg
+com.google.android.material.bottomsheet.BottomSheetBehavior$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzY
+com.google.android.gms.internal.measurement.zzfe: int zze
+androidx.fragment.app.BackStackState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfu: java.lang.String zzf
+com.google.android.gms.internal.measurement.zzfy: long zzy
+com.demajors.demajorsapp.model.artist.NFTItem: java.lang.String type
+com.google.android.gms.internal.measurement.zzes: com.google.android.gms.internal.measurement.zzes zza
+com.google.android.gms.internal.measurement.zzgd: com.google.android.gms.internal.measurement.zzke zzg
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzE
+com.google.android.gms.internal.measurement.zzgb: com.google.android.gms.internal.measurement.zzke zzg
+com.google.android.gms.internal.measurement.zzgf: int zze
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzz
+com.google.android.gms.internal.measurement.zzfc: int zzh
+com.google.android.gms.internal.measurement.zzju: com.google.android.gms.internal.measurement.zzjo zza
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor: java.lang.String MODULE_ID
+com.google.android.gms.internal.measurement.zzfy: long zzO
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: int zza
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+com.google.android.gms.internal.measurement.zzfk: com.google.android.gms.internal.measurement.zzgd zzg
+com.demajors.demajorsapp.model.api.detailpokemon.StatsItem: java.lang.Integer effort
+com.google.android.gms.common.Feature: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfo: int zze
+androidx.lifecycle.ProcessLifecycleOwner$3: androidx.lifecycle.ProcessLifecycleOwner this$0
+com.demajors.demajorsapp.model.api.auth.LoginData: java.lang.String token
+com.google.android.gms.internal.measurement.zzjx: com.google.android.gms.internal.measurement.zzmc zzc
+com.google.android.gms.internal.measurement.zzfi: java.lang.String zzf
+com.google.android.gms.internal.measurement.zzgo: com.google.android.gms.internal.measurement.zzke zzf
+kotlinx.coroutines.android.HandlerContext: kotlinx.coroutines.android.HandlerContext _immediate
+kotlinx.coroutines.InvokeOnCancelling: int _invoked
+kotlinx.coroutines.CommonPool: java.util.concurrent.Executor pool
+com.google.android.gms.internal.measurement.zzes: java.lang.String zzg
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.util.List moves
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mName
+com.google.android.gms.internal.measurement.zzgo: com.google.android.gms.internal.measurement.zzgo zza
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzP
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Integer order
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzke zzj
+androidx.customview.view.AbsSavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfc: java.lang.String zzg
+androidx.appcompat.widget.ActionMenuPresenter$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgk: com.google.android.gms.internal.measurement.zzgk zza
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType JPEG
+com.demajors.demajorsapp.model.banner.Banner: java.lang.String thumbnail
+com.google.android.gms.internal.measurement.zzfy: int zzZ
+com.google.android.gms.internal.measurement.zzej: int zzf
+com.google.android.gms.internal.measurement.zzfo: java.lang.String zzg
+com.demajors.demajorsapp.model.artist.RilisanItem: java.lang.String thumbnail
+com.google.android.material.timepicker.TimeModel: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: int zzK
+com.google.android.gms.internal.measurement.zzgf: com.google.android.gms.internal.measurement.zzkd zzg
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroupDetailsItem: com.demajors.demajorsapp.model.api.detailpokemon.MoveLearnMethod moveLearnMethod
+com.demajors.demajorsapp.model.api.detailpokemon.VersionGroupDetailsItem: java.lang.Integer levelLearnedAt
+com.google.android.gms.internal.measurement.zzfa: com.google.android.gms.internal.measurement.zzfa zza
+com.google.android.gms.internal.measurement.zzgk: com.google.android.gms.internal.measurement.zzke zze
+com.google.android.gms.internal.measurement.zzfu: int zze
+com.google.android.material.bottomappbar.BottomAppBar$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzej: int zze
+com.google.android.gms.internal.measurement.zzfs: java.lang.String zzg
+com.demajors.demajorsapp.model.home.ArtistItem: java.lang.String thumbnail
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size
+com.demajors.demajorsapp.model.api.detailpokemon.MovesItem: java.util.List versionGroupDetails
+kotlinx.coroutines.scheduling.LimitingDispatcher: int inFlightTasks
+com.google.android.gms.internal.measurement.zzej: com.google.android.gms.internal.measurement.zzej zza
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+androidx.appcompat.widget.AppCompatSpinner$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzel: com.google.android.gms.internal.measurement.zzel zza
+com.google.android.gms.internal.measurement.zzcl: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfc: boolean zzm
+com.demajors.demajorsapp.model.api.detailpokemon.Move: java.lang.String name
+com.demajors.demajorsapp.model.api.pokemon.PokemonResponse: java.lang.Integer count
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev
+com.google.android.gms.internal.measurement.zzgt: java.lang.String zzi
+com.google.android.gms.internal.measurement.zzex: boolean zzh
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.util.List abilities
+com.google.android.gms.internal.measurement.zzgh: float zzj
+com.google.android.material.button.MaterialButton$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzel: int zze
+com.google.android.gms.internal.measurement.zzes: boolean zzj
+com.google.android.gms.internal.measurement.zzgt: com.google.android.gms.internal.measurement.zzgt zza
+com.google.android.gms.internal.measurement.zzgm: java.lang.String zzf
+com.google.android.gms.common.api.Scope: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor: int MODULE_VERSION
+com.google.android.gms.internal.measurement.zzeq: int zzf
+kotlinx.coroutines.DispatchedCoroutine: int _decision
+com.google.android.gms.internal.measurement.zzgt: java.lang.String zzh
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType RAW
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.util.List types
+com.google.android.gms.internal.measurement.zzex: java.lang.String zzg
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzv
+androidx.fragment.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfa: int zze
+carbon.animation.AnimatedColorStateList: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+com.google.android.gms.internal.measurement.zzfy: int zzD
+androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: long zzo
+com.google.android.gms.internal.measurement.zzeq: boolean zzg
+androidx.transition.ChangeBounds$7: androidx.transition.ChangeBounds$ViewBounds mViewBounds
+com.demajors.demajorsapp.model.api.auth.LoginBody: java.lang.String email
+com.google.android.gms.internal.measurement.zzfc: java.lang.String zzl
+com.google.android.gms.internal.measurement.zzgm: com.google.android.gms.internal.measurement.zzgm zza
+com.google.android.gms.internal.measurement.zzfy: boolean zzG
+com.google.android.gms.internal.measurement.zzfk: int zzf
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: long mTimeToLive
+com.google.android.gms.internal.measurement.zzej: boolean zzl
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex
+androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
+androidx.core.widget.NestedScrollView$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzke zzH
+com.google.android.material.navigation.NavigationBarPresenter$SavedState: android.os.Parcelable$Creator CREATOR
+com.demajors.demajorsapp.model.api.detailpokemon.Stat: java.lang.String url
+kotlin.coroutines.AbstractCoroutineContextElement: kotlin.coroutines.CoroutineContext$Key key
+com.google.android.gms.internal.measurement.zzfc: com.google.android.gms.internal.measurement.zzke zzi
+com.google.android.gms.internal.measurement.zzfe: java.lang.String zzf
+com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse: com.demajors.demajorsapp.model.api.auth.RefreshTokenData data
+com.google.android.gms.common.ConnectionResult: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzfy: com.google.android.gms.internal.measurement.zzfu zzad
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.util.List stats
+com.demajors.demajorsapp.model.api.detailpokemon.TypesItem: java.lang.Integer slot
+com.google.android.gms.internal.measurement.zzfi: int zze
+com.google.android.gms.internal.measurement.zzfs: java.lang.String zzf
+com.google.android.gms.internal.measurement.zzfu: com.google.android.gms.internal.measurement.zzfi zzh
+com.google.android.gms.internal.measurement.zzel: com.google.android.gms.internal.measurement.zzeq zzg
+com.google.android.gms.internal.measurement.zzfu: com.google.android.gms.internal.measurement.zzfu zza
+com.google.android.gms.internal.measurement.zzfm: int zzf
+com.google.android.gms.internal.measurement.zzgh: long zzf
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Integer weight
+com.google.android.gms.internal.measurement.zzfy: boolean zzA
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: long mCreationTimestamp
+com.google.android.gms.internal.measurement.zzfw: com.google.android.gms.internal.measurement.zzfw zza
+com.demajors.demajorsapp.model.api.detailpokemon.Type: java.lang.String url
+com.google.android.gms.internal.measurement.zzfq: java.lang.String zzf
+com.google.android.gms.internal.measurement.zzeh: boolean zzj
+com.google.android.gms.internal.measurement.zzfy: long zzV
+com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse: java.lang.Integer id
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state
+com.demajors.demajorsapp.model.api.auth.LoginAPIResponse: com.demajors.demajorsapp.model.api.auth.LoginData data
+com.google.android.gms.internal.measurement.zzfy: java.lang.String zzu
+androidx.appcompat.widget.SearchView$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzeq: java.lang.String zzi
+com.google.android.gms.internal.measurement.zzeq: com.google.android.gms.internal.measurement.zzeq zza
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer
+com.google.android.gms.internal.measurement.zzgt: boolean zzj
+com.google.android.gms.internal.measurement.zzgo: int zze
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType PNG
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState: android.os.Parcelable$Creator CREATOR
+androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.measurement.zzgf: com.google.android.gms.internal.measurement.zzgf zza
+com.google.android.gms.internal.measurement.zzes: int zze
+com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty: java.lang.String mTriggerEventName
+com.google.android.gms.measurement.AppMeasurement: void endAdUnitExposure(java.lang.String)
+carbon.widget.DropDown$Style: carbon.widget.DropDown$Style[] values()
+androidx.core.content.ContextCompat$Api24Impl: android.content.Context createDeviceProtectedStorageContext(android.content.Context)
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+androidx.core.app.AppOpsManagerCompat$Api29Impl: android.app.AppOpsManager getSystemService(android.content.Context)
+dagger.android.DaggerBroadcastReceiver: DaggerBroadcastReceiver()
+com.bumptech.glide.load.ImageHeaderParser$ImageType: boolean hasAlpha()
+com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig$Flag: com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig$Flag valueOf(java.lang.String)
+androidx.constraintlayout.widget.ConstraintHelper: ConstraintHelper(android.content.Context,android.util.AttributeSet)
+com.google.android.material.transformation.FabTransformationSheetBehavior: FabTransformationSheetBehavior()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int,int)
+androidx.appcompat.resources.Compatibility$Api21Impl: void inflate(android.graphics.drawable.Drawable,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+com.caverock.androidsvg.CSSParser$AttribOp: com.caverock.androidsvg.CSSParser$AttribOp valueOf(java.lang.String)
+com.google.android.material.datepicker.MaterialCalendar: MaterialCalendar()
+com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar: java.util.List getComponents()
+androidx.appcompat.widget.AppCompatTextView: AppCompatTextView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior: HideBottomViewOnScrollBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getMaxUserProperties(java.lang.String,com.google.android.gms.internal.measurement.zzcf)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreFling(android.view.View,float,float)
+androidx.core.view.ViewCompat$Api21Impl: boolean isImportantForAccessibility(android.view.View)
+com.google.android.material.datepicker.MaterialDatePicker: MaterialDatePicker()
+carbon.widget.Button: Button(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api21Impl: float getZ(android.view.View)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.Object requireViewById(android.view.View,int)
+com.google.android.material.transformation.FabTransformationScrimBehavior: FabTransformationScrimBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getCurrentScreenClass(com.google.android.gms.internal.measurement.zzcf)
+com.google.android.gms.internal.measurement.zzbn: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+com.google.android.datatransport.cct.internal.NetworkConnectionInfo$MobileSubtype: com.google.android.datatransport.cct.internal.NetworkConnectionInfo$MobileSubtype valueOf(java.lang.String)
+carbon.widget.InputLayout: InputLayout(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.load.resource.bitmap.DownsampleStrategy$SampleSizeRounding: com.bumptech.glide.load.resource.bitmap.DownsampleStrategy$SampleSizeRounding valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.google.android.gms.measurement.AppMeasurement: java.lang.String getCurrentScreenName()
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: void notify(java.lang.String,int,java.lang.String,android.app.Notification)
+com.google.android.material.snackbar.SnackbarContentLayout: SnackbarContentLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void logEventAndBundle(java.lang.String,java.lang.String,android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+com.google.firebase.crashlytics.internal.common.DeliveryMechanism: com.google.firebase.crashlytics.internal.common.DeliveryMechanism[] values()
+com.google.android.material.textfield.TextInputEditText: TextInputEditText(android.content.Context,android.util.AttributeSet)
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreScroll(android.view.View,int,int,int[],int[])
+androidx.core.view.ViewCompat$Api21Impl: android.content.res.ColorStateList getBackgroundTintList(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.ViewCompat$Api18Impl: android.graphics.Rect getClipBounds(android.view.View)
+carbon.widget.CheckBox: CheckBox(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.widget.Guideline: Guideline(android.content.Context,android.util.AttributeSet)
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior: ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+com.demajors.demajorsapp.network.APIService: io.reactivex.Single requestDetailPokemon(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$3: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type: androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumHeight(android.view.View)
+com.google.android.datatransport.Priority: com.google.android.datatransport.Priority[] values()
+kotlin.TypeCastException: TypeCastException()
+com.google.android.material.bottomnavigation.BottomNavigationView: BottomNavigationView(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleY()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setRootAlpha(int)
+com.google.android.material.appbar.HeaderScrollingViewBehavior: HeaderScrollingViewBehavior()
+com.google.firebase.analytics.FirebaseAnalytics: java.lang.String getFirebaseInstanceId()
+androidx.core.view.ViewCompat$Api17Impl: android.view.Display getDisplay(android.view.View)
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+dagger.android.support.DaggerAppCompatActivity: DaggerAppCompatActivity()
+com.google.firebase.installations.remote.TokenResult$ResponseCode: com.google.firebase.installations.remote.TokenResult$ResponseCode valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api24Impl: void dispatchFinishTemporaryDetach(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateY()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setDataCollectionEnabled(boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+com.caverock.androidsvg.PreserveAspectRatio$Scale: com.caverock.androidsvg.PreserveAspectRatio$Scale[] values()
+androidx.appcompat.resources.Compatibility$Api15Impl: void getValueForDensity(android.content.res.Resources,int,int,android.util.TypedValue,boolean)
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior: FloatingActionButton$BaseBehavior()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.core.view.ViewCompat$Api26Impl: void setTooltipText(android.view.View,java.lang.CharSequence)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+android.support.v4.app.INotificationSideChannel$Stub: android.support.v4.app.INotificationSideChannel asInterface(android.os.IBinder)
+carbon.widget.TextView: TextView(android.content.Context,android.util.AttributeSet)
+com.caverock.androidsvg.SVG$Style$FillRule: com.caverock.androidsvg.SVG$Style$FillRule valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.appcompat.widget.FitWindowsLinearLayout: FitWindowsLinearLayout(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.load.EncodeStrategy: com.bumptech.glide.load.EncodeStrategy[] values()
+androidx.core.view.ViewCompat$Api29Impl: void setSystemGestureExclusionRects(android.view.View,java.util.List)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+com.google.android.gms.measurement.AppMeasurement: long generateEventId()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.lifecycle.ViewModel: ViewModel()
+androidx.core.widget.EdgeEffectCompat$Api31Impl: float getDistance(android.widget.EdgeEffect)
+com.bumptech.glide.load.PreferredColorSpace: com.bumptech.glide.load.PreferredColorSpace[] values()
+com.google.android.gms.measurement.AppMeasurement: java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
+androidx.appcompat.widget.LinearLayoutCompat: LinearLayoutCompat(android.content.Context)
+androidx.core.view.ViewCompat$Api16Impl: int getWindowSystemUiVisibility(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+androidx.core.view.ViewCompat$Api26Impl: android.view.View keyboardNavigationClusterSearch(android.view.View,android.view.View,int)
+androidx.appcompat.widget.SearchView: SearchView(android.content.Context,android.util.AttributeSet,int)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setUserProperty(java.lang.String,java.lang.String,com.google.android.gms.dynamic.IObjectWrapper,boolean,long)
+com.google.android.material.timepicker.ChipTextInputComboView: ChipTextInputComboView(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig$Flag: com.google.android.datatransport.runtime.scheduling.jobscheduling.SchedulerConfig$Flag[] values()
+carbon.widget.LinearLayout: LinearLayout(android.content.Context,android.util.AttributeSet)
+kotlin.NoWhenBranchMatchedException: NoWhenBranchMatchedException()
+androidx.core.content.ContextCompat$Api21Impl: java.io.File getCodeCacheDir(android.content.Context)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setCurrentScreen(com.google.android.gms.dynamic.IObjectWrapper,java.lang.String,java.lang.String,long)
+com.google.firebase.crashlytics.internal.common.DeliveryMechanism: com.google.firebase.crashlytics.internal.common.DeliveryMechanism valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void resetAnalyticsData(long)
+androidx.core.view.ViewCompat$Api17Impl: void setLayerPaint(android.view.View,android.graphics.Paint)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void logHealthData(int,java.lang.String,com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.dynamic.IObjectWrapper)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+com.google.android.material.transformation.ExpandableBehavior: ExpandableBehavior()
+com.caverock.androidsvg.SVG$Unit: com.caverock.androidsvg.SVG$Unit[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+carbon.widget.DropDown$Mode: carbon.widget.DropDown$Mode valueOf(java.lang.String)
+com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService: JobInfoSchedulerService()
+androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior: CoordinatorLayout$Behavior()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillAlpha(float)
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode[] values()
+com.caverock.androidsvg.SVG$Style$TextDirection: com.caverock.androidsvg.SVG$Style$TextDirection valueOf(java.lang.String)
+com.google.android.gms.measurement.AppMeasurementJobService: AppMeasurementJobService()
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumWidth(android.view.View)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedScroll(android.view.View,int,int,int,int,int[])
+android.support.v4.app.INotificationSideChannel$Default: void cancelAll(java.lang.String)
+carbon.widget.ProgressBar: ProgressBar(android.content.Context,android.util.AttributeSet)
+androidx.core.widget.PopupWindowCompat$Api23Impl: void setWindowLayoutType(android.widget.PopupWindow,int)
+androidx.core.view.ViewCompat$Api26Impl: void setFocusedByDefault(android.view.View,boolean)
+com.google.android.material.transformation.FabTransformationBehavior: FabTransformationBehavior(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateY(float)
+androidx.core.app.AppOpsManagerCompat$Api29Impl: java.lang.String getOpPackageName(android.content.Context)
+com.caverock.androidsvg.SVGParser$SVGElem: com.caverock.androidsvg.SVGParser$SVGElem[] values()
+com.demajors.demajorsapp.feature.profile.ProfileFragment: ProfileFragment()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: int getRootAlpha()
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23: AppCompatTextViewAutoSizeHelper$Impl23()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateX()
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintMode(android.view.View,android.graphics.PorterDuff$Mode)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+com.google.firebase.analytics.FirebaseAnalytics: com.google.android.gms.measurement.internal.zzib getScionFrontendApiImplementation(android.content.Context,android.os.Bundle)
+androidx.lifecycle.ProcessLifecycleOwner$3: void onActivityStopped(android.app.Activity)
+androidx.appcompat.widget.AppCompatAutoCompleteTextView: AppCompatAutoCompleteTextView(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.load.resource.bitmap.DefaultImageHeaderParser$Reader$EndOfFileException: DefaultImageHeaderParser$Reader$EndOfFileException()
+androidx.core.view.ViewCompat$Api15Impl: boolean hasOnClickListeners(android.view.View)
+androidx.core.view.ViewCompat$Api16Impl: boolean getFitsSystemWindows(android.view.View)
+androidx.core.view.ViewCompat$Api28Impl: void removeOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType[] values()
+com.google.android.gms.measurement.AppMeasurement: int getMaxUserProperties(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.appcompat.widget.ButtonBarLayout: ButtonBarLayout(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getGmpAppId(com.google.android.gms.internal.measurement.zzcf)
+com.google.android.gms.internal.measurement.zzbn: android.os.IBinder asBinder()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+kotlinx.coroutines.android.AndroidDispatcherFactory: java.lang.String hintOnError()
+android.support.v4.app.INotificationSideChannel$Stub: boolean setDefaultImpl(android.support.v4.app.INotificationSideChannel)
+com.google.firebase.installations.local.PersistedInstallation$RegistrationStatus: com.google.firebase.installations.local.PersistedInstallation$RegistrationStatus valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment: ReportFragment()
+androidx.appcompat.widget.AlertDialogLayout: AlertDialogLayout(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.ActionMenuView: ActionMenuView(android.content.Context,android.util.AttributeSet)
+com.demajors.demajorsapp.network.APIService: io.reactivex.Single requestListPokemon(int,int)
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level[] values()
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.appcompat.widget.ActionBarContainer: ActionBarContainer(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.core.widgets.ConstraintAnchor$Type: androidx.constraintlayout.core.widgets.ConstraintAnchor$Type[] values()
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: boolean isHorizontallyScrollable(android.widget.TextView)
+androidx.viewpager2.widget.ViewPager2: ViewPager2(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+android.support.v4.app.INotificationSideChannel$Stub: android.os.IBinder asBinder()
+dagger.android.DaggerDialogFragment: DaggerDialogFragment()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void initialize(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.internal.measurement.zzcl,long)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+androidx.core.view.ViewCompat$Api18Impl: void setClipBounds(android.view.View,android.graphics.Rect)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+com.google.gson.internal.bind.DateTypeAdapter$1: DateTypeAdapter$1()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setMeasurementEnabled(boolean,long)
+androidx.core.view.ViewCompat$Api17Impl: int getPaddingEnd(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.core.content.ContextCompat$Api21Impl: java.io.File getNoBackupFilesDir(android.content.Context)
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+com.google.android.material.transformation.FabTransformationScrimBehavior: FabTransformationScrimBehavior()
+com.bumptech.glide.load.PreferredColorSpace: com.bumptech.glide.load.PreferredColorSpace valueOf(java.lang.String)
+com.google.android.gms.measurement.AppMeasurement: com.google.android.gms.measurement.AppMeasurement getInstance(android.content.Context)
+com.caverock.androidsvg.SVG$Unit: com.caverock.androidsvg.SVG$Unit valueOf(java.lang.String)
+com.google.android.gms.internal.measurement.zzjd: zzjd()
+carbon.widget.InputLayout$ActionButton: carbon.widget.InputLayout$ActionButton[] values()
+androidx.recyclerview.widget.RecyclerView: void suppressLayout(boolean)
+carbon.widget.AutoSizeTextMode: carbon.widget.AutoSizeTextMode valueOf(java.lang.String)
+carbon.drawable.ripple.RippleDrawable$Style: carbon.drawable.ripple.RippleDrawable$Style valueOf(java.lang.String)
+carbon.widget.InputLayout$LabelStyle: carbon.widget.InputLayout$LabelStyle[] values()
+com.google.android.gms.internal.measurement.zzcb: com.google.android.gms.internal.measurement.zzcc asInterface(android.os.IBinder)
+com.google.android.gms.measurement.AppMeasurement: java.util.Map getUserProperties(java.lang.String,java.lang.String,boolean)
+carbon.widget.InputLayout$ErrorMode: carbon.widget.InputLayout$ErrorMode[] values()
+androidx.core.view.ViewCompat$Api26Impl: void setNextClusterForwardId(android.view.View,int)
+androidx.recyclerview.widget.GridLayoutManager: GridLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+carbon.widget.RadioButton: RadioButton(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.appcompat.widget.ActionBarOverlayLayout: ActionBarOverlayLayout(android.content.Context,android.util.AttributeSet)
+carbon.widget.FloatingActionButton: FloatingActionButton(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.MemoryCategory: com.bumptech.glide.MemoryCategory[] values()
+android.support.v4.app.INotificationSideChannel: void cancelAll(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+com.google.android.material.tabs.TabLayout: TabLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+androidx.lifecycle.ProcessLifecycleOwner$3: void onActivityCreated(android.app.Activity,android.os.Bundle)
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: INotificationSideChannel$Stub$Proxy(android.os.IBinder)
+com.caverock.androidsvg.SVG$Style$FontStyle: com.caverock.androidsvg.SVG$Style$FontStyle valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: void setNestedScrollingEnabled(android.view.View,boolean)
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: android.os.IBinder asBinder()
+carbon.widget.DropDown: DropDown(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.HeaderBehavior: HeaderBehavior(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: void setPathData(androidx.core.graphics.PathParser$PathDataNode[])
+androidx.constraintlayout.core.widgets.ConstraintAnchor$Type: androidx.constraintlayout.core.widgets.ConstraintAnchor$Type valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedFling(android.view.View,float,float,boolean)
+com.google.android.material.bottomappbar.BottomAppBar$Behavior: BottomAppBar$Behavior(android.content.Context,android.util.AttributeSet)
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode valueOf(java.lang.String)
+android.support.v4.app.INotificationSideChannel$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.google.gson.internal.bind.ArrayTypeAdapter$1: ArrayTypeAdapter$1()
+carbon.widget.FlowLayout: FlowLayout(android.content.Context,android.util.AttributeSet)
+androidx.databinding.ViewDataBinding$OnStartListener: void onStart()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setConditionalUserProperty(android.os.Bundle,long)
+carbon.internal.Roboto: carbon.internal.Roboto[] values()
+com.google.firebase.installations.FirebaseInstallationsException$Status: com.google.firebase.installations.FirebaseInstallationsException$Status[] values()
+carbon.widget.InputLayout$ErrorMode: carbon.widget.InputLayout$ErrorMode valueOf(java.lang.String)
+okhttp3.TlsVersion: okhttp3.TlsVersion[] values()
+androidx.appcompat.widget.SearchView$SearchAutoComplete: SearchView$SearchAutoComplete(android.content.Context,android.util.AttributeSet)
+com.google.android.material.timepicker.TimePickerView: TimePickerView(android.content.Context,android.util.AttributeSet)
+com.google.firebase.installations.FirebaseInstallationsRegistrar: com.google.firebase.installations.FirebaseInstallationsApi lambda$getComponents$0(com.google.firebase.components.ComponentContainer)
+com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragment: ListRilisanFragment()
+com.google.android.material.internal.BaselineLayout: BaselineLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.content.UnusedAppRestrictionsBackportService: UnusedAppRestrictionsBackportService()
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: java.lang.String getInterfaceDescriptor()
+androidx.lifecycle.SavedStateHandleController$OnRecreation: SavedStateHandleController$OnRecreation()
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy[] values()
+com.demajors.demajorsapp.feature.detailpokemon.basestat.BaseStatFragment: BaseStatFragment()
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.core.content.ContextCompat$Api16Impl: void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+androidx.appcompat.app.AppCompatViewInflater: AppCompatViewInflater()
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+com.google.android.material.appbar.HeaderBehavior: HeaderBehavior()
+dagger.android.DaggerContentProvider: DaggerContentProvider()
+com.google.android.material.theme.MaterialComponentsViewInflater: MaterialComponentsViewInflater()
+com.google.android.material.bottomsheet.BottomSheetBehavior: BottomSheetBehavior(android.content.Context,android.util.AttributeSet)
+com.caverock.androidsvg.PreserveAspectRatio$Scale: com.caverock.androidsvg.PreserveAspectRatio$Scale valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setConsent(android.os.Bundle,long)
+kotlin.coroutines.AbstractCoroutineContextElement: AbstractCoroutineContextElement(kotlin.coroutines.CoroutineContext$Key)
+com.caverock.androidsvg.SVGParser$SVGElem: com.caverock.androidsvg.SVGParser$SVGElem valueOf(java.lang.String)
+com.google.android.material.snackbar.BaseTransientBottomBar$SnackbarBaseLayout: BaseTransientBottomBar$SnackbarBaseLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.content.ContextCompat$Api24Impl: java.io.File getDataDir(android.content.Context)
+com.demajors.demajorsapp.App: App()
+com.google.android.material.appbar.MaterialToolbar: MaterialToolbar(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.internal.measurement.zzbl: com.google.android.gms.internal.measurement.zzbl[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getAppInstanceId(com.google.android.gms.internal.measurement.zzcf)
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+com.google.android.datatransport.cct.CctBackendFactory: com.google.android.datatransport.runtime.backends.TransportBackend create(com.google.android.datatransport.runtime.backends.CreationContext)
+carbon.widget.AutoSizeTextMode: carbon.widget.AutoSizeTextMode[] values()
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: void cancel(java.lang.String,int,java.lang.String)
+androidx.core.view.ViewCompat$Api26Impl: int getImportantForAutofill(android.view.View)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void performAction(android.os.Bundle,com.google.android.gms.internal.measurement.zzcf,long)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+okhttp3.TlsVersion: okhttp3.TlsVersion valueOf(java.lang.String)
+com.google.android.gms.measurement.AppMeasurement: void setConditionalUserProperty(com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.core.view.ViewCompat$Api21Impl: float getTranslationZ(android.view.View)
+com.bumptech.glide.load.engine.DecodeJob$Stage: com.bumptech.glide.load.engine.DecodeJob$Stage[] values()
+androidx.core.view.ViewCompat$Api21Impl: boolean isNestedScrollingEnabled(android.view.View)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+com.caverock.androidsvg.CSSParser$Combinator: com.caverock.androidsvg.CSSParser$Combinator valueOf(java.lang.String)
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior: AppBarLayout$ScrollingViewBehavior(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getFillAlpha()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: androidx.core.graphics.PathParser$PathDataNode[] getPathData()
+com.google.firebase.installations.FirebaseInstallationsRegistrar: FirebaseInstallationsRegistrar()
+androidx.core.view.ViewCompat$Api17Impl: int getLabelFor(android.view.View)
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+com.google.firebase.crashlytics.internal.common.CommonUtils$Architecture: com.google.firebase.crashlytics.internal.common.CommonUtils$Architecture[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+io.reactivex.internal.disposables.EmptyDisposable: io.reactivex.internal.disposables.EmptyDisposable valueOf(java.lang.String)
+androidx.legacy.content.WakefulBroadcastReceiver: WakefulBroadcastReceiver()
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact: androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact valueOf(java.lang.String)
+androidx.fragment.app.SpecialEffectsController$Operation$State: androidx.fragment.app.SpecialEffectsController$Operation$State valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeWidth(float)
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior: FloatingActionButton$Behavior(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+kotlin.coroutines.AbstractCoroutineContextElement: kotlin.coroutines.CoroutineContext$Element get(kotlin.coroutines.CoroutineContext$Key)
+com.caverock.androidsvg.SVG$Style$LineCaps: com.caverock.androidsvg.SVG$Style$LineCaps valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+com.google.android.datatransport.cct.internal.ClientInfo$ClientType: com.google.android.datatransport.cct.internal.ClientInfo$ClientType[] values()
+com.caverock.androidsvg.SVG$Style$TextDecoration: com.caverock.androidsvg.SVG$Style$TextDecoration[] values()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.core.view.ViewCompat$Api26Impl: boolean isImportantForAutofill(android.view.View)
+com.google.android.material.transformation.ExpandableTransformationBehavior: ExpandableTransformationBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+com.google.firebase.provider.FirebaseInitProvider: FirebaseInitProvider()
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+com.google.android.datatransport.cct.internal.NetworkConnectionInfo$MobileSubtype: com.google.android.datatransport.cct.internal.NetworkConnectionInfo$MobileSubtype[] values()
+androidx.activity.ComponentActivity: ComponentActivity()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+com.bumptech.glide.Registry$NoImageHeaderParserException: Registry$NoImageHeaderParserException()
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityPaused(com.google.android.gms.dynamic.IObjectWrapper,long)
+androidx.appcompat.resources.Compatibility$Api21Impl: int getChangingConfigurations(android.content.res.TypedArray)
+androidx.constraintlayout.core.SolverVariable$Type: androidx.constraintlayout.core.SolverVariable$Type valueOf(java.lang.String)
+androidx.core.content.ContextCompat$Api16Impl: void startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+com.caverock.androidsvg.CSSParser$Combinator: com.caverock.androidsvg.CSSParser$Combinator[] values()
+com.google.android.gms.internal.measurement.zzjp: com.google.android.gms.internal.measurement.zzjp[] values()
+androidx.core.view.ViewCompat$Api21Impl: void setElevation(android.view.View,float)
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+com.bumptech.glide.integration.okhttp3.OkHttpGlideModule: OkHttpGlideModule()
+androidx.appcompat.widget.AppCompatReceiveContentHelper$OnDropApi24Impl: boolean onDropForTextView(android.view.DragEvent,android.widget.TextView,android.app.Activity)
+com.google.android.material.appbar.AppBarLayout$Behavior: AppBarLayout$Behavior(android.content.Context,android.util.AttributeSet)
+com.google.gson.internal.bind.TimeTypeAdapter$1: TimeTypeAdapter$1()
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+com.google.firebase.FirebaseException: FirebaseException()
+androidx.core.view.ViewCompat$Api16Impl: android.view.ViewParent getParentForAccessibility(android.view.View)
+androidx.core.view.ViewCompat$Api24Impl: void setPointerIcon(android.view.View,android.view.PointerIcon)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityStarted(com.google.android.gms.dynamic.IObjectWrapper,long)
+carbon.drawable.CheckableDrawable$CheckedState: carbon.drawable.CheckableDrawable$CheckedState[] values()
+com.google.android.gms.internal.measurement.zzcb: zzcb()
+com.google.android.gms.measurement.AppMeasurementContentProvider: AppMeasurementContentProvider()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.ViewCompat$Api24Impl: void dispatchStartTemporaryDetach(android.view.View)
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+android.support.v4.app.INotificationSideChannel: void cancel(java.lang.String,int,java.lang.String)
+com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable: AbstractSafeParcelable()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotY(float)
+com.google.firebase.installations.remote.InstallationResponse$ResponseCode: com.google.firebase.installations.remote.InstallationResponse$ResponseCode[] values()
+androidx.core.view.ViewCompat$Api21Impl: void setTranslationZ(android.view.View,float)
+com.google.android.material.transformation.ExpandableBehavior: ExpandableBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api16Impl: int getImportantForAccessibility(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathOffset(float)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+androidx.lifecycle.ProcessLifecycleOwner$3: ProcessLifecycleOwner$3(androidx.lifecycle.ProcessLifecycleOwner)
+io.reactivex.BackpressureStrategy: io.reactivex.BackpressureStrategy[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotX()
+carbon.widget.TableView: TableView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+pub.devrel.easypermissions.RationaleDialogFragment: RationaleDialogFragment()
+com.bumptech.glide.manager.RequestManagerFragment: RequestManagerFragment()
+com.google.android.material.bottomappbar.BottomAppBar$Behavior: BottomAppBar$Behavior()
+com.google.firebase.ktx.FirebaseCommonKtxRegistrar: FirebaseCommonKtxRegistrar()
+com.bumptech.glide.load.resource.bitmap.DownsampleStrategy$SampleSizeRounding: com.bumptech.glide.load.resource.bitmap.DownsampleStrategy$SampleSizeRounding[] values()
+kotlin.KotlinNullPointerException: KotlinNullPointerException()
+com.google.firebase.heartbeatinfo.HeartBeatInfo$HeartBeat: com.google.firebase.heartbeatinfo.HeartBeatInfo$HeartBeat valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setDefaultEventParameters(android.os.Bundle)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathOffset()
+com.caverock.androidsvg.SVG$Style$FontStyle: com.caverock.androidsvg.SVG$Style$FontStyle[] values()
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+com.google.android.material.appbar.ViewOffsetBehavior: ViewOffsetBehavior()
+androidx.appcompat.view.menu.ExpandedMenuView: ExpandedMenuView(android.content.Context,android.util.AttributeSet)
+io.reactivex.BackpressureStrategy: io.reactivex.BackpressureStrategy valueOf(java.lang.String)
+androidx.fragment.app.DialogFragment: DialogFragment()
+androidx.core.content.ContextCompat$Api24Impl: boolean isDeviceProtectedStorage(android.content.Context)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+com.bumptech.glide.load.DataSource: com.bumptech.glide.load.DataSource[] values()
+kotlin.coroutines.AbstractCoroutineContextElement: kotlin.coroutines.CoroutineContext minusKey(kotlin.coroutines.CoroutineContext$Key)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotY()
+androidx.appcompat.widget.ActivityChooserView$InnerLayout: ActivityChooserView$InnerLayout(android.content.Context,android.util.AttributeSet)
+com.demajors.demajorsapp.feature.detailpokemon.moves.MovesFragment: MovesFragment()
+androidx.core.widget.EdgeEffectCompat$Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+com.google.android.datatransport.cct.internal.NetworkConnectionInfo$NetworkType: com.google.android.datatransport.cct.internal.NetworkConnectionInfo$NetworkType[] values()
+carbon.widget.EditText: EditText(android.content.Context,android.util.AttributeSet)
+io.reactivex.internal.disposables.DisposableHelper: io.reactivex.internal.disposables.DisposableHelper valueOf(java.lang.String)
+androidx.core.widget.PopupWindowCompat$Api19Impl: void showAsDropDown(android.widget.PopupWindow,android.view.View,int,int,int)
+com.bumptech.glide.request.RequestCoordinator$RequestState: com.bumptech.glide.request.RequestCoordinator$RequestState valueOf(java.lang.String)
+com.google.android.material.datepicker.MaterialCalendar$CalendarSelector: com.google.android.material.datepicker.MaterialCalendar$CalendarSelector valueOf(java.lang.String)
+carbon.animation.AnimUtils$Style: carbon.animation.AnimUtils$Style valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityHeading(android.view.View,boolean)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.appcompat.widget.AppCompatEditText: AppCompatEditText(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.internal.measurement.zzms: com.google.android.gms.internal.measurement.zzms[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getCachedAppInstanceId(com.google.android.gms.internal.measurement.zzcf)
+com.bumptech.glide.module.AppGlideModule: AppGlideModule()
+androidx.core.view.ViewCompat$Api26Impl: void setAutofillHints(android.view.View,java.lang.String[])
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getUserProperties(java.lang.String,java.lang.String,boolean,com.google.android.gms.internal.measurement.zzcf)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: float getAlpha()
+com.google.android.material.timepicker.ClockHandView: ClockHandView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.coordinatorlayout.widget.CoordinatorLayout: CoordinatorLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+com.google.firebase.FirebaseCommonRegistrar: FirebaseCommonRegistrar()
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+com.google.android.material.transformation.FabTransformationBehavior: FabTransformationBehavior()
+androidx.core.view.ViewCompat$Api24Impl: void updateDragShadow(android.view.View,android.view.View$DragShadowBuilder)
+carbon.widget.InputLayout$LabelStyle: carbon.widget.InputLayout$LabelStyle valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotX(float)
+androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour: androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour[] values()
+com.google.android.material.chip.ChipGroup: ChipGroup(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.core.view.ViewCompat$Api19Impl: boolean isLaidOut(android.view.View)
+com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity: ArtistDetailActivity()
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.core.view.ViewCompat$Api16Impl: boolean hasTransientState(android.view.View)
+kotlinx.coroutines.flow.internal.ChildCancelledException: ChildCancelledException()
+androidx.core.view.ViewCompat$Api16Impl: boolean hasOverlappingRendering(android.view.View)
+com.bumptech.glide.load.engine.DecodeJob$RunReason: com.bumptech.glide.load.engine.DecodeJob$RunReason[] values()
+androidx.constraintlayout.widget.ConstraintAttribute$AttributeType: androidx.constraintlayout.widget.ConstraintAttribute$AttributeType valueOf(java.lang.String)
+com.google.android.material.appbar.AppBarLayout: AppBarLayout(android.content.Context,android.util.AttributeSet)
+com.google.firebase.crashlytics.internal.common.CommonUtils$Architecture: com.google.firebase.crashlytics.internal.common.CommonUtils$Architecture valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityDestroyed(com.google.android.gms.dynamic.IObjectWrapper,long)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+com.google.android.material.internal.ForegroundLinearLayout: ForegroundLinearLayout(android.content.Context,android.util.AttributeSet)
+io.reactivex.internal.disposables.EmptyDisposable: io.reactivex.internal.disposables.EmptyDisposable[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+com.google.android.material.snackbar.BaseTransientBottomBar$Behavior: BaseTransientBottomBar$Behavior()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeColor(int)
+androidx.appcompat.widget.Toolbar: Toolbar(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api17Impl: int getLayoutDirection(android.view.View)
+com.caverock.androidsvg.SVG$Style$TextDirection: com.caverock.androidsvg.SVG$Style$TextDirection[] values()
+com.google.android.material.appbar.ViewOffsetBehavior: ViewOffsetBehavior(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: AppCompatTextViewAutoSizeHelper$Impl()
+com.google.gson.internal.bind.TypeAdapters$26: TypeAdapters$26()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeAlpha()
+androidx.core.view.ViewCompat$Api26Impl: void setKeyboardNavigationCluster(android.view.View,boolean)
+androidx.appcompat.widget.AppCompatRatingBar: AppCompatRatingBar(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.runtime.firebase.transport.LogEventDropped$Reason: com.google.android.datatransport.runtime.firebase.transport.LogEventDropped$Reason[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getCurrentScreenName(com.google.android.gms.internal.measurement.zzcf)
+carbon.internal.Roboto: carbon.internal.Roboto valueOf(java.lang.String)
+kotlin.coroutines.AbstractCoroutineContextElement: java.lang.Object fold(java.lang.Object,kotlin.jvm.functions.Function2)
+com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator: WormDotsIndicator(android.content.Context,android.util.AttributeSet)
+de.hdodenhof.circleimageview.CircleImageView: CircleImageView(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setMinimumSessionDuration(long)
+androidx.core.widget.PopupWindowCompat$Api23Impl: boolean getOverlapAnchor(android.widget.PopupWindow)
+androidx.appcompat.widget.SearchView: SearchView(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.cct.internal.NetworkConnectionInfo$NetworkType: com.google.android.datatransport.cct.internal.NetworkConnectionInfo$NetworkType valueOf(java.lang.String)
+com.caverock.androidsvg.SVGParser$SVGAttr: com.caverock.androidsvg.SVGParser$SVGAttr[] values()
+com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior: FloatingActionButton$Behavior()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int)
+com.google.android.material.transformation.FabTransformationSheetBehavior: FabTransformationSheetBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.runtime.backends.BackendResponse$Status: com.google.android.datatransport.runtime.backends.BackendResponse$Status[] values()
+androidx.core.view.ViewCompat$Api28Impl: void setScreenReaderFocusable(android.view.View,boolean)
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.core.view.ViewCompat$Api21Impl: boolean hasNestedScrollingParent(android.view.View)
+com.demajors.demajorsapp.feature.listpokemon.ListPokemonActivity: ListPokemonActivity()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+com.bumptech.glide.Priority: com.bumptech.glide.Priority[] values()
+com.google.firebase.heartbeatinfo.HeartBeatInfo$HeartBeat: com.google.firebase.heartbeatinfo.HeartBeatInfo$HeartBeat[] values()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.core.widget.NestedScrollView: NestedScrollView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.snackbar.Snackbar$SnackbarLayout: Snackbar$SnackbarLayout(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.Priority: com.bumptech.glide.Priority valueOf(java.lang.String)
+com.google.android.gms.measurement.AppMeasurementReceiver: AppMeasurementReceiver()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: AppMeasurementDynamiteService()
+androidx.core.view.ViewCompat$Api17Impl: void setPaddingRelative(android.view.View,int,int,int,int)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.fragment.app.SpecialEffectsController$Operation$State: androidx.fragment.app.SpecialEffectsController$Operation$State[] values()
+android.support.v4.app.INotificationSideChannel: void notify(java.lang.String,int,java.lang.String,android.app.Notification)
+com.bumptech.glide.load.engine.DecodeJob$Stage: com.bumptech.glide.load.engine.DecodeJob$Stage valueOf(java.lang.String)
+com.demajors.demajorsapp.feature.main.MainActivity: MainActivity()
+com.google.firebase.ktx.FirebaseCommonKtxRegistrar: java.util.List getComponents()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.core.view.ViewCompat$Api26Impl: void addKeyboardNavigationClusters(android.view.View,java.util.Collection,int)
+com.google.gson.internal.bind.TypeAdapters$30: TypeAdapters$30()
+androidx.core.view.ViewCompat$Api29Impl: void saveAttributeDataForStyleable(android.view.View,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray,int,int)
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.core.view.ViewCompat$Api19Impl: boolean isLayoutDirectionResolved(android.view.View)
+com.google.android.datatransport.runtime.backends.TransportBackendDiscovery: TransportBackendDiscovery()
+com.caverock.androidsvg.SVG$Style$TextAnchor: com.caverock.androidsvg.SVG$Style$TextAnchor[] values()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+com.google.android.gms.measurement.AppMeasurement: java.lang.String getCurrentScreenClass()
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+androidx.core.view.ViewCompat$Api31Impl: androidx.core.view.ContentInfoCompat performReceiveContent(android.view.View,androidx.core.view.ContentInfoCompat)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void generateEventId(com.google.android.gms.internal.measurement.zzcf)
+com.caverock.androidsvg.SVG$Style$VectorEffect: com.caverock.androidsvg.SVG$Style$VectorEffect valueOf(java.lang.String)
+com.demajors.demajorsapp.data.AppDatabase: AppDatabase()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void isDataCollectionEnabled(com.google.android.gms.internal.measurement.zzcf)
+androidx.fragment.app.FragmentActivity: FragmentActivity()
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+kotlin.UninitializedPropertyAccessException: UninitializedPropertyAccessException()
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.ViewCompat$Api17Impl: void setLabelFor(android.view.View,int)
+com.google.android.datatransport.cct.CctBackendFactory: CctBackendFactory()
+com.google.android.gms.dynamite.descriptors.com.google.android.gms.measurement.dynamite.ModuleDescriptor: ModuleDescriptor()
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.constraintlayout.widget.ConstraintLayout: ConstraintLayout(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: java.lang.String getGroupName()
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.recyclerview.widget.LinearLayoutManager: LinearLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getTestFlag(com.google.android.gms.internal.measurement.zzcf,int)
+com.google.android.gms.measurement.AppMeasurement: void logEventInternal(java.lang.String,java.lang.String,android.os.Bundle)
+com.google.firebase.crashlytics.internal.settings.SettingsCacheBehavior: com.google.firebase.crashlytics.internal.settings.SettingsCacheBehavior valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setInstanceIdProvider(com.google.android.gms.internal.measurement.zzck)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: android.graphics.Matrix getLocalMatrix()
+androidx.core.content.FileProvider: FileProvider()
+carbon.drawable.ripple.RippleDrawable$Style: carbon.drawable.ripple.RippleDrawable$Style[] values()
+androidx.appcompat.widget.AppCompatImageButton: AppCompatImageButton(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+com.google.android.gms.measurement.AppMeasurement: java.lang.String getAppInstanceId()
+carbon.animation.AnimUtils$Style: carbon.animation.AnimUtils$Style[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void logEvent(java.lang.String,java.lang.String,android.os.Bundle,boolean,boolean,long)
+okhttp3.internal.http2.ConnectionShutdownException: ConnectionShutdownException()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityStopped(com.google.android.gms.dynamic.IObjectWrapper,long)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathStart(float)
+okhttp3.Protocol: okhttp3.Protocol[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.appcompat.widget.LinearLayoutCompat: LinearLayoutCompat(android.content.Context,android.util.AttributeSet,int)
+kotlin.coroutines.AbstractCoroutineContextElement: kotlin.coroutines.CoroutineContext$Key getKey()
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+com.google.android.material.internal.FlowLayout: FlowLayout(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type: androidx.constraintlayout.core.widgets.analyzer.DependencyNode$Type[] values()
+dagger.android.support.DaggerApplication: DaggerApplication()
+androidx.recyclerview.widget.StaggeredGridLayoutManager: StaggeredGridLayoutManager(android.content.Context,android.util.AttributeSet,int,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar: java.util.List getComponents()
+androidx.loader.app.LoaderManagerImpl$LoaderViewModel: LoaderManagerImpl$LoaderViewModel()
+dagger.android.DaggerApplication: DaggerApplication()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getRotation()
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.android.HandlerContext createDispatcher(java.util.List)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void beginAdUnitExposure(java.lang.String,long)
+com.caverock.androidsvg.CSSParser$AttribOp: com.caverock.androidsvg.CSSParser$AttribOp[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+androidx.core.view.ViewCompat$Api16Impl: void removeOnGlobalLayoutListener(android.view.ViewTreeObserver,android.view.ViewTreeObserver$OnGlobalLayoutListener)
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+com.google.android.gms.internal.measurement.zzki: com.google.android.gms.internal.measurement.zzki[] values()
+com.google.android.material.appbar.AppBarLayout$Behavior: AppBarLayout$Behavior()
+androidx.appcompat.widget.FitWindowsFrameLayout: FitWindowsFrameLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityPaneTitle(android.view.View,java.lang.CharSequence)
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode valueOf(java.lang.String)
+com.caverock.androidsvg.CSSParser$MediaType: com.caverock.androidsvg.CSSParser$MediaType valueOf(java.lang.String)
+com.google.firebase.crashlytics.CrashlyticsRegistrar: CrashlyticsRegistrar()
+com.google.android.material.internal.NavigationMenuItemView: NavigationMenuItemView(android.content.Context,android.util.AttributeSet)
+com.caverock.androidsvg.PreserveAspectRatio$Alignment: com.caverock.androidsvg.PreserveAspectRatio$Alignment[] values()
+androidx.core.view.ViewCompat$Api17Impl: int generateViewId()
+com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar: FirebaseAnalyticsKtxRegistrar()
+androidx.recyclerview.widget.RecyclerView: boolean isLayoutSuppressed()
+androidx.core.view.ViewCompat$Api16Impl: android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View)
+com.bumptech.glide.load.ImageHeaderParser$ImageType: com.bumptech.glide.load.ImageHeaderParser$ImageType valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: AppCompatTextViewAutoSizeHelper$Impl29()
+com.google.android.material.internal.NavigationMenuView: NavigationMenuView(android.content.Context,android.util.AttributeSet)
+com.google.android.gms.measurement.AppMeasurement: void beginAdUnitExposure(java.lang.String)
+androidx.room.MultiInstanceInvalidationService: MultiInstanceInvalidationService()
+com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator$Type: com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator$Type[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityResumed(com.google.android.gms.dynamic.IObjectWrapper,long)
+androidx.constraintlayout.core.SolverVariable$Type: androidx.constraintlayout.core.SolverVariable$Type[] values()
+androidx.appcompat.widget.AbsActionBarView: AbsActionBarView(android.content.Context,android.util.AttributeSet)
+android.support.v4.app.INotificationSideChannel$Default: void cancel(java.lang.String,int,java.lang.String)
+com.bumptech.glide.request.RequestCoordinator$RequestState: com.bumptech.glide.request.RequestCoordinator$RequestState[] values()
+androidx.core.view.ViewCompat$Api29Impl: java.util.List getSystemGestureExclusionRects(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.appcompat.resources.Compatibility$Api21Impl: android.graphics.drawable.Drawable createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+androidx.cardview.widget.CardView: CardView(android.content.Context,android.util.AttributeSet)
+androidx.core.app.ComponentActivity: ComponentActivity()
+androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior: CoordinatorLayout$Behavior(android.content.Context,android.util.AttributeSet)
+com.google.android.material.button.MaterialButton: MaterialButton(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api17Impl: int getPaddingStart(android.view.View)
+androidx.core.content.ContextCompat$Api23Impl: java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+carbon.view.View: View(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.widget.ConstraintAttribute$AttributeType: androidx.constraintlayout.widget.ConstraintAttribute$AttributeType[] values()
+androidx.core.view.ViewCompat$Api21Impl: java.lang.String getTransitionName(android.view.View)
+androidx.core.view.ViewCompat$Api26Impl: boolean isFocusedByDefault(android.view.View)
+androidx.lifecycle.ProcessLifecycleOwner$3$1: void onActivityPostStarted(android.app.Activity)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityStopped(android.app.Activity)
+com.bumptech.glide.load.DecodeFormat: com.bumptech.glide.load.DecodeFormat valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathEnd()
+com.google.android.material.datepicker.MaterialCalendarGridView: MaterialCalendarGridView(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.app.AppCompatActivity: AppCompatActivity()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+com.google.firebase.encoders.proto.Protobuf$IntEncoding: com.google.firebase.encoders.proto.Protobuf$IntEncoding valueOf(java.lang.String)
+com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar: com.google.firebase.analytics.connector.AnalyticsConnector lambda$getComponents$0(com.google.firebase.components.ComponentContainer)
+androidx.core.content.ContextCompat$Api23Impl: java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+com.demajors.demajorsapp.base.BaseActivity: BaseActivity()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+com.caverock.androidsvg.SVG$GradientSpread: com.caverock.androidsvg.SVG$GradientSpread[] values()
+carbon.widget.ImageView: ImageView(android.content.Context,android.util.AttributeSet)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+carbon.widget.TextMarker: TextMarker(android.content.Context,android.util.AttributeSet)
+androidx.core.app.JobIntentService: JobIntentService()
+com.demajors.demajorsapp.network.APIService: io.reactivex.Single loginEmail(java.lang.String,com.demajors.demajorsapp.model.api.auth.LoginBody)
+pub.devrel.easypermissions.AppSettingsDialogHolderActivity: AppSettingsDialogHolderActivity()
+androidx.core.content.ContextCompat$Api23Impl: int getColor(android.content.Context,int)
+com.bumptech.glide.request.SingleRequest$Status: com.bumptech.glide.request.SingleRequest$Status[] values()
+com.google.android.material.appbar.AppBarLayout$BaseBehavior: AppBarLayout$BaseBehavior()
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+com.demajors.demajorsapp.feature.nft.detail.DetailNFTActivity: DetailNFTActivity()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setSessionTimeoutDuration(long)
+androidx.core.content.ContextCompat$Api19Impl: java.io.File[] getExternalCacheDirs(android.content.Context)
+androidx.lifecycle.ProcessLifecycleOwner$3$1: ProcessLifecycleOwner$3$1(androidx.lifecycle.ProcessLifecycleOwner$3)
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.ViewCompat$Api21Impl: android.graphics.PorterDuff$Mode getBackgroundTintMode(android.view.View)
+androidx.core.view.ViewCompat$Api16Impl: void setImportantForAccessibility(android.view.View,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+androidx.core.view.ViewCompat$Api26Impl: boolean isKeyboardNavigationCluster(android.view.View)
+com.google.android.material.bottomsheet.BottomSheetBehavior: BottomSheetBehavior()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setConsentThirdParty(android.os.Bundle,long)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.ViewCompat$Api16Impl: boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+carbon.widget.AutoCompleteEditText: AutoCompleteEditText(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivityCreated(com.google.android.gms.dynamic.IObjectWrapper,android.os.Bundle,long)
+androidx.core.view.ViewCompat$Api26Impl: int getNextClusterForwardId(android.view.View)
+android.support.v4.app.INotificationSideChannel$Default: INotificationSideChannel$Default()
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy valueOf(java.lang.String)
+com.demajors.demajorsapp.feature.detailpokemon.DetailPokemonActivity: DetailPokemonActivity()
+com.google.firebase.installations.remote.InstallationResponse$ResponseCode: com.google.firebase.installations.remote.InstallationResponse$ResponseCode valueOf(java.lang.String)
+io.reactivex.internal.disposables.DisposableHelper: io.reactivex.internal.disposables.DisposableHelper[] values()
+com.bumptech.glide.manager.SupportRequestManagerFragment: SupportRequestManagerFragment()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+com.google.android.datatransport.runtime.firebase.transport.LogEventDropped$Reason: com.google.android.datatransport.runtime.firebase.transport.LogEventDropped$Reason valueOf(java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void unregisterOnMeasurementEventListener(com.google.android.gms.internal.measurement.zzci)
+androidx.core.view.ViewCompat$Api31Impl: java.lang.String[] getReceiveContentMimeTypes(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getFillColor()
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level valueOf(java.lang.String)
+com.bumptech.glide.MemoryCategory: com.bumptech.glide.MemoryCategory valueOf(java.lang.String)
+com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar: FirebaseCrashlyticsKtxRegistrar()
+carbon.widget.RecyclerView: RecyclerView(android.content.Context,android.util.AttributeSet)
+carbon.drawable.CheckableDrawable$CheckedState: carbon.drawable.CheckableDrawable$CheckedState valueOf(java.lang.String)
+com.google.firebase.encoders.proto.Protobuf$IntEncoding: com.google.firebase.encoders.proto.Protobuf$IntEncoding[] values()
+com.google.android.material.timepicker.ClockFaceView: ClockFaceView(android.content.Context,android.util.AttributeSet)
+com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior: AppBarLayout$ScrollingViewBehavior()
+androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType: androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType valueOf(java.lang.String)
+android.support.v4.app.INotificationSideChannel$Stub: INotificationSideChannel$Stub()
+com.google.firebase.installations.remote.TokenResult$ResponseCode: com.google.firebase.installations.remote.TokenResult$ResponseCode[] values()
+com.bumptech.glide.request.SingleRequest$Status: com.bumptech.glide.request.SingleRequest$Status valueOf(java.lang.String)
+com.google.android.gms.common.api.internal.zza: zza()
+androidx.core.app.NotificationCompatSideChannelService: NotificationCompatSideChannelService()
+androidx.core.view.ViewCompat$Api19Impl: void notifySubtreeAccessibilityStateChanged(android.view.ViewParent,android.view.View,android.view.View,int)
+androidx.appcompat.widget.DialogTitle: DialogTitle(android.content.Context,android.util.AttributeSet)
+com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator: BaseDotsIndicator(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setAlpha(float)
+carbon.widget.RelativeLayout: RelativeLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api28Impl: void addOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+androidx.lifecycle.ProcessLifecycleOwner$3$1: void onActivityPostResumed(android.app.Activity)
+androidx.core.view.ViewCompat$Api26Impl: boolean restoreDefaultFocus(android.view.View)
+androidx.appcompat.widget.LinearLayoutCompat: LinearLayoutCompat(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void endAdUnitExposure(java.lang.String,long)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+com.caverock.androidsvg.SVG$Style$VectorEffect: com.caverock.androidsvg.SVG$Style$VectorEffect[] values()
+com.caverock.androidsvg.SVGParser$SVGAttr: com.caverock.androidsvg.SVGParser$SVGAttr valueOf(java.lang.String)
+com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator$Type: com.tbuonomo.viewpagerdotsindicator.BaseDotsIndicator$Type valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatReceiveContentHelper$OnDropApi24Impl: boolean onDropForView(android.view.DragEvent,android.view.View,android.app.Activity)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void registerOnMeasurementEventListener(com.google.android.gms.internal.measurement.zzci)
+com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver: AlarmManagerSchedulerBroadcastReceiver()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.appcompat.widget.AppCompatCheckBox: AppCompatCheckBox(android.content.Context,android.util.AttributeSet)
+androidx.constraintlayout.widget.Barrier: Barrier(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.GeneratedAppGlideModule: GeneratedAppGlideModule()
+com.demajors.demajorsapp.feature.myartist.detail.merchandise.ListArtistMerchandiseFragment: ListArtistMerchandiseFragment()
+com.google.android.material.appbar.CollapsingToolbarLayout: CollapsingToolbarLayout(android.content.Context,android.util.AttributeSet)
+com.demajors.demajorsapp.base.BaseViewModel: BaseViewModel()
+android.support.v4.app.INotificationSideChannel$Default: void notify(java.lang.String,int,java.lang.String,android.app.Notification)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+kotlin.KotlinNothingValueException: KotlinNothingValueException()
+androidx.appcompat.resources.Compatibility$Api18Impl: void setAutoCancel(android.animation.ObjectAnimator,boolean)
+com.demajors.demajorsapp.base.BaseFragment: BaseFragment()
+carbon.widget.Divider: Divider(android.content.Context,android.util.AttributeSet)
+com.bumptech.glide.load.engine.DecodeJob$RunReason: com.bumptech.glide.load.engine.DecodeJob$RunReason valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api19Impl: boolean isAttachedToWindow(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleY(float)
+carbon.widget.SearchEditText: SearchEditText(android.content.Context,android.util.AttributeSet)
+android.support.v4.app.INotificationSideChannel$Stub$Proxy: void cancelAll(java.lang.String)
+com.google.android.material.appbar.HeaderScrollingViewBehavior: HeaderScrollingViewBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+com.google.android.material.floatingactionbutton.FloatingActionButton$BaseBehavior: FloatingActionButton$BaseBehavior(android.content.Context,android.util.AttributeSet)
+com.google.android.datatransport.cct.internal.QosTier: com.google.android.datatransport.cct.internal.QosTier valueOf(java.lang.String)
+androidx.core.app.AppOpsManagerCompat$Api29Impl: int checkOpNoThrow(android.app.AppOpsManager,java.lang.String,int,java.lang.String)
+androidx.core.view.ViewCompat$Api16Impl: void requestFitSystemWindows(android.view.View)
+androidx.core.widget.PopupWindowCompat$Api23Impl: int getWindowLayoutType(android.widget.PopupWindow)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy[] values()
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimation(android.view.View,java.lang.Runnable)
+androidx.appcompat.view.menu.ActionMenuItemView: ActionMenuItemView(android.content.Context,android.util.AttributeSet)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.reflect.Method preHandler()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillColor(int)
+androidx.core.content.ContextCompat$Api19Impl: java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String)
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken valueOf(java.lang.String)
+carbon.drawable.ButtonGravity: carbon.drawable.ButtonGravity[] values()
+androidx.core.view.ViewCompat$Api23Impl: int getScrollIndicators(android.view.View)
+androidx.core.os.OperationCanceledException: OperationCanceledException()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathEnd(float)
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: DynamiteModule$DynamiteLoaderClassLoader()
+com.google.android.material.datepicker.MaterialTextInputPicker: MaterialTextInputPicker()
+androidx.core.view.ViewCompat$Api21Impl: void stopNestedScroll(android.view.View)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+com.demajors.demajorsapp.feature.myartist.detail.nft.ListArtistNFTFragment: ListArtistNFTFragment()
+com.google.android.material.internal.CheckableImageButton: CheckableImageButton(android.content.Context,android.util.AttributeSet)
+androidx.core.content.ContextCompat$Api19Impl: java.io.File[] getObbDirs(android.content.Context)
+androidx.core.view.ViewCompat$Api30Impl: void setStateDescription(android.view.View,java.lang.CharSequence)
+carbon.widget.InputLayout$ActionButton: carbon.widget.InputLayout$ActionButton valueOf(java.lang.String)
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api17Impl: boolean isPaddingRelative(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+com.google.android.datatransport.cct.internal.QosTier: com.google.android.datatransport.cct.internal.QosTier[] values()
+androidx.core.content.ContextCompat$Api21Impl: android.graphics.drawable.Drawable getDrawable(android.content.Context,int)
+androidx.core.widget.PopupWindowCompat$Api23Impl: void setOverlapAnchor(android.widget.PopupWindow,boolean)
+carbon.widget.ProgressBar$Style: carbon.widget.ProgressBar$Style[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void initForTests(java.util.Map)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void clearMeasurementEnabled(long)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void onActivitySaveInstanceState(com.google.android.gms.dynamic.IObjectWrapper,com.google.android.gms.internal.measurement.zzcf,long)
+com.google.android.material.appbar.AppBarLayout$BaseBehavior: AppBarLayout$BaseBehavior(android.content.Context,android.util.AttributeSet)
+androidx.core.view.ViewCompat$Api19Impl: void setAccessibilityLiveRegion(android.view.View,int)
+carbon.drawable.ButtonGravity: carbon.drawable.ButtonGravity valueOf(java.lang.String)
+androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy: androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy[] values()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
+com.demajors.demajorsapp.feature.nft.list.ListNftFragment: ListNftFragment()
+androidx.core.view.ViewCompat$Api19Impl: int getAccessibilityLiveRegion(android.view.View)
+com.google.firebase.installations.FirebaseInstallationsRegistrar: java.util.List getComponents()
+com.demajors.demajorsapp.feature.song.DetailSongActivity: DetailSongActivity()
+io.reactivex.exceptions.MissingBackpressureException: MissingBackpressureException()
+androidx.core.view.ViewCompat$Api18Impl: boolean isInLayout(android.view.View)
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+carbon.widget.ProgressBar$Style: carbon.widget.ProgressBar$Style valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: java.lang.String getPathName()
+com.google.android.material.chip.Chip: Chip(android.content.Context,android.util.AttributeSet)
+com.caverock.androidsvg.SVG$Style$TextDecoration: com.caverock.androidsvg.SVG$Style$TextDecoration valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+com.google.firebase.installations.FirebaseInstallationsException$Status: com.google.firebase.installations.FirebaseInstallationsException$Status valueOf(java.lang.String)
+com.google.android.datatransport.cct.internal.ClientInfo$ClientType: com.google.android.datatransport.cct.internal.ClientInfo$ClientType valueOf(java.lang.String)
+com.google.firebase.installations.local.PersistedInstallation$RegistrationStatus: com.google.firebase.installations.local.PersistedInstallation$RegistrationStatus[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+androidx.core.view.ViewCompat$Api17Impl: void setLayoutDirection(android.view.View,int)
+com.google.android.material.transformation.ExpandableTransformationBehavior: ExpandableTransformationBehavior()
+com.caverock.androidsvg.SVG$Style$LineJoin: com.caverock.androidsvg.SVG$Style$LineJoin valueOf(java.lang.String)
+com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity: DetailRilisanActivity()
+com.google.gson.internal.Excluder: Excluder()
+androidx.lifecycle.ProcessLifecycleOwner$3: void onActivityPaused(android.app.Activity)
+dagger.android.DaggerFragment: DaggerFragment()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setRotation(float)
+com.google.android.gms.common.api.internal.LifecycleCallback: com.google.android.gms.common.api.internal.LifecycleFragment getChimeraLifecycleFragmentImpl(com.google.android.gms.common.api.internal.LifecycleActivity)
+com.caverock.androidsvg.SVG$Style$TextAnchor: com.caverock.androidsvg.SVG$Style$TextAnchor valueOf(java.lang.String)
+androidx.core.widget.EdgeEffectCompat$Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+com.demajors.demajorsapp.feature.home.HomeFragment: HomeFragment()
+com.caverock.androidsvg.SVG$Style$LineJoin: com.caverock.androidsvg.SVG$Style$LineJoin[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeWidth()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+com.google.android.material.textfield.TextInputLayout: TextInputLayout(android.content.Context,android.util.AttributeSet)
+com.google.firebase.crashlytics.internal.settings.SettingsCacheBehavior: com.google.firebase.crashlytics.internal.settings.SettingsCacheBehavior[] values()
+com.demajors.demajorsapp.feature.login.LoginActivity: LoginActivity()
+androidx.appcompat.widget.ActionBarContextView: ActionBarContextView(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity: DetailMerchandiseActivity()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType: androidx.constraintlayout.core.widgets.analyzer.WidgetRun$RunType[] values()
+com.google.gson.internal.bind.ObjectTypeAdapter$1: ObjectTypeAdapter$1()
+com.google.android.gms.measurement.AppMeasurementService: AppMeasurementService()
+com.google.android.material.datepicker.MaterialCalendar$CalendarSelector: com.google.android.material.datepicker.MaterialCalendar$CalendarSelector[] values()
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeAlpha(float)
+androidx.core.view.ViewCompat$Api16Impl: void setHasTransientState(android.view.View,boolean)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.core.view.ViewCompat$Api24Impl: boolean startDragAndDrop(android.view.View,android.content.ClipData,android.view.View$DragShadowBuilder,java.lang.Object,int)
+com.caverock.androidsvg.SVG$Style$LineCaps: com.caverock.androidsvg.SVG$Style$LineCaps[] values()
+kotlinx.coroutines.android.AndroidDispatcherFactory: int getLoadPriority()
+com.bumptech.glide.module.LibraryGlideModule: LibraryGlideModule()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+com.google.gson.internal.bind.SqlDateTypeAdapter$1: SqlDateTypeAdapter$1()
+okhttp3.internal.publicsuffix.PublicSuffixDatabase: PublicSuffixDatabase()
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+com.google.android.datatransport.Priority: com.google.android.datatransport.Priority valueOf(java.lang.String)
+com.google.android.gms.stats.GCoreWakefulBroadcastReceiver: GCoreWakefulBroadcastReceiver()
+androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour: androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour valueOf(java.lang.String)
+com.google.firebase.analytics.FirebaseAnalytics: com.google.firebase.analytics.FirebaseAnalytics getInstance(android.content.Context)
+com.google.firebase.analytics.FirebaseAnalytics: void setCurrentScreen(android.app.Activity,java.lang.String,java.lang.String)
+com.google.android.gms.internal.measurement.zzmr: com.google.android.gms.internal.measurement.zzmr[] values()
+com.demajors.demajorsapp.data.AppDatabase_Impl: AppDatabase_Impl()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleX(float)
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat computeSystemWindowInsets(android.view.View,androidx.core.view.WindowInsetsCompat,android.graphics.Rect)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+com.caverock.androidsvg.PreserveAspectRatio$Alignment: com.caverock.androidsvg.PreserveAspectRatio$Alignment valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api26Impl: boolean hasExplicitFocusable(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+androidx.recyclerview.widget.RecyclerView$LayoutManager: RecyclerView$LayoutManager()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setEventInterceptor(com.google.android.gms.internal.measurement.zzci)
+androidx.core.view.ViewCompat$Api16Impl: void setBackground(android.view.View,android.graphics.drawable.Drawable)
+androidx.core.view.ViewCompat$Api24Impl: void cancelDragAndDrop(android.view.View)
+dagger.android.DaggerActivity: DaggerActivity()
+com.bumptech.glide.load.DecodeFormat: com.bumptech.glide.load.DecodeFormat[] values()
+androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact: androidx.fragment.app.SpecialEffectsController$Operation$LifecycleImpact[] values()
+androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy: androidx.recyclerview.widget.RecyclerView$Adapter$StateRestorationPolicy valueOf(java.lang.String)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl23: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+com.demajors.demajorsapp.network.APIService: io.reactivex.Single refreshToken(java.lang.String,java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.appcompat.app.AlertController$RecycleListView: AlertController$RecycleListView(android.content.Context,android.util.AttributeSet)
+android.support.v4.app.INotificationSideChannel$Stub: android.support.v4.app.INotificationSideChannel getDefaultImpl()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.fragment.app.Fragment: Fragment()
+carbon.widget.DropDown$Style: carbon.widget.DropDown$Style valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: boolean startNestedScroll(android.view.View,int)
+com.bumptech.glide.load.DataSource: com.bumptech.glide.load.DataSource valueOf(java.lang.String)
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.appcompat.widget.ContentFrameLayout: ContentFrameLayout(android.content.Context,android.util.AttributeSet)
+android.support.v4.app.INotificationSideChannel$Default: android.os.IBinder asBinder()
+androidx.core.view.ViewCompat$Api26Impl: void setImportantForAutofill(android.view.View,int)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: void handleException(kotlin.coroutines.CoroutineContext,java.lang.Throwable)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathStart()
+com.caverock.androidsvg.SVG$GradientSpread: com.caverock.androidsvg.SVG$GradientSpread valueOf(java.lang.String)
+carbon.widget.DropDown$Mode: carbon.widget.DropDown$Mode[] values()
+com.google.android.material.behavior.SwipeDismissBehavior: SwipeDismissBehavior()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior: ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior()
+androidx.appcompat.view.menu.ListMenuItemView: ListMenuItemView(android.content.Context,android.util.AttributeSet)
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api21Impl: void setTransitionName(android.view.View,java.lang.String)
+androidx.core.view.ViewCompat$Api31Impl: void setOnReceiveContentListener(android.view.View,java.lang.String[],androidx.core.view.OnReceiveContentListener)
+com.google.android.material.behavior.HideBottomViewOnScrollBehavior: HideBottomViewOnScrollBehavior()
+androidx.appcompat.widget.ViewStubCompat: ViewStubCompat(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+okhttp3.Protocol: okhttp3.Protocol valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintList(android.view.View,android.content.res.ColorStateList)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl29: boolean isHorizontallyScrollable(android.widget.TextView)
+androidx.appcompat.widget.SearchView: SearchView(android.content.Context)
+com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar: AnalyticsConnectorRegistrar()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateX(float)
+com.google.android.gms.measurement.AppMeasurement: java.lang.String getGmpAppId()
+androidx.core.view.ViewCompat$Api19Impl: void setContentChangeTypes(android.view.accessibility.AccessibilityEvent,int)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+dagger.android.DaggerService: DaggerService()
+com.demajors.demajorsapp.feature.myartist.MyArtistFragment: MyArtistFragment()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState: int getChangingConfigurations()
+androidx.core.view.ViewCompat$Api21Impl: float getElevation(android.view.View)
+com.google.firebase.components.ComponentDiscoveryService: ComponentDiscoveryService()
+com.bumptech.glide.load.EncodeStrategy: com.bumptech.glide.load.EncodeStrategy valueOf(java.lang.String)
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+com.google.android.datatransport.runtime.backends.BackendResponse$Status: com.google.android.datatransport.runtime.backends.BackendResponse$Status valueOf(java.lang.String)
+com.caverock.androidsvg.SVG$Style$FillRule: com.caverock.androidsvg.SVG$Style$FillRule[] values()
+com.google.android.material.button.MaterialButtonToggleGroup: MaterialButtonToggleGroup(android.content.Context,android.util.AttributeSet)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getStrokeColor()
+androidx.appcompat.widget.AppCompatButton: AppCompatButton(android.content.Context,android.util.AttributeSet)
+androidx.appcompat.widget.AppCompatTextViewAutoSizeHelper$Impl: void computeAndSetTextDirection(android.text.StaticLayout$Builder,android.widget.TextView)
+kotlin.coroutines.AbstractCoroutineContextElement: kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.CoroutineContext)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableDelegateState: int getChangingConfigurations()
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken[] values()
+androidx.core.view.ViewCompat$Api21Impl: void setZ(android.view.View,float)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: EmptyActivityLifecycleCallbacks()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleX()
+com.google.android.material.timepicker.RadialViewGroup: RadialViewGroup(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+carbon.widget.FrameLayout: FrameLayout(android.content.Context,android.util.AttributeSet)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+com.google.android.gms.measurement.AppMeasurement: void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
+androidx.recyclerview.widget.RecyclerView: RecyclerView(android.content.Context,android.util.AttributeSet)
+androidx.room.RoomDatabase: RoomDatabase()
+com.google.android.material.textview.MaterialTextView: MaterialTextView(android.content.Context,android.util.AttributeSet)
+com.caverock.androidsvg.CSSParser$MediaType: com.caverock.androidsvg.CSSParser$MediaType[] values()
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void getConditionalUserProperties(java.lang.String,java.lang.String,com.google.android.gms.internal.measurement.zzcf)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+com.demajors.demajorsapp.network.APIService: io.reactivex.Single logout(java.lang.String,java.lang.String)
+com.google.android.gms.measurement.internal.AppMeasurementDynamiteService: void setUserId(java.lang.String,long)

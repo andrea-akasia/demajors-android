@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "289754584186",
+    "project_id": "nft-demajors",
+    "storage_bucket": "nft-demajors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289754584186:android:705f49ba4d804a3cc117c3",
+        "android_client_info": {
+          "package_name": "com.demajors.demajorsapp.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289754584186-i6c7jiou4toasal844ikh5uv9n7t2229.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demajors.demajorsapp.dev",
+            "certificate_hash": "50eb69fd6f2f44587be10fa7167124384884a929"
+          }
+        },
+        {
+          "client_id": "289754584186-m566q7lot9jvtu40s3r1cufq1t2ije1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQGQ0cwO72Ce9DOkNXYl07t0cpyZDCLjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289754584186-m566q7lot9jvtu40s3r1cufq1t2ije1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
