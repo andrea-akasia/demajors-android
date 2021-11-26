@@ -84,7 +84,7 @@
                         android:layout_height="@dimen/_40sdp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/sample_profile_picture" />
+                        tools:srcCompat="@drawable/sample_profile_picture" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -101,7 +101,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/roboto_700"
                             android:gravity="center_vertical"
-                            android:text="Kadek Adi Andrea"
+                            tools:text="Kadek Adi Andrea"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp" />
 

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
+import com.demajors.demajorsapp.model.api.auth.DataUser
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -13,6 +14,37 @@ class ProfileViewModel
 
     internal var warningMessage = MutableLiveData<String>()
     internal var onLogoutSuccess = MutableLiveData<Boolean>()
+    internal var onUserInfoLoaded = MutableLiveData<DataUser>()
+
+    fun getUsername() = dataManager.getUsername()
+
+    fun loadUserInfo() {
+        dataManager.getUserInfo()
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                onUserInfoLoaded.postValue(response.data?.dataUser!!)
+                            } else {
+                                Timber.w(Throwable("getUserInfo gagal: ${response.errMessage}"))
+                                warningMessage.postValue("Load User Info gagal: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        warningMessage.postValue("Server Error $code")
+                        Timber.w(Throwable("Server Error $code"))
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
 
     fun logout() {
         dataManager.logout()

@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
+import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentProfileBinding
 import com.demajors.demajorsapp.feature.login.LoginActivity
+import com.demajors.demajorsapp.util.GlideApp
 
 class ProfileFragment : BaseFragment<ProfileViewModel>() {
     override val viewModelClass: Class<ProfileViewModel> = ProfileViewModel::class.java
@@ -29,8 +31,25 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
         _binding = null
     }
 
+    override fun onResume() {
+        super.onResume()
+        viewModel.loadUserInfo()
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel.onUserInfoLoaded.observe(
+            viewLifecycleOwner,
+            {
+                GlideApp.with(this)
+                    .load(it.photo)
+                    .placeholder(R.drawable.user_photo_placeholder)
+                    .into(_binding?.imgUser!!)
+
+                _binding?.valueUserName?.text = it.username
+            }
+        )
 
         viewModel.onLogoutSuccess.observe(
             viewLifecycleOwner,
@@ -45,6 +64,8 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
         )
 
         _binding?.let { ui ->
+            ui.valueUserName.text = viewModel.getUsername()
+
             ui.actionLogout.setOnClickListener {
                 openLogoutConfirmation()
             }

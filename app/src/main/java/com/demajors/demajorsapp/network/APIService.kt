@@ -4,6 +4,7 @@ import com.demajors.demajorsapp.model.api.BaseAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
+import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import io.reactivex.Single
@@ -17,6 +18,11 @@ import retrofit2.http.Url
 import retrofit2.http.Header
 
 interface APIService {
+
+    @GET("v1/user/info")
+    fun getUserInfo(
+        @Header("Authorization") token: String
+    ): Single<Response<UserInfoAPIResponse>>
 
     @POST
     fun logout(

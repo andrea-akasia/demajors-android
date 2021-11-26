@@ -16,11 +16,15 @@ import com.demajors.demajorsapp.model.api.BaseAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
+import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import com.demajors.demajorsapp.util.Const.Companion.KEY_EMAIL
 import com.demajors.demajorsapp.util.Const.Companion.KEY_IS_LOGGED_IN
+import com.demajors.demajorsapp.util.Const.Companion.KEY_NAME
+import com.demajors.demajorsapp.util.Const.Companion.KEY_PHONE
 import com.demajors.demajorsapp.util.Const.Companion.KEY_TOKEN
 import com.demajors.demajorsapp.util.Const.Companion.KEY_TOKEN_REFRESH
+import com.demajors.demajorsapp.util.Const.Companion.KEY_USERNAME
 
 @Singleton
 class DataManager
@@ -45,6 +49,15 @@ class DataManager
     /* -------------------------------------- Preferences --------------------------------------- */
 
     fun getEmail(): String = prefs.getString(KEY_EMAIL, "")!!
+    fun getName(): String = prefs.getString(KEY_NAME, "")!!
+    fun getUsername(): String = prefs.getString(KEY_USERNAME, "")!!
+    fun getPhone(): String = prefs.getString(KEY_PHONE, "")!!
+
+    fun saveUserInfo(name: String, username: String, phone: String) {
+        prefs.putString(KEY_NAME, name)
+        prefs.putString(KEY_USERNAME, username)
+        prefs.putString(KEY_PHONE, phone)
+    }
 
     fun saveLoginCredentials(email: String, token: String, tokenRefresh: String) {
         prefs.putString(KEY_EMAIL, email)
@@ -68,6 +81,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+
+    fun getUserInfo(): Single<Response<UserInfoAPIResponse>> {
+        return api.getUserInfo(getAuthorizationHeader())
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
 
     fun logout(): Single<Response<BaseAPIResponse>> {
         return api.logout(BuildConfig.AUTH_URL + "v1/token/revoke", getRefreshAuthorizationHeader())
