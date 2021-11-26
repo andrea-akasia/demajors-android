@@ -1,5 +1,6 @@
 package com.demajors.demajorsapp.di.modules
 
+import com.demajors.demajorsapp.feature.cart.CartFragment
 import com.demajors.demajorsapp.feature.detailpokemon.basestat.BaseStatFragment
 import com.demajors.demajorsapp.feature.detailpokemon.moves.MovesFragment
 import dagger.Module
@@ -14,6 +15,10 @@ import com.demajors.demajorsapp.feature.profile.ProfileFragment
 
 @Module
 abstract class FragmentBuildersModule {
+
+    @ContributesAndroidInjector
+    abstract fun contributeCartFragment(): CartFragment
+
     @ContributesAndroidInjector
     abstract fun contributeListNftFragment(): ListNftFragment
 
