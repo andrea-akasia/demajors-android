@@ -1,5 +1,6 @@
 package com.demajors.demajorsapp.di.modules
 
+import com.demajors.demajorsapp.feature.animation.AnimationActivity
 import com.demajors.demajorsapp.feature.listpokemon.ListPokemonActivity
 import com.demajors.demajorsapp.feature.detailpokemon.DetailPokemonActivity
 import dagger.Module
@@ -14,6 +15,9 @@ import com.demajors.demajorsapp.feature.song.DetailSongActivity
 
 @Module
 abstract class BuildersModule {
+
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindAnimationActivity(): AnimationActivity
 
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindDetailRilisanActivity(): DetailRilisanActivity

@@ -1,5 +1,6 @@
 package com.demajors.demajorsapp.feature.nft.detail
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Toast
@@ -8,6 +9,7 @@ import com.demajors.demajorsapp.BuildConfig
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityDetailNftBinding
+import com.demajors.demajorsapp.feature.animation.AnimationActivity
 import com.demajors.demajorsapp.util.getCurrentTimeISO
 import com.google.gson.Gson
 import com.midtrans.sdk.corekit.callback.TransactionFinishedCallback
@@ -41,7 +43,9 @@ class DetailNFTActivity : BaseActivity<DetailNFTViewModel>(), TransactionFinishe
         binding.actionBack.setOnClickListener { onBackPressed() }
 
         binding.btnBuy.setOnClickListener {
-            pay()
+            startActivity(
+                Intent(this, AnimationActivity::class.java)
+            )
         }
 
         initMidtrans()

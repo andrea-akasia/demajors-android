@@ -8,6 +8,7 @@ import dagger.multibindings.IntoMap
 import dagger.Binds
 import com.demajors.demajorsapp.base.AppViewModelFactory
 import androidx.lifecycle.ViewModelProvider
+import com.demajors.demajorsapp.feature.animation.AnimationViewModel
 import com.demajors.demajorsapp.feature.cart.CartViewModel
 import com.demajors.demajorsapp.feature.detailpokemon.DetailPokemonViewModel
 import com.demajors.demajorsapp.feature.detailpokemon.basestat.BaseStatViewModel
@@ -26,6 +27,11 @@ import com.demajors.demajorsapp.feature.song.SongViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(AnimationViewModel::class)
+    abstract fun bindAnimationViewModel(animationViewModel: AnimationViewModel): ViewModel
 
     @Binds
     @IntoMap

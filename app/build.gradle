@@ -12,8 +12,8 @@ android {
         applicationId "com.demajors.demajorsapp"
         minSdkVersion 23
         targetSdkVersion 31
-        versionCode 4
-        versionName "0.0.4"
+        versionCode 5
+        versionName "0.0.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions {
@@ -187,4 +187,6 @@ dependencies {
         exclude group: "com.google.android.gms", module: "play-services-base"
     }
     prodImplementation 'com.midtrans:uikit:1.30.0'
+
+    implementation 'com.airbnb.android:lottie:4.2.2'
 }
