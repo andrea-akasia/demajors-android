@@ -41,6 +41,7 @@
         <activity android:name=".feature.merchandise.DetailMerchandiseActivity" />
         <activity android:name=".feature.rilisan.DetailRilisanActivity" />
         <activity android:name=".feature.animation.AnimationActivity" />
+        <activity android:name=".feature.profile.mynft.MyNftActivity" />
     </application>
 
 </manifest>

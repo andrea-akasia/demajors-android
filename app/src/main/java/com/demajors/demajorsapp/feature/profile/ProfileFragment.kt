@@ -10,6 +10,7 @@ import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentProfileBinding
 import com.demajors.demajorsapp.feature.login.LoginActivity
+import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.util.GlideApp
 
 class ProfileFragment : BaseFragment<ProfileViewModel>() {
@@ -68,6 +69,12 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
 
             ui.actionLogout.setOnClickListener {
                 openLogoutConfirmation()
+            }
+
+            ui.actionMyNft.setOnClickListener {
+                startActivity(
+                    Intent(requireContext(), MyNftActivity::class.java)
+                )
             }
         }
     }

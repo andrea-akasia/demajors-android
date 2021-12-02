@@ -22,11 +22,17 @@ import com.demajors.demajorsapp.feature.myartist.detail.ArtistViewModel
 import com.demajors.demajorsapp.feature.nft.detail.DetailNFTViewModel
 import com.demajors.demajorsapp.feature.nft.list.ListNFTViewModel
 import com.demajors.demajorsapp.feature.profile.ProfileViewModel
+import com.demajors.demajorsapp.feature.profile.mynft.MyNFTViewModel
 import com.demajors.demajorsapp.feature.rilisan.RilisanViewModel
 import com.demajors.demajorsapp.feature.song.SongViewModel
 
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MyNFTViewModel::class)
+    abstract fun bindMyNFTViewModel(myNFTViewModel: MyNFTViewModel): ViewModel
 
     @Binds
     @IntoMap
