@@ -34,6 +34,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_artist_detail.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_cart.xml" value="0.27717391304347827" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_merchandise.xml" value="0.33" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_mynft_unopened.xml" value="0.30344202898550726" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_pokemon.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_rilisan.xml" value="0.31476449275362317" />
@@ -49,6 +50,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_moves.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_my_artist.xml" value="0.25" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_nft.xml" value="0.30344202898550726" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_opened_mynft.xml" value="0.28072916666666664" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_unopened_mynft.xml" value="0.28072916666666664" />
@@ -61,6 +63,8 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_cart.xml" value="0.18645833333333334" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_cart_merchandise.xml" value="0.2" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_latest_release.xml" value="0.75" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_mynft_unopened_premium.xml" value="0.30344202898550726" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_mynft_unopened_regular.xml" value="0.30344202898550726" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_nft_premium.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_nft_reguler.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_now_playing.xml" value="0.23143115942028986" />

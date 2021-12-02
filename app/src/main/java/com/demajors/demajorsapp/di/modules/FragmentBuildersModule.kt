@@ -13,7 +13,7 @@ import com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragm
 import com.demajors.demajorsapp.feature.nft.list.ListNftFragment
 import com.demajors.demajorsapp.feature.profile.ProfileFragment
 import com.demajors.demajorsapp.feature.profile.mynft.OpenedMyNFTFragment
-import com.demajors.demajorsapp.feature.profile.mynft.UnopenedMyNFTFragment
+import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTFragment
 
 @Module
 abstract class FragmentBuildersModule {
