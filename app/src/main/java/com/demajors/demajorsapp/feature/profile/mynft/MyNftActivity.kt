@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityMyNftBinding
+import com.demajors.demajorsapp.feature.profile.mynft.opened.OpenedMyNFTFragment
 import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.android.AndroidInjector

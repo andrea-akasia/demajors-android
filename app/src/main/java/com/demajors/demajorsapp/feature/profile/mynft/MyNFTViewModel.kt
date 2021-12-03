@@ -23,4 +23,12 @@ class MyNFTViewModel
         result.add(NFTItem(type = "REGULAR"))
         return result
     }
+
+    fun getDummyOpened(): MutableList<NFTItem> {
+        val result = mutableListOf<NFTItem>()
+        result.add(NFTItem(type = "PREMIUM"))
+        result.add(NFTItem(type = "REGULAR"))
+        result.add(NFTItem(type = "REGULAR"))
+        return result
+    }
 }

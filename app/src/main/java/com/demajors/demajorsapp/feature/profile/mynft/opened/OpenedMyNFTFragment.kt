@@ -1,12 +1,14 @@
-package com.demajors.demajorsapp.feature.profile.mynft
+package com.demajors.demajorsapp.feature.profile.mynft.opened
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentOpenedMynftBinding
+import com.demajors.demajorsapp.feature.profile.mynft.MyNFTViewModel
 
 class OpenedMyNFTFragment : BaseFragment<MyNFTViewModel>() {
     override val viewModelClass: Class<MyNFTViewModel> = MyNFTViewModel::class.java
@@ -40,8 +42,8 @@ class OpenedMyNFTFragment : BaseFragment<MyNFTViewModel>() {
         super.onViewCreated(view, savedInstanceState)
 
         _binding?.let { ui ->
-//            ui.rv.layoutManager = GridLayoutManager(activity, 2)
-//            ui.rv.adapter = ArtistReleaseAdapter(viewModel.getDummyArtistReleases())
+            ui.rv.layoutManager = LinearLayoutManager(activity)
+            ui.rv.adapter = OpenedMyNFTAdapter(viewModel.getDummyOpened())
         }
     }
 }

@@ -12,7 +12,7 @@ import com.demajors.demajorsapp.feature.myartist.detail.nft.ListArtistNFTFragmen
 import com.demajors.demajorsapp.feature.myartist.detail.rilisan.ListRilisanFragment
 import com.demajors.demajorsapp.feature.nft.list.ListNftFragment
 import com.demajors.demajorsapp.feature.profile.ProfileFragment
-import com.demajors.demajorsapp.feature.profile.mynft.OpenedMyNFTFragment
+import com.demajors.demajorsapp.feature.profile.mynft.opened.OpenedMyNFTFragment
 import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTFragment
 
 @Module
