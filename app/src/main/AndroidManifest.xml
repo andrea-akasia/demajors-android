@@ -44,6 +44,7 @@
         <activity android:name=".feature.profile.mynft.MyNftActivity" />
         <activity android:name=".feature.profile.mynft.unopened.UnopenedMyNFTDetailActivity" />
         <activity android:name=".feature.signup.SignUpActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".feature.signup.VerifyEmailActivity" />
     </application>
 
 </manifest>

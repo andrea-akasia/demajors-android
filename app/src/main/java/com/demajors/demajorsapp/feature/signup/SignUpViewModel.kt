@@ -19,6 +19,39 @@ class SignUpViewModel
     internal var onVerifySuccess = MutableLiveData<Boolean>()
     internal var isLoading = MutableLiveData<Boolean>()
 
+    private fun loadUserInfo() {
+        dataManager.getUserInfo()
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                dataManager.saveUserInfo(
+                                    response.data?.dataUser?.name!!,
+                                    response.data.dataUser.username!!,
+                                    response.data.dataUser.noTelp!!
+                                )
+                                onVerifySuccess.postValue(true)
+                            } else {
+                                Timber.w(Throwable("getUserInfo gagal: ${response.errMessage}"))
+                                warningMessage.postValue("Load User Info gagal: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        warningMessage.postValue("Server Error $code")
+                        Timber.w(Throwable("Server Error $code"))
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
+
     fun verify(email: String, pass: String, otp: String) {
         dataManager.verifyEmail(VerifyEmailBody(otp, email, pass))
             .doOnSubscribe(this::addDisposable)
@@ -32,7 +65,7 @@ class SignUpViewModel
                                     token = response.data?.token!!,
                                     tokenRefresh = response.data.tokenRefresh!!
                                 )
-                                onVerifySuccess.postValue(true)
+                                loadUserInfo()
                             } else {
                                 warningMessage.postValue(response.errMessage)
                             }
@@ -84,8 +117,10 @@ class SignUpViewModel
                                 warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
                             }
                         } else {
-                            warningMessage.postValue("Server Error $code")
-                            Timber.w(Throwable("Server Error $code"))
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
                         }
                     }
                 },

@@ -1,5 +1,6 @@
 package com.demajors.demajorsapp.feature.signup
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -24,6 +25,13 @@ class SignUpActivity : BaseActivity<SignUpViewModel>() {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
+        viewModel.warningMessage.observe(
+            this,
+            {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            }
+        )
+
         viewModel.isLoading.observe(
             this,
             {
@@ -40,6 +48,14 @@ class SignUpActivity : BaseActivity<SignUpViewModel>() {
         viewModel.onSignUpSuccess.observe(
             this,
             {
+                startActivity(
+                    Intent(
+                        this@SignUpActivity,
+                        VerifyEmailActivity::class.java
+                    )
+                        .putExtra(VerifyEmailActivity.KEY_EMAIL, binding.valueEmail.text.toString())
+                        .putExtra(VerifyEmailActivity.KEY_PASS, binding.valuePassword.text.toString())
+                )
             }
         )
 
@@ -80,13 +96,6 @@ class SignUpActivity : BaseActivity<SignUpViewModel>() {
                 "$"
         )
 
-        return passwordREGEX.matcher(password.toString()).matches()
-
-        /*password?.let {
-            val passwordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\\\S+\$).{4,}\$"
-            val passwordMatcher = Regex(passwordPattern)
-
-            return passwordMatcher.find(password) != null
-        } ?: return false*/
+        return passwordREGEX.matcher(password).matches()
     }
 }

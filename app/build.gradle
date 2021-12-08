@@ -189,4 +189,5 @@ dependencies {
     prodImplementation 'com.midtrans:uikit:1.30.0'
 
     implementation 'com.airbnb.android:lottie:4.2.2'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
 }

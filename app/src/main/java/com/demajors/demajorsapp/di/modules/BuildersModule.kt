@@ -14,10 +14,14 @@ import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTDetailActivity
 import com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
 import com.demajors.demajorsapp.feature.signup.SignUpActivity
+import com.demajors.demajorsapp.feature.signup.VerifyEmailActivity
 import com.demajors.demajorsapp.feature.song.DetailSongActivity
 
 @Module
 abstract class BuildersModule {
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindVerifyEmailActivity(): VerifyEmailActivity
+
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindSignUpActivity(): SignUpActivity
 
