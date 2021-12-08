@@ -18,6 +18,9 @@ import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
 import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
+import com.demajors.demajorsapp.model.api.signup.SignUpBody
+import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
+import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
 import com.demajors.demajorsapp.util.Const.Companion.KEY_EMAIL
 import com.demajors.demajorsapp.util.Const.Companion.KEY_IS_LOGGED_IN
 import com.demajors.demajorsapp.util.Const.Companion.KEY_NAME
@@ -81,6 +84,17 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun verifyEmail(body: VerifyEmailBody): Single<Response<VerifyEmailAPIResponse>> {
+        return api.verifyEmail(BuildConfig.AUTH_URL + "v1/user/email/verif", body)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
+    fun signUp(body: SignUpBody): Single<Response<BaseAPIResponse>> {
+        return api.signUp(body)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
 
     fun getUserInfo(): Single<Response<UserInfoAPIResponse>> {
         return api.getUserInfo(getAuthorizationHeader())

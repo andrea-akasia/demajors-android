@@ -10,6 +10,7 @@ import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityLoginBinding
 import com.demajors.demajorsapp.feature.main.MainActivity
+import com.demajors.demajorsapp.feature.signup.SignUpActivity
 
 class LoginActivity : BaseActivity<LoginViewModel>() {
 
@@ -56,6 +57,12 @@ class LoginActivity : BaseActivity<LoginViewModel>() {
                 this.finish()
             }
         )
+
+        binding.actionRegister.setOnClickListener {
+            startActivity(
+                Intent(this, SignUpActivity::class.java)
+            )
+        }
 
         binding.btnLogin.setOnClickListener {
             if (binding.valueEmail.text.toString().isNotEmpty() &&

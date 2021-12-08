@@ -7,6 +7,9 @@ import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
 import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
+import com.demajors.demajorsapp.model.api.signup.SignUpBody
+import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
+import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.POST
@@ -18,6 +21,16 @@ import retrofit2.http.Url
 import retrofit2.http.Header
 
 interface APIService {
+    @POST
+    fun verifyEmail(
+        @Url authURL: String,
+        @Body body: VerifyEmailBody
+    ): Single<Response<VerifyEmailAPIResponse>>
+
+    @POST("v1/user/signup")
+    fun signUp(
+        @Body body: SignUpBody
+    ): Single<Response<BaseAPIResponse>>
 
     @GET("v1/user/info")
     fun getUserInfo(
