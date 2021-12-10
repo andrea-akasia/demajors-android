@@ -48,7 +48,7 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
                     .placeholder(R.drawable.user_photo_placeholder)
                     .into(_binding?.imgUser!!)
 
-                _binding?.valueUserName?.text = it.username
+                _binding?.valueUserName?.text = it.email
             }
         )
 

@@ -53,10 +53,12 @@ class SignUpViewModel
     }
 
     fun verify(email: String, pass: String, otp: String) {
+        isLoading.postValue(true)
         dataManager.verifyEmail(VerifyEmailBody(otp, email, pass))
             .doOnSubscribe(this::addDisposable)
             .subscribe(
                 { res ->
+                    isLoading.postValue(false)
                     if (res.isSuccessful) {
                         res.body()?.let { response ->
                             if (response.isSucceed) {
@@ -86,6 +88,7 @@ class SignUpViewModel
                     }
                 },
                 { err ->
+                    isLoading.postValue(false)
                     Timber.e(err)
                     warningMessage.postValue(err.message)
                 }

@@ -3,6 +3,7 @@ package com.demajors.demajorsapp.feature.signup
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -35,6 +36,17 @@ class VerifyEmailActivity : BaseActivity<SignUpViewModel>() {
             this,
             {
                 Toast.makeText(this, it, Toast.LENGTH_LONG).show()
+            }
+        )
+
+        viewModel.isLoading.observe(
+            this,
+            {
+                if (it) {
+                    binding.viewLoading.visibility = View.VISIBLE
+                } else {
+                    binding.viewLoading.visibility = View.GONE
+                }
             }
         )
 
