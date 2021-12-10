@@ -53,6 +53,7 @@ class SignUpActivity : BaseActivity<SignUpViewModel>() {
                         this@SignUpActivity,
                         VerifyEmailActivity::class.java
                     )
+                        .putExtra(VerifyEmailActivity.KEY_ACTION, "REGISTER")
                         .putExtra(VerifyEmailActivity.KEY_EMAIL, binding.valueEmail.text.toString())
                         .putExtra(VerifyEmailActivity.KEY_PASS, binding.valuePassword.text.toString())
                 )

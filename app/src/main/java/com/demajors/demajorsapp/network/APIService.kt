@@ -50,6 +50,17 @@ interface APIService {
     ): Single<Response<RefreshTokenAPIResponse>>
 
     @POST
+    fun verifyOTPLogin(
+        @Url authURL: String,
+        @Body body: VerifyEmailBody
+    ): Single<Response<LoginAPIResponse>>
+
+    @POST("v1/user/login/otp/email")
+    fun loginEmailWithOTP(
+        @Body body: LoginBody,
+    ): Single<Response<BaseAPIResponse>>
+
+    @POST
     fun loginEmail(
         @Url authURL: String,
         @Body body: LoginBody,

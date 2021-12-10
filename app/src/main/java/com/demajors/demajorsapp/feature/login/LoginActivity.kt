@@ -9,8 +9,8 @@ import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityLoginBinding
-import com.demajors.demajorsapp.feature.main.MainActivity
 import com.demajors.demajorsapp.feature.signup.SignUpActivity
+import com.demajors.demajorsapp.feature.signup.VerifyEmailActivity
 
 class LoginActivity : BaseActivity<LoginViewModel>() {
 
@@ -46,15 +46,18 @@ class LoginActivity : BaseActivity<LoginViewModel>() {
             }
         )
 
-        viewModel.isLoginSuccess.observe(
+        viewModel.isReqOTPSuccess.observe(
             this,
             {
                 startActivity(
-                    Intent(this@LoginActivity, MainActivity::class.java)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    Intent(this@LoginActivity, VerifyEmailActivity::class.java)
+                        .putExtra(VerifyEmailActivity.KEY_ACTION, "LOGIN")
+                        .putExtra(VerifyEmailActivity.KEY_EMAIL, binding.valueEmail.text.toString())
+                        .putExtra(VerifyEmailActivity.KEY_PASS, binding.valuePassword.text.toString())
+//                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+//                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 )
-                this.finish()
+                // this.finish()
             }
         )
 

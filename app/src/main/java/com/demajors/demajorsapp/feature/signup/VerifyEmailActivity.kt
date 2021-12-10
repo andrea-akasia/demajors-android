@@ -20,6 +20,7 @@ class VerifyEmailActivity : BaseActivity<SignUpViewModel>() {
     companion object {
         const val KEY_EMAIL = "EMAIL"
         const val KEY_PASS = "PASS"
+        const val KEY_ACTION = "ACTION"
     }
 
     @SuppressLint("SetTextI18n")
@@ -65,18 +66,33 @@ class VerifyEmailActivity : BaseActivity<SignUpViewModel>() {
         binding.label.text = "Mohon masukan 6 digit kode verifikasi dikirim ke\n${intent.getStringExtra(KEY_EMAIL)}"
 
         binding.viewOtp.setOtpCompletionListener {
-            viewModel.verify(
-                email = intent.getStringExtra(KEY_EMAIL)!!,
-                pass = intent.getStringExtra(KEY_PASS)!!,
-                otp = it
-            )
+            if (intent.getStringExtra(KEY_ACTION) == "LOGIN") {
+                viewModel.verifyLogin(
+                    email = intent.getStringExtra(KEY_EMAIL)!!,
+                    pass = intent.getStringExtra(KEY_PASS)!!,
+                    otp = it
+                )
+            } else {
+                viewModel.verify(
+                    email = intent.getStringExtra(KEY_EMAIL)!!,
+                    pass = intent.getStringExtra(KEY_PASS)!!,
+                    otp = it
+                )
+            }
         }
 
         binding.actionResend.setOnClickListener {
-            viewModel.signup(
-                email = intent.getStringExtra(KEY_EMAIL)!!,
-                pass = intent.getStringExtra(KEY_PASS)!!
-            )
+            if (intent.getStringExtra(KEY_ACTION) == "LOGIN") {
+                viewModel.loginEmail(
+                    email = intent.getStringExtra(KEY_EMAIL)!!,
+                    pass = intent.getStringExtra(KEY_PASS)!!
+                )
+            } else {
+                viewModel.signup(
+                    email = intent.getStringExtra(KEY_EMAIL)!!,
+                    pass = intent.getStringExtra(KEY_PASS)!!
+                )
+            }
         }
     }
 }

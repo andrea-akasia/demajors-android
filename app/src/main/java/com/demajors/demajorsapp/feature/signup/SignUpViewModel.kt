@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
+import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
 import com.demajors.demajorsapp.util.generateResponseApiFromErrorBody
@@ -85,6 +86,80 @@ class SignUpViewModel
                             warningMessage.postValue("Server Error $code")
                             Timber.w(Throwable("Server Error $code"))
                         }
+                    }
+                },
+                { err ->
+                    isLoading.postValue(false)
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
+
+    fun verifyLogin(email: String, pass: String, otp: String) {
+        isLoading.postValue(true)
+        dataManager.verifyOTPLogin(VerifyEmailBody(otp, email, pass))
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    isLoading.postValue(false)
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                dataManager.saveLoginCredentials(
+                                    email = email,
+                                    token = response.data?.token!!,
+                                    tokenRefresh = response.data.tokenRefresh!!
+                                )
+                                loadUserInfo()
+                            } else {
+                                warningMessage.postValue(response.errMessage)
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        if (code == 401) {
+                            dataManager.clearPrefs()
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
+                        } else {
+                            warningMessage.postValue("Server Error $code")
+                            Timber.w(Throwable("Server Error $code"))
+                        }
+                    }
+                },
+                { err ->
+                    isLoading.postValue(false)
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
+
+    fun loginEmail(email: String, pass: String) {
+        isLoading.postValue(true)
+        dataManager.loginEmailWithOTP(LoginBody(email, pass))
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    isLoading.postValue(false)
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                // success resend otp for login
+                            } else {
+                                Timber.w(Throwable("gagal: ${response.errMessage}"))
+                                warningMessage.postValue("gagal: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        warningMessage.postValue("Server Error $code")
+                        Timber.w(Throwable("Server Error $code"))
                     }
                 },
                 { err ->

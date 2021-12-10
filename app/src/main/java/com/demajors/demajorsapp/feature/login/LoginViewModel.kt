@@ -14,7 +14,7 @@ class LoginViewModel
 
     internal var warningMessage = MutableLiveData<String>()
     internal var isLoading = MutableLiveData<Boolean>()
-    internal var isLoginSuccess = MutableLiveData<Boolean>()
+    internal var isReqOTPSuccess = MutableLiveData<Boolean>()
 
     private fun loadUserInfo() {
         dataManager.getUserInfo()
@@ -29,7 +29,7 @@ class LoginViewModel
                                     response.data.dataUser.username!!,
                                     response.data.dataUser.noTelp!!
                                 )
-                                isLoginSuccess.postValue(true)
+                                isReqOTPSuccess.postValue(true)
                             } else {
                                 Timber.w(Throwable("getUserInfo gagal: ${response.errMessage}"))
                                 warningMessage.postValue("Load User Info gagal: ${response.errMessage}")
@@ -51,7 +51,7 @@ class LoginViewModel
 
     fun loginEmail(email: String, password: String) {
         isLoading.postValue(true)
-        dataManager.loginEmail(LoginBody(email, password))
+        dataManager.loginEmailWithOTP(LoginBody(email, password))
             .doOnSubscribe(this::addDisposable)
             .subscribe(
                 { res ->
@@ -59,12 +59,13 @@ class LoginViewModel
                     if (res.isSuccessful) {
                         res.body()?.let { response ->
                             if (response.isSucceed) {
-                                dataManager.saveLoginCredentials(
-                                    email,
-                                    response.data?.token!!,
-                                    response.data.tokenRefresh!!
-                                )
-                                loadUserInfo()
+                                isReqOTPSuccess.postValue(true)
+//                                dataManager.saveLoginCredentials(
+//                                    email,
+//                                    response.data?.token!!,
+//                                    response.data.tokenRefresh!!
+//                                )
+                                // loadUserInfo()
                             } else {
                                 Timber.w(Throwable("Login gagal: ${response.errMessage}"))
                                 warningMessage.postValue("Login gagal: ${response.errMessage}")

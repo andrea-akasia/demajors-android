@@ -84,6 +84,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun verifyOTPLogin(body: VerifyEmailBody): Single<Response<LoginAPIResponse>> {
+        return api.verifyOTPLogin(BuildConfig.AUTH_URL + "v1/user/email/login", body)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
     fun verifyEmail(body: VerifyEmailBody): Single<Response<VerifyEmailAPIResponse>> {
         return api.verifyEmail(BuildConfig.AUTH_URL + "v1/user/email/verif", body)
             .subscribeOn(Schedulers.io())
@@ -110,6 +116,12 @@ class DataManager
 
     fun refreshToken(): Single<Response<RefreshTokenAPIResponse>> {
         return api.refreshToken(BuildConfig.AUTH_URL + "v1/token/refresh", getRefreshAuthorizationHeader())
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
+    fun loginEmailWithOTP(body: LoginBody): Single<Response<BaseAPIResponse>> {
+        return api.loginEmailWithOTP(body)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
     }
