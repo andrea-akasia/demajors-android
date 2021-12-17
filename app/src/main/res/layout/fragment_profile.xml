@@ -8,489 +8,538 @@
     android:background="@color/colorPrimary">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/app_bar"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/view_logged"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:paddingTop="@dimen/_8sdp"
-        android:paddingBottom="@dimen/_8sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingEnd="@dimen/_10sdp"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/label_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Kamu"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/action_notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_notification" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:fillViewport="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_bar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp">
+
+                <carbon.widget.LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    app:carbon_cornerRadius="10dp"
+                    app:carbon_elevation="8dp"
+                    app:carbon_elevationShadowColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_user"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@drawable/sample_profile_picture" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_14sdp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_user"
+                            app:layout_constraintStart_toEndOf="@+id/img_user"
+                            app:layout_constraintTop_toTopOf="@+id/img_user">
+
+                            <TextView
+                                android:id="@+id/value_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_700"
+                                android:gravity="center_vertical"
+                                tools:text="Kadek Adi Andrea"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/value_verify_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_400"
+                                android:gravity="center_vertical"
+                                android:text="Belum verifikasi KYC"
+                                android:textColor="#A7A7A7"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/action_verify"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/background_verify_now"
+                            android:padding="@dimen/_6sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_user">
+
+                            <ImageView
+                                android:id="@+id/icon_shield"
+                                android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_shield_green" />
+
+                            <ImageView
+                                android:id="@+id/img_next_verify"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                app:layout_constraintBottom_toBottomOf="@+id/icon_shield"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/icon_shield"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                            <TextView
+                                android:id="@+id/label_verify"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_700"
+                                android:gravity="center_vertical"
+                                android:text="Verifikasi Sekarang"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/icon_shield"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </carbon.widget.LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/view_star_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/background_star_info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <TextView
+                        android:id="@+id/label_total_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_700"
+                        android:text="Total Star Kamu"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/value_total_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_700"
+                        android:text="9999"
+                        android:textColor="#FFA900"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/value_total_star"
+                        app:layout_constraintEnd_toStartOf="@+id/value_total_star"
+                        app:layout_constraintTop_toTopOf="@+id/value_total_star"
+                        app:srcCompat="@drawable/ic_star" />
+
+                    <Button
+                        android:id="@+id/btn_topup_star"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Topup Star"
+                        android:background="@drawable/background_button_red"
+                        android:fontFamily="@font/roboto_700"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/value_total_star" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_star_info">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/action_my_nft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/img_my_nft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_nav_wallet" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_my_nft"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/img_my_nft"
+                            app:srcCompat="@drawable/ic_arrow_2" />
+
+                        <TextView
+                            android:id="@+id/label_my_nft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_700"
+                            android:gravity="center_vertical"
+                            android:text="My NFT"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_my_nft"
+                            app:layout_constraintStart_toEndOf="@+id/img_my_nft"
+                            app:layout_constraintTop_toTopOf="@+id/img_my_nft" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/action_order_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/img_order_history"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_profile_history" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_order_history"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/img_order_history"
+                            app:srcCompat="@drawable/ic_arrow_2" />
+
+                        <TextView
+                            android:id="@+id/label_order_history"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_700"
+                            android:gravity="center_vertical"
+                            android:text="Riwayat Pesanan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_order_history"
+                            app:layout_constraintStart_toEndOf="@+id/img_order_history"
+                            app:layout_constraintTop_toTopOf="@+id/img_order_history" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/label_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_700"
+                        android:gravity="center_vertical"
+                        android:text="Pengaturan Umum"
+                        android:textColor="#DCCEAC"
+                        android:textSize="20sp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/action_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/img_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_nav_profile" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/img_profile"
+                            app:srcCompat="@drawable/ic_arrow_2" />
+
+                        <TextView
+                            android:id="@+id/label_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_700"
+                            android:gravity="center_vertical"
+                            android:text="Profile Pengguna"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+                            app:layout_constraintStart_toEndOf="@+id/img_profile"
+                            app:layout_constraintTop_toTopOf="@+id/img_profile" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/action_kyc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/img_kyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_profile_security" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_kyc"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/img_kyc"
+                            app:srcCompat="@drawable/ic_arrow_2" />
+
+                        <TextView
+                            android:id="@+id/label_kyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_700"
+                            android:gravity="center_vertical"
+                            android:text="KYC Pengguna"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_kyc"
+                            app:layout_constraintStart_toEndOf="@+id/img_kyc"
+                            app:layout_constraintTop_toTopOf="@+id/img_kyc" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/action_security"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/img_security"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_profile_security" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_security"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/img_security"
+                            app:srcCompat="@drawable/ic_arrow_2" />
+
+                        <TextView
+                            android:id="@+id/label_security"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_700"
+                            android:gravity="center_vertical"
+                            android:text="Keamanan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_security"
+                            app:layout_constraintStart_toEndOf="@+id/img_security"
+                            app:layout_constraintTop_toTopOf="@+id/img_security" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/action_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <ImageView
+                        android:id="@+id/img_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_logout" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_logout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_logout"
+                        app:srcCompat="@drawable/ic_arrow_2" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_700"
+                        android:gravity="center_vertical"
+                        android:text="Keluar"
+                        android:textColor="#C32E3C"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_logout"
+                        app:layout_constraintStart_toEndOf="@+id/img_logout"
+                        app:layout_constraintTop_toTopOf="@+id/img_logout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_unauthenticated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/label_title"
+            android:id="@+id/value_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Profile Kamu"
+            android:fontFamily="@font/roboto_700"
             android:gravity="center_vertical"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:fontFamily="@font/poppins_700"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/action_notif"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_notification" />
+            android:text="Login Untuk Melihat Profile" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
-        android:id="@+id/scroll_view"
-        android:fillViewport="true"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <Button
+            android:id="@+id/btn_goto_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/_6sdp">
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_button_green"
+            android:fontFamily="@font/roboto_700"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/value_msg" />
 
-            <carbon.widget.LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_8sdp"
-                android:background="@color/colorPrimary"
-                android:orientation="vertical"
-                android:padding="@dimen/_10sdp"
-                app:carbon_cornerRadius="10dp"
-                app:carbon_elevation="8dp"
-                app:carbon_elevationShadowColor="#FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/img_user"
-                        android:layout_width="@dimen/_40sdp"
-                        android:layout_height="@dimen/_40sdp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@drawable/sample_profile_picture" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_14sdp"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_user"
-                        app:layout_constraintStart_toEndOf="@+id/img_user"
-                        app:layout_constraintTop_toTopOf="@+id/img_user">
-
-                        <TextView
-                            android:id="@+id/value_user_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_700"
-                            android:gravity="center_vertical"
-                            tools:text="Kadek Adi Andrea"
-                            android:textColor="#FFFFFF"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/value_verify_status"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_400"
-                            android:gravity="center_vertical"
-                            android:text="Belum verifikasi KYC"
-                            android:textColor="#A7A7A7"
-                            android:textSize="13sp" />
-
-                    </LinearLayout>
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/action_verify"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@drawable/background_verify_now"
-                        android:padding="@dimen/_6sdp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/img_user">
-
-                        <ImageView
-                            android:id="@+id/icon_shield"
-                            android:layout_width="@dimen/_18sdp"
-                            android:layout_height="@dimen/_18sdp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_shield_green" />
-
-                        <ImageView
-                            android:id="@+id/img_next_verify"
-                            android:layout_width="@dimen/_10sdp"
-                            android:layout_height="@dimen/_10sdp"
-                            app:layout_constraintBottom_toBottomOf="@+id/icon_shield"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/icon_shield"
-                            app:srcCompat="@drawable/ic_arrow_right" />
-
-                        <TextView
-                            android:id="@+id/label_verify"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_12sdp"
-                            android:fontFamily="@font/roboto_700"
-                            android:gravity="center_vertical"
-                            android:text="Verifikasi Sekarang"
-                            android:textColor="#FFFFFF"
-                            android:textSize="13sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/icon_shield"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </carbon.widget.LinearLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/view_star_info"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_8sdp"
-                android:padding="@dimen/_10sdp"
-                android:background="@drawable/background_star_info"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-                <TextView
-                    android:id="@+id/label_total_star"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_700"
-                    android:text="Total Star Kamu"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/value_total_star"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_700"
-                    android:text="9999"
-                    android:textColor="#FFA900"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/img_star"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_6sdp"
-                    app:layout_constraintBottom_toBottomOf="@+id/value_total_star"
-                    app:layout_constraintEnd_toStartOf="@+id/value_total_star"
-                    app:layout_constraintTop_toTopOf="@+id/value_total_star"
-                    app:srcCompat="@drawable/ic_star" />
-
-                <Button
-                    android:id="@+id/btn_topup_star"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_28sdp"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:text="Topup Star"
-                    android:background="@drawable/background_button_red"
-                    android:fontFamily="@font/roboto_700"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:textAllCaps="false"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/value_total_star" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view_star_info">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/action_my_nft"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp">
-
-                    <ImageView
-                        android:id="@+id/img_my_nft"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_nav_wallet" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_my_nft"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_my_nft"
-                        app:srcCompat="@drawable/ic_arrow_2" />
-
-                    <TextView
-                        android:id="@+id/label_my_nft"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/roboto_700"
-                        android:gravity="center_vertical"
-                        android:text="My NFT"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_my_nft"
-                        app:layout_constraintStart_toEndOf="@+id/img_my_nft"
-                        app:layout_constraintTop_toTopOf="@+id/img_my_nft" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/action_order_history"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_20sdp"
-                    android:padding="@dimen/_10sdp">
-
-                    <ImageView
-                        android:id="@+id/img_order_history"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_profile_history" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_order_history"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_order_history"
-                        app:srcCompat="@drawable/ic_arrow_2" />
-
-                    <TextView
-                        android:id="@+id/label_order_history"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/roboto_700"
-                        android:gravity="center_vertical"
-                        android:text="Riwayat Pesanan"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_order_history"
-                        app:layout_constraintStart_toEndOf="@+id/img_order_history"
-                        app:layout_constraintTop_toTopOf="@+id/img_order_history" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:id="@+id/label_setting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins_700"
-                    android:gravity="center_vertical"
-                    android:text="Pengaturan Umum"
-                    android:textColor="#DCCEAC"
-                    android:textSize="20sp" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/action_profile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp">
-
-                    <ImageView
-                        android:id="@+id/img_profile"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_nav_profile" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_profile"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_profile"
-                        app:srcCompat="@drawable/ic_arrow_2" />
-
-                    <TextView
-                        android:id="@+id/label_profile"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/roboto_700"
-                        android:gravity="center_vertical"
-                        android:text="Profile Pengguna"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_profile"
-                        app:layout_constraintStart_toEndOf="@+id/img_profile"
-                        app:layout_constraintTop_toTopOf="@+id/img_profile" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/action_kyc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp">
-
-                    <ImageView
-                        android:id="@+id/img_kyc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_profile_security" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_kyc"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_kyc"
-                        app:srcCompat="@drawable/ic_arrow_2" />
-
-                    <TextView
-                        android:id="@+id/label_kyc"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/roboto_700"
-                        android:gravity="center_vertical"
-                        android:text="KYC Pengguna"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_kyc"
-                        app:layout_constraintStart_toEndOf="@+id/img_kyc"
-                        app:layout_constraintTop_toTopOf="@+id/img_kyc" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/action_security"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp">
-
-                    <ImageView
-                        android:id="@+id/img_security"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_profile_security" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_security"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/img_security"
-                        app:srcCompat="@drawable/ic_arrow_2" />
-
-                    <TextView
-                        android:id="@+id/label_security"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:fontFamily="@font/roboto_700"
-                        android:gravity="center_vertical"
-                        android:text="Keamanan"
-                        android:textColor="#FFFFFF"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/img_security"
-                        app:layout_constraintStart_toEndOf="@+id/img_security"
-                        app:layout_constraintTop_toTopOf="@+id/img_security" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </LinearLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/action_logout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/_10sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-                <ImageView
-                    android:id="@+id/img_logout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_logout" />
-
-                <ImageView
-                    android:layout_width="@dimen/_16sdp"
-                    android:layout_height="@dimen/_16sdp"
-                    app:layout_constraintBottom_toBottomOf="@+id/img_logout"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/img_logout"
-                    app:srcCompat="@drawable/ic_arrow_2" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:fontFamily="@font/roboto_700"
-                    android:gravity="center_vertical"
-                    android:text="Keluar"
-                    android:textColor="#C32E3C"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/img_logout"
-                    app:layout_constraintStart_toEndOf="@+id/img_logout"
-                    app:layout_constraintTop_toTopOf="@+id/img_logout" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

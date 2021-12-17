@@ -34,11 +34,20 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
 
     override fun onResume() {
         super.onResume()
-        viewModel.loadUserInfo()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel.onAuthFailed.observe(
+            viewLifecycleOwner,
+            {
+                _binding?.let { ui ->
+                    ui.viewUnauthenticated.visibility = View.VISIBLE
+                    ui.viewLogged.visibility = View.GONE
+                }
+            }
+        )
 
         viewModel.onUserInfoLoaded.observe(
             viewLifecycleOwner,
@@ -65,7 +74,20 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
         )
 
         _binding?.let { ui ->
-            ui.valueUserName.text = viewModel.getUsername()
+            if (viewModel.isLoggedIn()) {
+                ui.viewUnauthenticated.visibility = View.GONE
+                ui.viewLogged.visibility = View.VISIBLE
+                viewModel.loadUserInfo()
+            } else {
+                ui.viewUnauthenticated.visibility = View.VISIBLE
+                ui.viewLogged.visibility = View.GONE
+            }
+
+            ui.btnGotoLogin.setOnClickListener {
+                startActivity(
+                    Intent(requireContext(), LoginActivity::class.java)
+                )
+            }
 
             ui.actionLogout.setOnClickListener {
                 openLogoutConfirmation()

@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
 import com.demajors.demajorsapp.model.api.auth.DataUser
+import com.demajors.demajorsapp.util.generateResponseApiFromErrorBody
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -15,8 +16,10 @@ class ProfileViewModel
     internal var warningMessage = MutableLiveData<String>()
     internal var onLogoutSuccess = MutableLiveData<Boolean>()
     internal var onUserInfoLoaded = MutableLiveData<DataUser>()
+    internal var onAuthFailed = MutableLiveData<String>()
 
     fun getUsername() = dataManager.getUsername()
+    fun isLoggedIn(): Boolean = dataManager.getLoginState()
 
     fun loadUserInfo() {
         dataManager.getUserInfo()
@@ -35,8 +38,20 @@ class ProfileViewModel
                     } else {
                         // not 20x
                         val code = res.code()
-                        warningMessage.postValue("Server Error $code")
-                        Timber.w(Throwable("Server Error $code"))
+                        if (code != 401) {
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
+                        } else {
+                            dataManager.clearPrefs()
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                onAuthFailed.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            } else {
+                                onAuthFailed.postValue("please relogin")
+                            }
+                        }
                     }
                 },
                 { err ->

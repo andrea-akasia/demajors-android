@@ -60,12 +60,6 @@ class LoginViewModel
                         res.body()?.let { response ->
                             if (response.isSucceed) {
                                 isReqOTPSuccess.postValue(true)
-//                                dataManager.saveLoginCredentials(
-//                                    email,
-//                                    response.data?.token!!,
-//                                    response.data.tokenRefresh!!
-//                                )
-                                // loadUserInfo()
                             } else {
                                 Timber.w(Throwable("Login gagal: ${response.errMessage}"))
                                 warningMessage.postValue("Login gagal: ${response.errMessage}")

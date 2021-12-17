@@ -27,23 +27,19 @@ class MainViewModel
                             if (response.isSucceed) {
                                 dataManager.updateToken(response.data?.token!!)
                             } else {
-                                onAuthFailed.postValue(response.errMessage)
+                                Timber.w(Throwable(response.errMessage))
                             }
                         }
                     } else {
                         // not 20x
                         val code = res.code()
-                        if (code == 401) {
-                            dataManager.clearPrefs()
+                        if (code != 401) {
                             val errorBody = res.errorBody()
                             if (errorBody != null) {
-                                onAuthFailed.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
-                            } else {
-                                onAuthFailed.postValue("please relogin")
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
                             }
                         } else {
-                            warningMessage.postValue("Server Error $code")
-                            Timber.w(Throwable("Server Error $code"))
+                            dataManager.clearPrefs()
                         }
                     }
                 },

@@ -1,6 +1,5 @@
 package com.demajors.demajorsapp.feature.main
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import dagger.android.AndroidInjector
@@ -16,7 +15,6 @@ import android.view.WindowManager
 import android.widget.Toast
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.feature.cart.CartFragment
-import com.demajors.demajorsapp.feature.login.LoginActivity
 import com.demajors.demajorsapp.feature.myartist.MyArtistFragment
 import com.demajors.demajorsapp.feature.nft.list.ListNftFragment
 
@@ -31,17 +29,6 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        if (viewModel.isLoggedIn()) {
-            viewModel.refreshToken()
-        } else {
-            startActivity(
-                Intent(this, LoginActivity::class.java)
-                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            )
-            this.finish()
-        }
 
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -77,20 +64,14 @@ class MainActivity : BaseActivity<MainViewModel>(), HasAndroidInjector {
                 Toast.makeText(this, it, Toast.LENGTH_LONG).show()
             }
         )
-
-        viewModel.onAuthFailed.observe(
-            this,
-            {
-                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
-                startActivity(
-                    Intent(this, LoginActivity::class.java)
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                )
-                this.finish()
-            }
-        )
     }
 
     override fun androidInjector(): AndroidInjector<Any> = androidInjector
+
+    override fun onResume() {
+        if (viewModel.isLoggedIn()) {
+            viewModel.refreshToken()
+        }
+        super.onResume()
+    }
 }
