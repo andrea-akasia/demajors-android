@@ -5,7 +5,9 @@ import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
 import com.demajors.demajorsapp.model.api.auth.DataUser
+import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
 import com.demajors.demajorsapp.util.generateResponseApiFromErrorBody
+import okhttp3.MultipartBody
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -17,9 +19,87 @@ class ProfileViewModel
     internal var onLogoutSuccess = MutableLiveData<Boolean>()
     internal var onUserInfoLoaded = MutableLiveData<DataUser>()
     internal var onAuthFailed = MutableLiveData<String>()
+    internal var onUpdateProfileSuccess = MutableLiveData<Boolean>()
+    internal var onUploadImageSuccess = MutableLiveData<String>()
 
     fun getUsername() = dataManager.getUsername()
     fun isLoggedIn(): Boolean = dataManager.getLoginState()
+    var currentPhotoURL = ""
+
+    fun updateProfile(name: String, username: String, phone: String, photo: String) {
+        dataManager.updateProfile(UpdateProfileBody(name = name, username = username, noTelp = phone, photo = photo))
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                onUpdateProfileSuccess.postValue(true)
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        if (code != 401) {
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
+                        } else {
+                            dataManager.clearPrefs()
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                onAuthFailed.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            } else {
+                                onAuthFailed.postValue("please relogin")
+                            }
+                        }
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
+
+    fun uploadImage(file: MultipartBody.Part) {
+        dataManager.uploadImage(file)
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                currentPhotoURL = response.data!!
+                                onUploadImageSuccess.postValue(currentPhotoURL)
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        if (code != 401) {
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
+                        } else {
+                            dataManager.clearPrefs()
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                onAuthFailed.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            } else {
+                                onAuthFailed.postValue("please relogin")
+                            }
+                        }
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
 
     fun loadUserInfo() {
         dataManager.getUserInfo()
@@ -29,7 +109,8 @@ class ProfileViewModel
                     if (res.isSuccessful) {
                         res.body()?.let { response ->
                             if (response.isSucceed) {
-                                onUserInfoLoaded.postValue(response.data?.dataUser!!)
+                                currentPhotoURL = response.data?.dataUser?.photo!!
+                                onUserInfoLoaded.postValue(response.data.dataUser!!)
                             } else {
                                 Timber.w(Throwable("getUserInfo gagal: ${response.errMessage}"))
                                 warningMessage.postValue("Load User Info gagal: ${response.errMessage}")

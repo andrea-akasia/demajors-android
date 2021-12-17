@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_700"
+            android:text="Update Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/action_back"
+            app:layout_constraintStart_toEndOf="@+id/action_back"
+            app:layout_constraintTop_toTopOf="@+id/action_back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antonio_400"
+            android:text="Name"
+            android:textColor="#696969"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/value_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/background_textfield"
+            android:hint="Masukanan Nama Anda"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#696969"
+            android:fontFamily="@font/antonio_400"
+            android:textSize="14sp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antonio_400"
+            android:text="Username"
+            android:textColor="#696969"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/value_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/background_textfield"
+            android:hint="Masukanan Username"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#696969"
+            android:fontFamily="@font/antonio_400"
+            android:textSize="14sp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antonio_400"
+            android:text="No Handphone"
+            android:textColor="#696969"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/value_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/background_textfield"
+            android:hint="contoh: 081234567890"
+            android:inputType="phone"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#696969"
+            android:fontFamily="@font/antonio_400"
+            android:textSize="14sp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antonio_400"
+            android:text="Foto"
+            android:textColor="#696969"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/upload_image_placeholder"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@drawable/background_button_green"
+            android:fontFamily="@font/roboto_700"
+            android:text="SIMPAN"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/value_msg" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

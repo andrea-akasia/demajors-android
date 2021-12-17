@@ -12,8 +12,8 @@ android {
         applicationId "com.demajors.demajorsapp"
         minSdkVersion 23
         targetSdkVersion 31
-        versionCode 5
-        versionName "0.0.5"
+        versionCode 7
+        versionName "0.0.7"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions {
@@ -190,4 +190,6 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:4.2.2'
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
+    implementation 'com.github.esafirm:android-image-picker:3.0.0-beta1'
+    implementation 'id.zelory:compressor:3.0.1'
 }

@@ -4,6 +4,10 @@
     package="com.demajors.demajorsapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name="com.demajors.demajorsapp.App"
@@ -45,6 +49,7 @@
         <activity android:name=".feature.profile.mynft.unopened.UnopenedMyNFTDetailActivity" />
         <activity android:name=".feature.signup.SignUpActivity" android:windowSoftInputMode="adjustPan" />
         <activity android:name=".feature.signup.VerifyEmailActivity" />
+        <activity android:name=".feature.profile.UpdateProfileActivity" android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

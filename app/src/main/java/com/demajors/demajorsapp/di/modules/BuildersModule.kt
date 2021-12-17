@@ -10,6 +10,7 @@ import com.demajors.demajorsapp.feature.main.MainActivity
 import com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
 import com.demajors.demajorsapp.feature.nft.detail.DetailNFTActivity
+import com.demajors.demajorsapp.feature.profile.UpdateProfileActivity
 import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTDetailActivity
 import com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
@@ -19,6 +20,10 @@ import com.demajors.demajorsapp.feature.song.DetailSongActivity
 
 @Module
 abstract class BuildersModule {
+
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindUpdateProfileActivity(): UpdateProfileActivity
+
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindVerifyEmailActivity(): VerifyEmailActivity
 

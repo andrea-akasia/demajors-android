@@ -18,9 +18,11 @@ import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
 import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
+import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
+import com.demajors.demajorsapp.model.api.upload.UploadAPIResponse
 import com.demajors.demajorsapp.util.Const.Companion.KEY_EMAIL
 import com.demajors.demajorsapp.util.Const.Companion.KEY_IS_LOGGED_IN
 import com.demajors.demajorsapp.util.Const.Companion.KEY_NAME
@@ -28,6 +30,7 @@ import com.demajors.demajorsapp.util.Const.Companion.KEY_PHONE
 import com.demajors.demajorsapp.util.Const.Companion.KEY_TOKEN
 import com.demajors.demajorsapp.util.Const.Companion.KEY_TOKEN_REFRESH
 import com.demajors.demajorsapp.util.Const.Companion.KEY_USERNAME
+import okhttp3.MultipartBody
 
 @Singleton
 class DataManager
@@ -84,6 +87,18 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun updateProfile(body: UpdateProfileBody): Single<Response<BaseAPIResponse>> {
+        return api.updateProfile(getAuthorizationHeader(), body)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
+    fun uploadImage(file: MultipartBody.Part): Single<Response<UploadAPIResponse>> {
+        return api.uploadFile(getAuthorizationHeader(), file)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
     fun verifyOTPLogin(body: VerifyEmailBody): Single<Response<LoginAPIResponse>> {
         return api.verifyOTPLogin(BuildConfig.AUTH_URL + "v1/user/email/login", body)
             .subscribeOn(Schedulers.io())

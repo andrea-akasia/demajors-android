@@ -7,10 +7,13 @@ import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
 import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
+import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
+import com.demajors.demajorsapp.model.api.upload.UploadAPIResponse
 import io.reactivex.Single
+import okhttp3.MultipartBody
 import retrofit2.Response
 import retrofit2.http.POST
 import retrofit2.http.GET
@@ -19,8 +22,24 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 import retrofit2.http.Url
 import retrofit2.http.Header
+import retrofit2.http.PUT
+import retrofit2.http.Multipart
+import retrofit2.http.Part
 
 interface APIService {
+    @PUT("v1/user/info")
+    fun updateProfile(
+        @Header("Authorization") token: String,
+        @Body body: UpdateProfileBody
+    ): Single<Response<BaseAPIResponse>>
+
+    @Multipart
+    @POST("v1/user/file/image")
+    fun uploadFile(
+        @Header("Authorization") token: String,
+        @Part file: MultipartBody.Part
+    ): Single<Response<UploadAPIResponse>>
+
     @POST
     fun verifyEmail(
         @Url authURL: String,

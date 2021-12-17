@@ -10,6 +10,7 @@ import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentProfileBinding
 import com.demajors.demajorsapp.feature.login.LoginActivity
+import com.demajors.demajorsapp.feature.main.MainActivity
 import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.util.GlideApp
 
@@ -34,6 +35,7 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
 
     override fun onResume() {
         super.onResume()
+        viewModel.loadUserInfo()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -65,7 +67,7 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
             viewLifecycleOwner,
             {
                 startActivity(
-                    Intent(requireContext(), LoginActivity::class.java)
+                    Intent(requireContext(), MainActivity::class.java)
                         .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 )
@@ -96,6 +98,12 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
             ui.actionMyNft.setOnClickListener {
                 startActivity(
                     Intent(requireContext(), MyNftActivity::class.java)
+                )
+            }
+
+            ui.actionProfile.setOnClickListener {
+                startActivity(
+                    Intent(requireContext(), UpdateProfileActivity::class.java)
                 )
             }
         }
