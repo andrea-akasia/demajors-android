@@ -87,6 +87,8 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    suspend fun getListPagedArtist(page: Int, limit: Int) = api.getListPagedArtist(page, limit)
+
     fun updateProfile(body: UpdateProfileBody): Single<Response<BaseAPIResponse>> {
         return api.updateProfile(getAuthorizationHeader(), body)
             .subscribeOn(Schedulers.io())

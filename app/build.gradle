@@ -140,9 +140,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
     //paging library
-    implementation "androidx.paging:paging-runtime-ktx:2.1.2"
-    implementation "androidx.paging:paging-runtime-ktx:2.1.2"
-    implementation "androidx.paging:paging-rxjava2-ktx:2.1.2"
+    implementation "androidx.paging:paging-runtime-ktx:3.1.0"
 
     //timber log
     implementation 'com.jakewharton.timber:timber:4.7.1'

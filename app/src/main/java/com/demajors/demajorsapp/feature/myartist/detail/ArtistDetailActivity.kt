@@ -1,6 +1,7 @@
 package com.demajors.demajorsapp.feature.myartist.detail
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import com.demajors.demajorsapp.R
@@ -57,6 +58,16 @@ class ArtistDetailActivity : BaseActivity<ArtistViewModel>(), HasAndroidInjector
         )
 
         setupTabs()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun setupTabs() {

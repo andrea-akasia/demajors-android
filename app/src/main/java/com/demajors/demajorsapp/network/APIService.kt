@@ -1,6 +1,7 @@
 package com.demajors.demajorsapp.network
 
 import com.demajors.demajorsapp.model.api.BaseAPIResponse
+import com.demajors.demajorsapp.model.api.artist.ListArtistAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
@@ -27,6 +28,12 @@ import retrofit2.http.Multipart
 import retrofit2.http.Part
 
 interface APIService {
+    @GET("v1/user/artist/list")
+    suspend fun getListPagedArtist(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int
+    ): Response<ListArtistAPIResponse>
+
     @PUT("v1/user/info")
     fun updateProfile(
         @Header("Authorization") token: String,
