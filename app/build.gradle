@@ -190,4 +190,7 @@ dependencies {
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
     implementation 'com.github.esafirm:android-image-picker:3.0.0-beta1'
     implementation 'id.zelory:compressor:3.0.1'
+
+    //player
+    implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
 }

@@ -13,6 +13,8 @@ class SongViewModel
 
     internal var warningMessage = MutableLiveData<String>()
 
+    var isPLaying = false
+
     fun getDummyHomeItems(): MutableList<HomeItem> {
         val result = mutableListOf<HomeItem>()
         result.add(HomeItem())
