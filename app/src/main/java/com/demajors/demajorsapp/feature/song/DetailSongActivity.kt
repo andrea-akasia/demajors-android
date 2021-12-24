@@ -51,6 +51,7 @@ class DetailSongActivity : BaseActivity<SongViewModel>() {
         binding.valueArtistName.text = currentData.name
         binding.valueAlbumName.text = currentData.description
         binding.songTitle.text = currentData.title
+        binding.title.text = currentData.title
 
         // TODO load other tracks based on artist
         binding.rvTracks.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
