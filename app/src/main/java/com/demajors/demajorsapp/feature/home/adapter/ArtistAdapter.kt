@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemArtistBinding
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
-import com.demajors.demajorsapp.model.home.ArtistItem
+import com.demajors.demajorsapp.model.api.artist.Artist
+import com.demajors.demajorsapp.util.GlideApp
 
-class ArtistAdapter(val data: MutableList<ArtistItem>) : RecyclerView.Adapter<ArtistAdapter.ArtistHolder>() {
+class ArtistAdapter(val data: MutableList<Artist>) : RecyclerView.Adapter<ArtistAdapter.ArtistHolder>() {
 
     class ArtistHolder(val binding: ViewItemArtistBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -21,6 +22,12 @@ class ArtistAdapter(val data: MutableList<ArtistItem>) : RecyclerView.Adapter<Ar
 
     override fun onBindViewHolder(holder: ArtistHolder, position: Int) {
         with(holder) {
+            GlideApp.with(itemView.context)
+                .load(data[position].avatarUrl)
+                .centerCrop()
+                .into(binding.img)
+            binding.valueName.text = data[position].name
+
             itemView.setOnClickListener {
                 itemView.context.startActivity(
                     Intent(

@@ -29,6 +29,12 @@ import retrofit2.http.Part
 
 interface APIService {
     @GET("v1/user/artist/list")
+    fun getListArtistForHome(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int
+    ): Single<Response<ListArtistAPIResponse>>
+
+    @GET("v1/user/artist/list")
     suspend fun getListPagedArtist(
         @Query("page") page: Int,
         @Query("limit") limit: Int

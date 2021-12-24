@@ -4,10 +4,11 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
+import com.demajors.demajorsapp.model.api.artist.Artist
 import com.demajors.demajorsapp.model.artist.NFTItem
 import com.demajors.demajorsapp.model.banner.Banner
-import com.demajors.demajorsapp.model.home.ArtistItem
 import com.demajors.demajorsapp.model.home.HomeItem
+import timber.log.Timber
 import javax.inject.Inject
 
 @SuppressLint("CheckResult")
@@ -15,6 +16,35 @@ class HomeViewModel
 @Inject constructor(private val dataManager: DataManager) : BaseViewModel() {
 
     internal var warningMessage = MutableLiveData<String>()
+    internal var onArtistLoaded = MutableLiveData<List<Artist>>()
+
+    fun loadListArtist() {
+        dataManager.getListArtistForHome()
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                onArtistLoaded.postValue(response.data)
+                            } else {
+                                Timber.w(Throwable("getListArtistForHome gagal: ${response.errMessage}"))
+                                warningMessage.postValue("error: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        warningMessage.postValue("Server Error $code")
+                        Timber.w(Throwable("Server Error $code"))
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
 
     fun getDummyPremiumNFTs(): MutableList<NFTItem> {
         val result = mutableListOf<NFTItem>()
@@ -43,21 +73,6 @@ class HomeViewModel
         result.add(HomeItem())
         result.add(HomeItem())
         result.add(HomeItem())
-        return result
-    }
-
-    fun getDummyArtistItems(): MutableList<ArtistItem> {
-        val result = mutableListOf<ArtistItem>()
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
-        result.add(ArtistItem())
         return result
     }
 }

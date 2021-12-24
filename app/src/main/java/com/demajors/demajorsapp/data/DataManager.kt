@@ -13,6 +13,7 @@ import retrofit2.Response
 import androidx.paging.DataSource
 import com.demajors.demajorsapp.BuildConfig
 import com.demajors.demajorsapp.model.api.BaseAPIResponse
+import com.demajors.demajorsapp.model.api.artist.ListArtistAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginAPIResponse
 import com.demajors.demajorsapp.model.api.auth.LoginBody
 import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
@@ -87,6 +88,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun getListArtistForHome(): Single<Response<ListArtistAPIResponse>> {
+        return api.getListArtistForHome(page = 1, limit = 10)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
     suspend fun getListPagedArtist(page: Int, limit: Int) = api.getListPagedArtist(page, limit)
 
     fun updateProfile(body: UpdateProfileBody): Single<Response<BaseAPIResponse>> {

@@ -20,6 +20,7 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
     private val binding get() = _binding!!
 
     private var bannerAdapter: BannerAdapter? = null
+    private lateinit var artistAdapter: ArtistAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,6 +39,19 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding?.let { ui ->
+
+            /*--------------------------- LIST ARTISTS --------------------------------------  */
+            viewModel.onArtistLoaded.observe(
+                viewLifecycleOwner,
+                {
+                    artistAdapter = ArtistAdapter(it.toMutableList())
+                    ui.rvArtist.apply {
+                        layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+                        adapter = artistAdapter
+                    }
+                }
+            )
+
             bannerAdapter = BannerAdapter(viewModel.getDummyBanner())
             ui.viewBanner.adapter = bannerAdapter
             ui.bannerIndicator.setViewPager2(ui.viewBanner)
@@ -51,11 +65,10 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
             ui.rvRecommendations.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             ui.rvRecommendations.adapter = RecommendationAdapter(viewModel.getDummyHomeItems())
 
-            ui.rvArtist.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            ui.rvArtist.adapter = ArtistAdapter(viewModel.getDummyArtistItems())
-
             ui.rvNft.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             ui.rvNft.adapter = NFTAdapter(viewModel.getDummyPremiumNFTs())
         }
+
+        viewModel.loadListArtist()
     }
 }
