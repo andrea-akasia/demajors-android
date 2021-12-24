@@ -9,7 +9,7 @@ import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentHomeBinding
 import com.demajors.demajorsapp.feature.home.adapter.BannerAdapter
 import com.demajors.demajorsapp.feature.home.adapter.BestSellerAdapter
-import com.demajors.demajorsapp.feature.home.adapter.NowPLayingAdapter
+import com.demajors.demajorsapp.feature.home.adapter.LatestReleaseAdapter
 import com.demajors.demajorsapp.feature.home.adapter.RecommendationAdapter
 import com.demajors.demajorsapp.feature.home.adapter.ArtistAdapter
 import com.demajors.demajorsapp.feature.myartist.detail.nft.NFTAdapter
@@ -21,6 +21,7 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
 
     private var bannerAdapter: BannerAdapter? = null
     private lateinit var artistAdapter: ArtistAdapter
+    private lateinit var rilisanAdapter: LatestReleaseAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,16 +53,24 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
                 }
             )
 
+            /*--------------------------- LIST RILISAN --------------------------------------  */
+            viewModel.onRilisanLoaded.observe(
+                viewLifecycleOwner,
+                {
+                    rilisanAdapter = LatestReleaseAdapter(it.toMutableList())
+                    ui.rvLatest.apply {
+                        layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+                        adapter = rilisanAdapter
+                    }
+                }
+            )
+
             bannerAdapter = BannerAdapter(viewModel.getDummyBanner())
             ui.viewBanner.adapter = bannerAdapter
             ui.bannerIndicator.setViewPager2(ui.viewBanner)
 
             ui.rvBestSeller.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             ui.rvBestSeller.adapter = BestSellerAdapter(viewModel.getDummyHomeItems())
-
-            ui.rvNowPlaying.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            ui.rvNowPlaying.adapter = NowPLayingAdapter(viewModel.getDummyHomeItems())
-
             ui.rvRecommendations.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             ui.rvRecommendations.adapter = RecommendationAdapter(viewModel.getDummyHomeItems())
 
@@ -70,5 +79,6 @@ class HomeFragment : BaseFragment<HomeViewModel>() {
         }
 
         viewModel.loadListArtist()
+        viewModel.loadListRilisan()
     }
 }

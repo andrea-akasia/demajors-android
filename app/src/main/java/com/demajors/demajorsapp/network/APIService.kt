@@ -9,6 +9,7 @@ import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
+import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
@@ -28,6 +29,12 @@ import retrofit2.http.Multipart
 import retrofit2.http.Part
 
 interface APIService {
+    @GET("v1/user/rilisan/list")
+    fun getListRilisanForHome(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int
+    ): Single<Response<ListRilisanAPIResponse>>
+
     @GET("v1/user/artist/list")
     fun getListArtistForHome(
         @Query("page") page: Int,

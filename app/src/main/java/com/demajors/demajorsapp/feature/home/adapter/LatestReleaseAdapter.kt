@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemLatestReleaseBinding
 import com.demajors.demajorsapp.feature.song.DetailSongActivity
-import com.demajors.demajorsapp.model.home.HomeItem
+import com.demajors.demajorsapp.model.api.rilisan.Rilisan
+import com.demajors.demajorsapp.util.GlideApp
 
-class NowPLayingAdapter(val data: MutableList<HomeItem>) : RecyclerView.Adapter<NowPLayingAdapter.NowPLayingHolder>() {
+class LatestReleaseAdapter(val data: MutableList<Rilisan>) : RecyclerView.Adapter<LatestReleaseAdapter.NowPLayingHolder>() {
 
     class NowPLayingHolder(val binding: ViewItemLatestReleaseBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -21,6 +22,13 @@ class NowPLayingAdapter(val data: MutableList<HomeItem>) : RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: NowPLayingHolder, position: Int) {
         with(holder) {
+            GlideApp.with(itemView.context)
+                .load(data[position].avatarUrl)
+                .centerCrop()
+                .into(binding.imgThumbnail)
+            binding.valueTitle.text = data[position].title
+            binding.valueArtist.text = data[position].name
+
             itemView.setOnClickListener {
                 itemView.context.startActivity(
                     Intent(

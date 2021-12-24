@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
 import com.demajors.demajorsapp.model.api.artist.Artist
+import com.demajors.demajorsapp.model.api.rilisan.Rilisan
 import com.demajors.demajorsapp.model.artist.NFTItem
 import com.demajors.demajorsapp.model.banner.Banner
 import com.demajors.demajorsapp.model.home.HomeItem
@@ -17,6 +18,35 @@ class HomeViewModel
 
     internal var warningMessage = MutableLiveData<String>()
     internal var onArtistLoaded = MutableLiveData<List<Artist>>()
+    internal var onRilisanLoaded = MutableLiveData<List<Rilisan>>()
+
+    fun loadListRilisan() {
+        dataManager.getListRilisanForHome()
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                onRilisanLoaded.postValue(response.data)
+                            } else {
+                                Timber.w(Throwable("getListRilisanForHome gagal: ${response.errMessage}"))
+                                warningMessage.postValue("error: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        warningMessage.postValue("Server Error $code")
+                        Timber.w(Throwable("Server Error $code"))
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
 
     fun loadListArtist() {
         dataManager.getListArtistForHome()
