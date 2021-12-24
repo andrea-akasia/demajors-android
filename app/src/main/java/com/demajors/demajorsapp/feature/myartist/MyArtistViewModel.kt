@@ -23,7 +23,7 @@ class MyArtistViewModel
 
     fun loadListData() {
         artistFlow = Pager(
-            config = PagingConfig(pageSize = 20),
+            config = PagingConfig(pageSize = 10),
             pagingSourceFactory = { ArtistPagingDataSource(dataManager) }
         ).flow.cachedIn(viewModelScope)
     }

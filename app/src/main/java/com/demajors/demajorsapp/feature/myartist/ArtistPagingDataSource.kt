@@ -4,33 +4,23 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.demajors.demajorsapp.data.DataManager
 import com.demajors.demajorsapp.model.api.artist.Artist
-import timber.log.Timber
+import java.lang.Exception
 
 class ArtistPagingDataSource(private val dataManager: DataManager) :
     PagingSource<Int, Artist>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Artist> {
-        val pageNumber = params.key ?: 1
         return try {
+            val pageNumber = params.key ?: 1
             val response = dataManager.getListPagedArtist(pageNumber, params.loadSize)
             val pagedResponse = response.body()
-            val data = pagedResponse?.data
-            Timber.d("data size is ${data?.size}")
-
-            val nextPageNumber: Int = pageNumber + 1
-            // TODO need next page from api
-            /*if (pagedResponse?.pageInfo?.next != null) {
-                val uri = Uri.parse(pagedResponse.pageInfo.next)
-                val nextPageQuery = uri.getQueryParameter("page")
-                nextPageNumber = nextPageQuery?.toInt()
-            }*/
+            val prevKey = if (pageNumber == 1) null else pageNumber - 1
 
             LoadResult.Page(
-                data = data.orEmpty(),
-                prevKey = null,
-                nextKey = null
+                data = pagedResponse?.data!!,
+                prevKey = prevKey,
+                nextKey = if (pagedResponse.data.isNotEmpty()) pageNumber.plus(1) else null
             )
         } catch (e: Exception) {
-            Timber.e(e)
             LoadResult.Error(e)
         }
     }

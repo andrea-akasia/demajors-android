@@ -43,6 +43,8 @@
         app:layout_constraintTop_toBottomOf="@+id/value_search" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        tools:visibility="visible"
         android:id="@+id/rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -52,6 +54,17 @@
         tools:listitem="@layout/view_item_artist"
         tools:itemCount="12"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_your_artist" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="@+id/rv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label_your_artist" />
