@@ -1,11 +1,9 @@
 package com.demajors.demajorsapp.feature.home.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.demajors.demajorsapp.databinding.ViewItemRecommendationBinding
-import com.demajors.demajorsapp.feature.song.DetailSongActivity
 import com.demajors.demajorsapp.model.home.HomeItem
 
 class RecommendationAdapter(val data: MutableList<HomeItem>) : RecyclerView.Adapter<RecommendationAdapter.RecommendationHolder>() {
@@ -21,14 +19,14 @@ class RecommendationAdapter(val data: MutableList<HomeItem>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: RecommendationHolder, position: Int) {
         with(holder) {
-            itemView.setOnClickListener {
+            /*itemView.setOnClickListener {
                 itemView.context.startActivity(
                     Intent(
                         itemView.context,
                         DetailSongActivity::class.java
                     )
                 )
-            }
+            }*/
         }
     }
 

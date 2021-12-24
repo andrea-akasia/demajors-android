@@ -24,6 +24,7 @@ import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
+import com.demajors.demajorsapp.model.api.song.ListSongAPIResponse
 import com.demajors.demajorsapp.model.api.upload.UploadAPIResponse
 import com.demajors.demajorsapp.util.Const.Companion.KEY_EMAIL
 import com.demajors.demajorsapp.util.Const.Companion.KEY_IS_LOGGED_IN
@@ -89,6 +90,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun getListSongForHome(): Single<Response<ListSongAPIResponse>> {
+        return api.getListSongForHome(page = 1, limit = 10)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
     fun getListRilisanForHome(): Single<Response<ListRilisanAPIResponse>> {
         return api.getListRilisanForHome(page = 1, limit = 10)
             .subscribeOn(Schedulers.io())

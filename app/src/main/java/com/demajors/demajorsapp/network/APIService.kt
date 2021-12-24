@@ -13,6 +13,7 @@ import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailBody
+import com.demajors.demajorsapp.model.api.song.ListSongAPIResponse
 import com.demajors.demajorsapp.model.api.upload.UploadAPIResponse
 import io.reactivex.Single
 import okhttp3.MultipartBody
@@ -29,6 +30,12 @@ import retrofit2.http.Multipart
 import retrofit2.http.Part
 
 interface APIService {
+    @GET("v1/user/songs/list")
+    fun getListSongForHome(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int
+    ): Single<Response<ListSongAPIResponse>>
+
     @GET("v1/user/rilisan/list")
     fun getListRilisanForHome(
         @Query("page") page: Int,

@@ -8,15 +8,23 @@ import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivitySongDetailBinding
 import com.demajors.demajorsapp.feature.home.adapter.RecommendationAdapter
+import com.demajors.demajorsapp.model.api.song.Song
+import com.demajors.demajorsapp.util.GlideApp
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
+import com.google.gson.Gson
 
 class DetailSongActivity : BaseActivity<SongViewModel>() {
 
     override val viewModelClass: Class<SongViewModel> = SongViewModel::class.java
     private lateinit var binding: ActivitySongDetailBinding
 
+    companion object {
+        const val KEY_DATA = "DATA"
+    }
+
     lateinit var player: ExoPlayer
+    lateinit var currentData: Song
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,8 +35,24 @@ class DetailSongActivity : BaseActivity<SongViewModel>() {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
 
+        currentData = Gson().fromJson(intent.getStringExtra(KEY_DATA), Song::class.java)
+
         binding.actionBack.setOnClickListener { onBackPressed() }
 
+        GlideApp.with(applicationContext)
+            .load(currentData.coverUrl)
+            .centerCrop()
+            .into(binding.imgSong)
+
+        GlideApp.with(applicationContext)
+            .load(currentData.avatarUrl)
+            .centerCrop()
+            .into(binding.imgArtist)
+        binding.valueArtistName.text = currentData.name
+        binding.valueAlbumName.text = currentData.description
+        binding.songTitle.text = currentData.title
+
+        // TODO load other tracks based on artist
         binding.rvTracks.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.rvTracks.adapter = RecommendationAdapter(viewModel.getDummyHomeItems())
 
@@ -47,7 +71,7 @@ class DetailSongActivity : BaseActivity<SongViewModel>() {
 
     fun setupPlayer() {
         player = ExoPlayer.Builder(this).build()
-        val mediaItem = MediaItem.fromUri("https://firebasestorage.googleapis.com/v0/b/nft-demajors.appspot.com/o/test.mp3?alt=media&token=72f093fb-d328-4c1e-ba4e-2d4fa4b9ceb3")
+        val mediaItem = MediaItem.fromUri(currentData.previewFileUrl!!)
         player.setMediaItem(mediaItem)
         player.prepare()
 
