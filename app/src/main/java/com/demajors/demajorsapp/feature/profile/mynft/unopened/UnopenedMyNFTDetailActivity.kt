@@ -29,6 +29,7 @@ class UnopenedMyNFTDetailActivity : BaseActivity<MyNFTViewModel>(), Animator.Ani
         binding.viewAnimation.addAnimatorListener(this)
 
         binding.btnOpen.setOnClickListener {
+            binding.nftImg.visibility = View.GONE
             binding.btnOpen.visibility = View.GONE
             binding.viewAnimation.visibility = View.VISIBLE
             binding.viewAnimation.playAnimation()
