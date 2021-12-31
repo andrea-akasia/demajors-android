@@ -9,7 +9,7 @@ import com.demajors.demajorsapp.BuildConfig
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityDetailNftBinding
-import com.demajors.demajorsapp.feature.animation.AnimationActivity
+import com.demajors.demajorsapp.feature.login.LoginActivity
 import com.demajors.demajorsapp.util.getCurrentTimeISO
 import com.google.gson.Gson
 import com.midtrans.sdk.corekit.callback.TransactionFinishedCallback
@@ -43,9 +43,14 @@ class DetailNFTActivity : BaseActivity<DetailNFTViewModel>(), TransactionFinishe
         binding.actionBack.setOnClickListener { onBackPressed() }
 
         binding.btnBuy.setOnClickListener {
-            startActivity(
-                Intent(this, AnimationActivity::class.java)
-            )
+            if (viewModel.isLoggedIn) {
+
+                pay()
+            } else {
+                startActivity(
+                    Intent(this, LoginActivity::class.java)
+                )
+            }
         }
 
         initMidtrans()
@@ -86,7 +91,7 @@ class DetailNFTActivity : BaseActivity<DetailNFTViewModel>(), TransactionFinishe
             .setClientKey(BuildConfig.CLIENT_KEY)
             .setContext(this)
             .setTransactionFinishedCallback(this)
-            .setMerchantBaseUrl(BuildConfig.BASE_URL)
+            .setMerchantBaseUrl(BuildConfig.BASE_URL + "v1/")
             .enableLog(true)
             .setUIkitCustomSetting(
                 UIKitCustomSetting().apply {
