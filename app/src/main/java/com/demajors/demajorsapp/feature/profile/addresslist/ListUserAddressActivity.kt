@@ -1,6 +1,7 @@
 package com.demajors.demajorsapp.feature.profile.addresslist
 
 import android.os.Bundle
+import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -45,9 +46,17 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
         viewModel.onDataLoaded.observe(
             this,
             {
-                adapter = UserAddressAdapter(it.toMutableList())
-                binding.rv.layoutManager = LinearLayoutManager(this)
-                binding.rv.adapter = adapter
+                if(it.isNotEmpty()){
+                    adapter = UserAddressAdapter(it.toMutableList())
+                    binding.rv.layoutManager = LinearLayoutManager(this)
+                    binding.rv.adapter = adapter
+
+                    binding.rv.visibility = View.VISIBLE
+                    binding.viewEmpty.visibility = View.GONE
+                }else{
+                    binding.rv.visibility = View.GONE
+                    binding.viewEmpty.visibility = View.VISIBLE
+                }
             }
         )
     }
