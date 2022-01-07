@@ -12,8 +12,8 @@ android {
         applicationId "com.demajors.demajorsapp"
         minSdkVersion 23
         targetSdkVersion 31
-        versionCode 7
-        versionName "0.0.7"
+        versionCode 9
+        versionName "0.0.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         javaCompileOptions {
@@ -193,4 +193,10 @@ dependencies {
 
     //player
     implementation 'com.google.android.exoplayer:exoplayer:2.16.1'
+
+    //locations
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation "com.google.android.gms:play-services-location:19.0.1"
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.maps.android:android-maps-utils:2.0.3'
 }
