@@ -10,11 +10,13 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.demajors.demajorsapp.R
 import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityListUserAddressBinding
+import com.demajors.demajorsapp.model.api.profile.address.UserAddress
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -28,7 +30,8 @@ import timber.log.Timber
 
 class ListUserAddressActivity :
     BaseActivity<UserAddressViewModel>(),
-    CreateAddressDialog.SaveListener {
+    CreateAddressDialog.SaveListener,
+    UserAddressAdapter.UserAddressListener {
 
     override val viewModelClass: Class<UserAddressViewModel> = UserAddressViewModel::class.java
     private lateinit var binding: ActivityListUserAddressBinding
@@ -109,6 +112,7 @@ class ListUserAddressActivity :
             {
                 if (it.isNotEmpty()) {
                     adapter = UserAddressAdapter(it.toMutableList())
+                    adapter.listener = this@ListUserAddressActivity
                     binding.rv.layoutManager = LinearLayoutManager(this)
                     binding.rv.adapter = adapter
 
@@ -122,6 +126,13 @@ class ListUserAddressActivity :
         )
 
         viewModel.onDataCreated.observe(
+            this,
+            {
+                onResume()
+            }
+        )
+
+        viewModel.onDataDeleted.observe(
             this,
             {
                 onResume()
@@ -198,5 +209,17 @@ class ListUserAddressActivity :
     override fun onSave(latitude: Double, longitude: Double, address: String) {
         Timber.d("onSave $address: $latitude,$longitude")
         viewModel.create(latitude, longitude, address)
+    }
+
+    override fun onDelete(data: UserAddress) {
+        val deleteDialog = AlertDialog.Builder(this)
+        deleteDialog.setMessage("Anda Yakin Ingin menghapus alamat ini?")
+        deleteDialog.setPositiveButton("YA") { _, _ ->
+            viewModel.delete(data)
+        }
+        deleteDialog.setNegativeButton("BATAL") { dialog, _ ->
+            dialog.dismiss()
+        }
+        deleteDialog.create().show()
     }
 }

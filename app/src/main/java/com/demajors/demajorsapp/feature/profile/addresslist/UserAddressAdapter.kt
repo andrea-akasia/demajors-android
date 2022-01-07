@@ -10,6 +10,12 @@ import com.demajors.demajorsapp.model.api.profile.address.UserAddress
 
 class UserAddressAdapter(val data: MutableList<UserAddress>) : RecyclerView.Adapter<UserAddressAdapter.UserAddressHolder>() {
 
+    interface UserAddressListener {
+        fun onDelete(data: UserAddress)
+    }
+
+    var listener: UserAddressListener? = null
+
     class UserAddressHolder(val binding: ViewItemUserAddressBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserAddressHolder =
@@ -30,14 +36,9 @@ class UserAddressAdapter(val data: MutableList<UserAddress>) : RecyclerView.Adap
 
             binding.valueAddress.text = data[bindingAdapterPosition].address
             binding.valueCoordinate.text = "${data[bindingAdapterPosition].latitude}, ${data[bindingAdapterPosition].longitude}"
-            /*itemView.setOnClickListener {
-                itemView.context.startActivity(
-                    Intent(
-                        itemView.context,
-                        DetailSongActivity::class.java
-                    )
-                )
-            }*/
+            binding.actionDelete.setOnClickListener {
+                listener?.onDelete(data[bindingAdapterPosition])
+            }
         }
     }
 

@@ -11,6 +11,7 @@ import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
 import com.demajors.demajorsapp.model.api.profile.address.CreateUserAddressBody
 import com.demajors.demajorsapp.model.api.profile.address.ListUserAddressAPIResponse
+import com.demajors.demajorsapp.model.api.profile.address.UpdateUserAddressBody
 import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
@@ -32,6 +33,12 @@ import retrofit2.http.Multipart
 import retrofit2.http.Part
 
 interface APIService {
+    @PUT("v1/user/address")
+    fun deleteUserAddress(
+        @Header("Authorization") token: String,
+        @Body body: UpdateUserAddressBody
+    ): Single<Response<BaseAPIResponse>>
+
     @POST("v1/user/address")
     fun createUserAddress(
         @Header("Authorization") token: String,
