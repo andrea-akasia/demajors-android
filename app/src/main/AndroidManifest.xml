@@ -50,6 +50,7 @@
         <activity android:name=".feature.signup.SignUpActivity" android:windowSoftInputMode="adjustPan" />
         <activity android:name=".feature.signup.VerifyEmailActivity" />
         <activity android:name=".feature.profile.UpdateProfileActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".feature.profile.addresslist.ListUserAddressActivity" />
     </application>
 
 </manifest>

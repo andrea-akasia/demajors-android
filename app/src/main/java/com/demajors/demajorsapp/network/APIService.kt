@@ -9,6 +9,7 @@ import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.pokemon.PokemonResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
+import com.demajors.demajorsapp.model.api.profile.address.ListUserAddressAPIResponse
 import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
 import com.demajors.demajorsapp.model.api.signup.VerifyEmailAPIResponse
@@ -30,6 +31,11 @@ import retrofit2.http.Multipart
 import retrofit2.http.Part
 
 interface APIService {
+    @GET("v1/user/address/list")
+    fun getListUserAddress(
+        @Header("Authorization") token: String
+    ): Single<Response<ListUserAddressAPIResponse>>
+
     @GET("v1/user/songs/list")
     fun getListSongForHome(
         @Query("page") page: Int,

@@ -11,9 +11,12 @@ import com.demajors.demajorsapp.base.BaseFragment
 import com.demajors.demajorsapp.databinding.FragmentProfileBinding
 import com.demajors.demajorsapp.feature.login.LoginActivity
 import com.demajors.demajorsapp.feature.main.MainActivity
+import com.demajors.demajorsapp.feature.profile.addresslist.ListUserAddressActivity
 import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.util.GlideApp
+import kotlinx.coroutines.DelicateCoroutinesApi
 
+@DelicateCoroutinesApi
 class ProfileFragment : BaseFragment<ProfileViewModel>() {
     override val viewModelClass: Class<ProfileViewModel> = ProfileViewModel::class.java
     private var _binding: FragmentProfileBinding? = null
@@ -106,18 +109,24 @@ class ProfileFragment : BaseFragment<ProfileViewModel>() {
                     Intent(requireContext(), UpdateProfileActivity::class.java)
                 )
             }
+
+            ui.actionAddress.setOnClickListener {
+                startActivity(
+                    Intent(requireContext(), ListUserAddressActivity::class.java)
+                )
+            }
         }
     }
 
     private fun openLogoutConfirmation() {
-        val dialog = AlertDialog.Builder(requireContext())
-        dialog.setMessage("Anda Yakin Ingin Melakukan Logout?")
-        dialog.setPositiveButton("YA") { _, _ ->
+        val logoutDialog = AlertDialog.Builder(requireContext())
+        logoutDialog.setMessage("Anda Yakin Ingin Melakukan Logout?")
+        logoutDialog.setPositiveButton("YA") { _, _ ->
             viewModel.logout()
         }
-        dialog.setNegativeButton("BATAL") { dialog, _ ->
+        logoutDialog.setNegativeButton("BATAL") { dialog, _ ->
             dialog.dismiss()
         }
-        dialog.create().show()
+        logoutDialog.create().show()
     }
 }

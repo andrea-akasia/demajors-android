@@ -41,6 +41,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_nft.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_pokemon.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_detail_rilisan.xml" value="0.31476449275362317" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_list_user_address.xml" value="0.29270833333333335" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/activity_my_nft.xml" value="0.28072916666666664" />
@@ -57,7 +58,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_my_artist.xml" value="0.25" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_nft.xml" value="0.30344202898550726" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_opened_mynft.xml" value="0.28072916666666664" />
-        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_profile.xml" value="0.5" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_unopened_mynft.xml" value="0.28072916666666664" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/fragment_wallet.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/home_slider_banner.xml" value="0.23143115942028986" />
@@ -75,6 +76,7 @@
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_nft_reguler.xml" value="0.21875" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_now_playing.xml" value="0.23143115942028986" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_recommendation.xml" value="0.5" />
+        <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/layout/view_item_user_address.xml" value="0.33" />
         <entry key="..\:/PROJECT/demajors/demajors/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1587719298245614" />
       </map>
     </option>

@@ -11,16 +11,22 @@ import com.demajors.demajorsapp.feature.merchandise.DetailMerchandiseActivity
 import com.demajors.demajorsapp.feature.myartist.detail.ArtistDetailActivity
 import com.demajors.demajorsapp.feature.nft.detail.DetailNFTActivity
 import com.demajors.demajorsapp.feature.profile.UpdateProfileActivity
+import com.demajors.demajorsapp.feature.profile.addresslist.ListUserAddressActivity
 import com.demajors.demajorsapp.feature.profile.mynft.MyNftActivity
 import com.demajors.demajorsapp.feature.profile.mynft.unopened.UnopenedMyNFTDetailActivity
 import com.demajors.demajorsapp.feature.rilisan.DetailRilisanActivity
 import com.demajors.demajorsapp.feature.signup.SignUpActivity
 import com.demajors.demajorsapp.feature.signup.VerifyEmailActivity
 import com.demajors.demajorsapp.feature.song.DetailSongActivity
+import kotlinx.coroutines.DelicateCoroutinesApi
 
 @Module
 abstract class BuildersModule {
 
+    @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
+    abstract fun bindListUserAddressActivity(): ListUserAddressActivity
+
+    @DelicateCoroutinesApi
     @ContributesAndroidInjector(modules = [FragmentBuildersModule::class])
     abstract fun bindUpdateProfileActivity(): UpdateProfileActivity
 
