@@ -17,12 +17,18 @@ import com.demajors.demajorsapp.base.BaseActivity
 import com.demajors.demajorsapp.databinding.ActivityListUserAddressBinding
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.ResolvableApiException
-import com.google.android.gms.location.*
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationSettingsRequest
+import com.google.android.gms.location.LocationSettingsStatusCodes
 import com.google.android.gms.tasks.CancellationTokenSource
 import com.google.android.material.snackbar.Snackbar
 import timber.log.Timber
 
-class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
+class ListUserAddressActivity :
+    BaseActivity<UserAddressViewModel>(),
+    CreateAddressDialog.SaveListener {
 
     override val viewModelClass: Class<UserAddressViewModel> = UserAddressViewModel::class.java
     private lateinit var binding: ActivityListUserAddressBinding
@@ -31,27 +37,27 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private var cancellationSource: CancellationTokenSource? = null
 
-    val locationSetting = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()){ result ->
+    val locationSetting = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
         Timber.d("StartIntentSenderForResult -> ${result.resultCode}")
         if (result.resultCode == RESULT_OK) {
             Timber.i("gps turned on")
             getCurrentLocation()
-        }else{
+        } else {
             Timber.w("gps need to be turned on")
         }
     }
 
-    val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()){ permissions ->
+    val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
         var isAllGranted = true
         permissions.entries.forEach {
             Timber.d("${it.key} -> ${it.value}")
-            if(!it.value) { isAllGranted = false }
+            if (!it.value) { isAllGranted = false }
         }
 
-        if(isAllGranted){
+        if (isAllGranted) {
             Timber.i("Permission Granted")
             showEnableLocationSetting()
-        }else{
+        } else {
             Timber.i("Permission not granted")
             Toast.makeText(this, "tidak dapat menambah alamat. mohon berikan izin akses lokasi terlebih dahulu", Toast.LENGTH_SHORT).show()
         }
@@ -70,10 +76,10 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
 
         binding.actionBack.setOnClickListener { onBackPressed() }
         binding.actionAdd.setOnClickListener {
-            if(isPermissionsGranted()){
+            if (isPermissionsGranted()) {
                 Timber.i("Permission already Granted")
                 showEnableLocationSetting()
-            }else{
+            } else {
                 requestPermissionLauncher.launch(
                     arrayOf(
                         Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -101,17 +107,24 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
         viewModel.onDataLoaded.observe(
             this,
             {
-                if(it.isNotEmpty()){
+                if (it.isNotEmpty()) {
                     adapter = UserAddressAdapter(it.toMutableList())
                     binding.rv.layoutManager = LinearLayoutManager(this)
                     binding.rv.adapter = adapter
 
                     binding.rv.visibility = View.VISIBLE
                     binding.viewEmpty.visibility = View.GONE
-                }else{
+                } else {
                     binding.rv.visibility = View.GONE
                     binding.viewEmpty.visibility = View.VISIBLE
                 }
+            }
+        )
+
+        viewModel.onDataCreated.observe(
+            this,
+            {
+                onResume()
             }
         )
     }
@@ -132,13 +145,16 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
     }
 
     @SuppressLint("MissingPermission")
-    private fun getCurrentLocation(){
+    private fun getCurrentLocation() {
         Snackbar.make(binding.parent, "Mencari lokasi anda...", Snackbar.LENGTH_LONG).show()
 
         cancellationSource = CancellationTokenSource()
         val currentLocationTask = fusedLocationClient.getCurrentLocation(LocationRequest.PRIORITY_HIGH_ACCURACY, cancellationSource!!.token)
         currentLocationTask.addOnSuccessListener { location ->
             Timber.d("currentLocationTask Location -> ${location.latitude}, ${location.longitude}")
+            val createDialog = CreateAddressDialog().newInstance(location.latitude, location.longitude)
+            createDialog.listener = this@ListUserAddressActivity
+            createDialog.show(supportFragmentManager, null)
         }
         currentLocationTask.addOnFailureListener {
             Timber.e(Throwable(it))
@@ -177,5 +193,10 @@ class ListUserAddressActivity : BaseActivity<UserAddressViewModel>() {
                     }
             }
         }
+    }
+
+    override fun onSave(latitude: Double, longitude: Double, address: String) {
+        Timber.d("onSave $address: $latitude,$longitude")
+        viewModel.create(latitude, longitude, address)
     }
 }

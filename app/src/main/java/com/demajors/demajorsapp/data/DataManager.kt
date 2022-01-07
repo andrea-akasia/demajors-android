@@ -20,6 +20,7 @@ import com.demajors.demajorsapp.model.api.auth.RefreshTokenAPIResponse
 import com.demajors.demajorsapp.model.api.auth.UserInfoAPIResponse
 import com.demajors.demajorsapp.model.api.detailpokemon.DetailPokemonResponse
 import com.demajors.demajorsapp.model.api.profile.UpdateProfileBody
+import com.demajors.demajorsapp.model.api.profile.address.CreateUserAddressBody
 import com.demajors.demajorsapp.model.api.profile.address.ListUserAddressAPIResponse
 import com.demajors.demajorsapp.model.api.rilisan.ListRilisanAPIResponse
 import com.demajors.demajorsapp.model.api.signup.SignUpBody
@@ -91,6 +92,12 @@ class DataManager
     private fun getRefreshAuthorizationHeader(): String = "Bearer " + prefs.getString(KEY_TOKEN_REFRESH)
 
     /* ---------------------------------------- Network ----------------------------------------- */
+    fun createUserAddress(body: CreateUserAddressBody): Single<Response<BaseAPIResponse>> {
+        return api.createUserAddress(getAuthorizationHeader(), body)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
+
     fun getListUserAddress(): Single<Response<ListUserAddressAPIResponse>> {
         return api.getListUserAddress(getAuthorizationHeader())
             .subscribeOn(Schedulers.io())

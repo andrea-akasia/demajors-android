@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.MutableLiveData
 import com.demajors.demajorsapp.base.BaseViewModel
 import com.demajors.demajorsapp.data.DataManager
+import com.demajors.demajorsapp.model.api.profile.address.CreateUserAddressBody
 import com.demajors.demajorsapp.model.api.profile.address.UserAddress
 import com.demajors.demajorsapp.util.generateResponseApiFromErrorBody
 import timber.log.Timber
@@ -16,6 +17,47 @@ class UserAddressViewModel
     internal var warningMessage = MutableLiveData<String>()
     internal var onAuthFailed = MutableLiveData<String>()
     internal var onDataLoaded = MutableLiveData<List<UserAddress>>()
+    internal var onDataCreated = MutableLiveData<Boolean>()
+
+    fun create(lat: Double, lng: Double, address: String) {
+        dataManager.createUserAddress(CreateUserAddressBody(address = address, lat = lat, lng = lng))
+            .doOnSubscribe(this::addDisposable)
+            .subscribe(
+                { res ->
+                    if (res.isSuccessful) {
+                        res.body()?.let { response ->
+                            if (response.isSucceed) {
+                                onDataCreated.postValue(true)
+                            } else {
+                                Timber.w(Throwable("createUserAddress gagal: ${response.errMessage}"))
+                                warningMessage.postValue("Create Data gagal: ${response.errMessage}")
+                            }
+                        }
+                    } else {
+                        // not 20x
+                        val code = res.code()
+                        if (code != 401) {
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                warningMessage.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            }
+                        } else {
+                            dataManager.clearPrefs()
+                            val errorBody = res.errorBody()
+                            if (errorBody != null) {
+                                onAuthFailed.postValue(generateResponseApiFromErrorBody(errorBody).errMessage)
+                            } else {
+                                onAuthFailed.postValue("please relogin")
+                            }
+                        }
+                    }
+                },
+                { err ->
+                    Timber.e(err)
+                    warningMessage.postValue(err.message)
+                }
+            )
+    }
 
     fun loadData() {
         dataManager.getListUserAddress()
